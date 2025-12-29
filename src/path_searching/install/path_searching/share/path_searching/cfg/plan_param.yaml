@@ -1,0 +1,7 @@
+# enable_downstairs: false
+# check_collision_radius: 0.10
+# voronoi_radius: 0.19
+ros__parameters:
+  enable_downstairs: false
+  check_collision_radius: 0.10
+  voronoi_radius: 0.19

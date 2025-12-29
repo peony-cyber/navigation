@@ -1,0 +1,6 @@
+Invoking command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/mpc_follower/install/mpc_follower
+Invoked command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/mpc_follower/install/mpc_follower
+Invoking command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/mpc_follower/build/mpc_follower -- -j32 -l32
+Invoked command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/mpc_follower/build/mpc_follower -- -j32 -l32
+Invoking command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/mpc_follower/build/mpc_follower
+Invoked command in '/home/peony/navigation_ws/mpc_follower/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/mpc_follower/build/mpc_follower
