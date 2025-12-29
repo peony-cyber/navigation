@@ -244,6 +244,10 @@ private:
         }
       }
     }
+
+    // recompute ESDF after obstacle updates
+    esdf_1->updateDistanceField();
+
     static unsigned int cnt_num = 0;
     if (detectCollision() || cnt_num > 5)
     {

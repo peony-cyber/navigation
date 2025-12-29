@@ -13,14 +13,19 @@ namespace ESDF_enviroment {
         bool** bin_map;
         bool** valid_map;
         double** height_map;
+        double** distance_map;
+        int** nearest_obs_x;
+        int** nearest_obs_y;
         cv::Mat img;
-        Eigen::Vector2i Size;
+        Eigen::Vector2i Size; // Size[0]=rows (height), Size[1]=cols (width)
         Eigen::Vector2d Offset;
         bool enable_downstairs = false;
         std::string height_map_path;
     public:
         void esdf_init(bool* bin_map_, int sizeX_, int sizeY_, Eigen::Vector2d offset_, bool enable_downstairs = false);
-        void showpt(Eigen::Vector2i pt);
+        void computeDistanceField();
+        void updateDistanceField();
+        // void showpt(Eigen::Vector2i pt);
         esdf();
         ~esdf();
         double height_conversion(unsigned char height_);

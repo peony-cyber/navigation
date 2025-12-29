@@ -44,6 +44,12 @@ ament_target_dependencies(plan_manager
   Eigen3 PCL pcl_conversions pcl_ros visualization_msgs std_msgs OpenCV
 )
 target_link_libraries(plan_manager ${PROJECT_NAME}_lib)
+
+# Benchmark executable for ESDF performance testing
+add_executable(esdf_benchmark src/benchmark_esdf.cpp)
+target_link_libraries(esdf_benchmark ${PROJECT_NAME}_lib)
+ament_target_dependencies(esdf_benchmark Eigen3 OpenCV)
+
 # ---------- 包含目录 ----------
 target_include_directories(${PROJECT_NAME}_lib PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -51,7 +57,7 @@ target_include_directories(${PROJECT_NAME}_lib PUBLIC
   $<INSTALL_INTERFACE:include>
 )
 # ---------- 安装 ----------
-install(TARGETS plan_manager ${PROJECT_NAME}_lib
+install(TARGETS plan_manager esdf_benchmark ${PROJECT_NAME}_lib
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}
