@@ -4,4 +4,4 @@
 ros__parameters:
   enable_downstairs: false
   check_collision_radius: 0.10
-  voronoi_radius: 0.19
+  obstacle_expand_radius: 0.19

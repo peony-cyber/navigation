@@ -12,7 +12,6 @@
 #include <pcl/common/transforms.h>
 #include <pcl/point_cloud.h>
 #include <pcl/point_types.h>
-#include "point.h"
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
 
@@ -28,15 +27,15 @@ public:
     smoother_1()
   {
     this->declare_parameter<bool>("enable_downstairs", false);
-    this->declare_parameter<double>("voronoi_radius", 0.40);
+    this->declare_parameter<double>("obstacle_expand_radius", 0.40);
     this->declare_parameter<double>("check_collision_radius", 0.50);
 
     this->get_parameter("enable_downstairs", enable_downstaris);
-    this->get_parameter("voronoi_radius", voronoi_radius);
+    this->get_parameter("obstacle_expand_radius", obstacle_expand_radius);
     this->get_parameter("check_collision_radius", collision_radius);
 
     RCLCPP_INFO(this->get_logger(), "[Params] [enable_downstairs] : %s", enable_downstaris ? "true" : "false");
-    RCLCPP_INFO(this->get_logger(), "[Params] [voronoi_radius] : %f", voronoi_radius);
+    RCLCPP_INFO(this->get_logger(), "[Params] [obstacle_expand_radius] : %f", obstacle_expand_radius);
     RCLCPP_INFO(this->get_logger(), "[Params] [check_collision_radius] : %f", collision_radius);
 
     map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
@@ -72,7 +71,7 @@ private:
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
   std::shared_ptr<tf2_ros::TransformListener> transform_listener_;
   bool enable_downstaris;
-  double voronoi_radius, collision_radius;
+  double obstacle_expand_radius, collision_radius;
 
   Eigen::Vector2d Index2pos(Eigen::Vector2i index_)
   {
@@ -145,8 +144,7 @@ private:
     Eigen::Vector2d end = goal_;
     Eigen::Vector2i start_index = Pos2index(start);
     Eigen::Vector2i end_index = Pos2index(end);
-    esdf_1->voronoi_map.findnearstVoronoi(start_index[0], start_index[1]);
-    esdf_1->voronoi_map.findnearstVoronoi(end_index[0], end_index[1]);
+    // switching to grid-based search; no Voronoi preprocessing required
     auto beforeTime = std::chrono::steady_clock::now();
     auto result = planner_1.search(start_index, end_index);
     if (result == navi_planner::Astar::NO_PATH)
@@ -207,12 +205,12 @@ private:
     for (size_t i = 1; i < path_now.size(); i++)
     {
       Eigen::Vector2i path_node_index = esdf_1->Pos2index(path_now[i]);
-      if (esdf_1->voronoi_map.isOccupied(path_node_index[0], path_node_index[1]))
+      if (esdf_1->checkCollision(path_node_index))
       {
         RCLCPP_INFO(this->get_logger(), "Collision detected");
         return true;
       }
-      double dist_1 = esdf_1->voronoi_map.data[path_node_index[0]][path_node_index[1]].dist;
+      double dist_1 = esdf_1->getDist(path_node_index);
       if (dist_1 < collision_radius * 20)
       {
         RCLCPP_INFO(this->get_logger(), "Collision detected");
@@ -228,26 +226,24 @@ private:
     pcl::PointCloud<pcl::PointXYZ> buffer;
     pcl::fromROSMsg(*cloud_msg, buffer);
 
-    std::vector<navi_planner::INTPOINT> Obstacles;
+    // mark obstacle cells directly in the occupancy grid
+    int expand_cells = (int)std::round(obstacle_expand_radius * 20.0);
     for (auto &p : buffer.points)
     {
       Eigen::Vector2d obs_pt(p.x, p.y);
       Eigen::Vector2i obs_index = esdf_1->Pos2index(obs_pt);
-      bool y_valid = map_size[0] >= (obs_index[1] + 9) && (obs_index[1] - 9) >= 0;
-      bool x_valid = map_size[1] >= (obs_index[0] + 9) && (obs_index[0] - 9) >= 0;
-      if (!(y_valid && x_valid)) { continue; }
-      for (int k1 = -6; k1 < 7; k1++)
+      for (int k1 = -expand_cells; k1 <= expand_cells; k1++)
       {
-        for (int k2 = -6; k2 < 7; k2++)
+        for (int k2 = -expand_cells; k2 <= expand_cells; k2++)
         {
-          if (k1 * k1 + k2 * k2 > voronoi_radius * voronoi_radius * 400) continue;
-          Obstacles.push_back(navi_planner::IntPoint(obs_index[0] + k1, obs_index[1] + k2));
+          if (k1 * k1 + k2 * k2 > expand_cells * expand_cells) continue;
+          int ix = obs_index[0] + k1;
+          int iy = obs_index[1] + k2;
+          if (ix < 0 || iy < 0 || ix >= esdf_1->Size[0] || iy >= esdf_1->Size[1]) continue;
+          esdf_1->bin_map[ix][iy] = true;
         }
       }
     }
-
-    esdf_1->voronoi_map.exchangeObstacles(Obstacles);
-    esdf_1->voronoi_map.update();
     static unsigned int cnt_num = 0;
     if (detectCollision() || cnt_num > 5)
     {

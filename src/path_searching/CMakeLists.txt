@@ -29,8 +29,6 @@ find_package(OpenCV REQUIRED)
 # ---------- 算法库 ----------
 add_library(${PROJECT_NAME}_lib STATIC
   src/Astar.cpp
-  src/bucketedqueue.cpp
-  src/dynamicvoronoi.cpp
   src/esdf_map.cpp
   src/smoother.cpp
 )

@@ -1,6 +1,5 @@
 #ifndef ESDF_H
 #define ESDF_H
-#include "dynamicvoronoi.h"
 #include <Eigen/Core>
 #include <iostream>
 #include <opencv2/highgui.hpp>
@@ -14,7 +13,6 @@ namespace ESDF_enviroment {
         bool** bin_map;
         bool** valid_map;
         double** height_map;
-        navi_planner::DynamicVoronoi voronoi_map;
         cv::Mat img;
         Eigen::Vector2i Size;
         Eigen::Vector2d Offset;
@@ -29,6 +27,7 @@ namespace ESDF_enviroment {
         bool checkCollision(Eigen::Vector2i pos_);
         bool checkUpStairs(Eigen::Vector2i pos_, Eigen::Vector2i next_pos_);
         double getDist(Eigen::Vector2i pos_);
+        Eigen::Vector2i getNearestObstacleIndex(Eigen::Vector2i pos_);
         void getMapRegion(Eigen::Vector2i & map_size_){map_size_ =  Size;}
         Eigen::Vector2d Index2pos(Eigen::Vector2i index_)
         {

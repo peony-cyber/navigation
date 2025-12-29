@@ -1,0 +1,136 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+-- Found tf2_eigen: 0.25.17 (/opt/ros/humble/share/tf2_eigen/cmake)
+-- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0m** WARNING ** io features related to pcap will be disabled[0m
+-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+-- Found Qhull version 8.0.2
+-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+-- looking for PCL_COMMON
+-- looking for PCL_KDTREE
+-- looking for PCL_OCTREE
+-- looking for PCL_SEARCH
+-- looking for PCL_SAMPLE_CONSENSUS
+-- looking for PCL_FILTERS
+-- looking for PCL_2D
+-- looking for PCL_GEOMETRY
+-- looking for PCL_IO
+-- looking for PCL_FEATURES
+-- looking for PCL_ML
+-- looking for PCL_SEGMENTATION
+-- looking for PCL_VISUALIZATION
+-- looking for PCL_SURFACE
+-- looking for PCL_REGISTRATION
+-- looking for PCL_KEYPOINTS
+-- looking for PCL_TRACKING
+-- looking for PCL_RECOGNITION
+-- looking for PCL_STEREO
+-- looking for PCL_APPS
+-- looking for PCL_IN_HAND_SCANNER
+-- looking for PCL_MODELER
+-- looking for PCL_POINT_CLOUD_EDITOR
+-- looking for PCL_OUTOFCORE
+-- looking for PCL_PEOPLE
+-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/peony/navigation_ws/build/path_searching
+[35m[1mConsolidate compiler generated dependencies of target path_searching_lib[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o[0m
+[ 28%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o[0m
+In file included from [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:2[m[K:
+[01m[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:[m[K In function ‘[01m[Kvoid GenTraj(const std::vector<Eigen::Matrix<double, 2, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, float)[m[K’:
+[01m[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:40:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   40 |   for (int j = 0 ; [01;35m[Kj < path.size()[m[K; ++j) {
+      |                    [01;35m[K~~^~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:[m[K In member function ‘[01m[Knavi_planner::smoother::VV2D navi_planner::smoother::smooth(navi_planner::smoother::VV2D, double, double)[m[K’:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:16:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   16 |         for(int j = 0 ; [01;35m[Kj < newPath.size()[m[K;j+=1)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:82:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KR_3[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   82 |                     double [01;35m[KR_3[m[K = pow(R_2,1.5);
+      |                            [01;35m[K^~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:42:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knext_node[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   42 |                 Eigen::Vector2d &[01;35m[Knext_node[m[K = Path_d_temp[j-1];
+      |                                  [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:43:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_node[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   43 |                 Eigen::Vector2d &[01;35m[Klast_node[m[K = Path_d_temp[j+1];
+      |                                  [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:14:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KObs_thre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   14 |         double [01;35m[KObs_thre[m[K = 10;
+      |                [01;35m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:[m[K In member function ‘[01m[Knavi_planner::smoother::VV2D navi_planner::smoother::pathResampling(navi_planner::smoother::VV2D)[m[K’:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:122:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  122 |         for(int i = 2 ; [01;35m[Ki < path_input.size()-1[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[ 57%] [32m[1mLinking CXX static library libpath_searching_lib.a[0m
+[ 71%] Built target path_searching_lib
+[35m[1mConsolidate compiler generated dependencies of target plan_manager[0m
+[ 85%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[100%] [32m[1mLinking CXX executable plan_manager[0m
+[100%] Built target plan_manager
+-- Install configuration: ""
+-- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+-- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager" to ""
+-- Installing: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/ulitys.h
+-- Installing: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/dynamicvoronoi.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/Astar.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/point.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/bucketedqueue.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/smoother.h
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv
+-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake
+-- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml

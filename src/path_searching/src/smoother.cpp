@@ -47,42 +47,36 @@ namespace navi_planner {
                 Eigen::Vector2i index_ = esdf_environment_->Pos2index(currunt_node);
                 if(1)
                 {
-                    if(esdf_environment_->voronoi_map.data[index_[0]][index_[1]].sqdist == 0)
+                    // if current cell is occupied, apply smoothing regularization only
+                    if(esdf_environment_->bin_map[index_[0]][index_[1]])
                     {
                         currunt_x -= lambda_1*(2*currunt_x - last_x - next_x);
                         currunt_y -= lambda_1*(2*currunt_y - last_y - next_y);
                         continue;
                     }
                     
-                    Eigen::Vector2i neighborObsIndex = Eigen::Vector2i::Zero();
+                    Eigen::Vector2i neighborObsIndex = esdf_environment_->getNearestObstacleIndex(index_);
                     Eigen::Vector2d neighborObs = Eigen::Vector2d::Zero();
-                    neighborObsIndex[0] = esdf_environment_->voronoi_map.data[index_[0]][index_[1]].obstX;
-                    neighborObsIndex[1] = esdf_environment_->voronoi_map.data[index_[0]][index_[1]].obstY;
-                    neighborObs = esdf_environment_->Index2pos(neighborObsIndex);
+                    if(neighborObsIndex[0] >= 0) neighborObs = esdf_environment_->Index2pos(neighborObsIndex);
                     Eigen::Vector2d delta_vec = neighborObs-currunt_node;
-                    // delta_vec = delta_vec * 20.0f;
-                    // double delta_x = esdf_environment_->voronoi_map.data[index_[0]][index_[1]].obstX - index_[0];
-                    // double delta_y = esdf_environment_->voronoi_map.data[index_[0]][index_[1]].obstY - index_[1];
-
-                    
 
                     int cnt_1 = 0;
-                    for(int i = -2; i < 3; i++)
+                    for(int di = -2; di < 3; di++)
                     {
-                        for(int j = -2; j < 3 ; j++)
+                        for(int dj = -2; dj < 3 ; dj++)
                         {
-                            if(esdf_environment_->voronoi_map.isOccupied((int)(index_[0] + i),(int)(index_[1] + j)))
+                            Eigen::Vector2i check_idx = index_ + Eigen::Vector2i(di,dj);
+                            if(check_idx[0] < 0 || check_idx[1] < 0 || check_idx[0] >= esdf_environment_->Size[0] || check_idx[1] >= esdf_environment_->Size[1]) continue;
+                            if(esdf_environment_->checkCollision(check_idx))
                                 continue;
                             cnt_1 ++;
-                            neighborObsIndex[0] = esdf_environment_->voronoi_map.data[index_[0]+i][index_[1]+j].obstX;
-                            neighborObsIndex[1] = esdf_environment_->voronoi_map.data[index_[0]+i][index_[1]+j].obstY;
-                            neighborObs = esdf_environment_->Index2pos(neighborObsIndex);
-                            delta_vec += (neighborObs-currunt_node);
-                            //delta_x += esdf_environment_->voronoi_map.data[(int)index_[0]+i][(int)index_[1]+j].obstX - index_[0];
-                            //delta_y += esdf_environment_->voronoi_map.data[(int)index_[0]+i][(int)index_[1]+j].obstY - index_[1];
+                            Eigen::Vector2i nIdx = esdf_environment_->getNearestObstacleIndex(check_idx);
+                            if(nIdx[0] < 0) continue;
+                            Eigen::Vector2d nObs = esdf_environment_->Index2pos(nIdx);
+                            delta_vec += (nObs-currunt_node);
                         }
                     }
-                    delta_vec /= cnt_1;
+                    if(cnt_1 > 0) delta_vec /= cnt_1;
                     // delta_y /= cnt_1;
                     double R_2 = (delta_vec).norm();
                     double R_3 = pow(R_2,1.5);
@@ -91,7 +85,7 @@ namespace navi_planner {
                     double temp_y = currunt_y - lambda_2 * ((delta_vec[1]) / R_2);
                     Eigen::Vector2d temp_pos(temp_x,temp_y);
                     Eigen::Vector2i temp_index = esdf_environment_->Pos2index(temp_pos);
-                    if(esdf_environment_->voronoi_map.isOccupied(temp_index[0],temp_index[1]))
+                    if(esdf_environment_->checkCollision(temp_index))
                     {
                         currunt_x -= lambda_1*(2*currunt_x - last_x - next_x);
                         currunt_y -= lambda_1*(2*currunt_y - last_y - next_y);
@@ -133,7 +127,7 @@ namespace navi_planner {
                 // int map_y = Path_d[i][1] - y_offset;
                 Eigen::Vector2i index_ = esdf_environment_->Pos2index(path_input[i]);
                 if(((path_input[i] - path_input[j]).norm()*2 < 
-                esdf_environment_->voronoi_map.data[index_[0]][index_[1]].dist * 0.05f))
+                esdf_environment_->getDist(index_) * 0.05f))
                     continue;
                 else
                 {
@@ -157,7 +151,7 @@ namespace navi_planner {
         {
             Eigen::Vector2d midPoint = (i/checknum)*node1 + (1-i/checknum)*node2;
             Eigen::Vector2i index_ = esdf_environment_->Pos2index(midPoint);
-            if(esdf_environment_->voronoi_map.isOccupied(index_[0],index_[1]))
+            if(esdf_environment_->checkCollision(index_))
             {return true;}
         }
         return false;

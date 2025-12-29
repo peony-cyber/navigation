@@ -44,8 +44,6 @@ namespace ESDF_enviroment
             memcpy(bin_map[i],bin_map_ + sizeY_ * i, sizeY_*sizeof(bool));
         }
 
-        voronoi_map.initializeMap(sizeX_,sizeY_,bin_map);
-        voronoi_map.update();
         if(true)
         {
             img = cv::imread(height_map_path + "height_map.png");
@@ -61,7 +59,8 @@ namespace ESDF_enviroment
                     std::cout<<"read"<< i << j <<std::endl;
                     height_map[i][j] = height_conversion(img.at<cv::Vec3b>(j,i)[0]);
                     valid_map[i][j] = img.at<cv::Vec3b>(j,i)[2] < 128 ? true : false ;
-                    img.at<cv::Vec3b>(j,i)[1] = voronoi_map.isVoronoi(i,j) == true ? 255 : 0;
+                    // mark green channel for occupied cells
+                    img.at<cv::Vec3b>(j,i)[1] = bin_map[i][j] ? 255 : 0;
                 }
             }
             cv::imwrite(height_map_path + "test.png",img);
@@ -70,8 +69,7 @@ namespace ESDF_enviroment
 
     bool esdf::checkCollision(Eigen::Vector2i pos_)
     {
-        //return bin_map[pos_[0]][pos_[1]];// || !voronoi_map.isVoronoi(pos_[0],pos_[1]);
-        return !voronoi_map.isVoronoi(pos_[0],pos_[1]);
+        return bin_map[pos_[0]][pos_[1]];
     }
 
     bool esdf::checkUpStairs(Eigen::Vector2i pos_, Eigen::Vector2i next_pos_)
@@ -90,7 +88,43 @@ namespace ESDF_enviroment
 
     double esdf::getDist(Eigen::Vector2i pos_)
     {
-        return voronoi_map.data[pos_[0]][pos_[1]].dist;
+        // brute-force search for nearest occupied cell (distance in grid cells)
+        double best = std::numeric_limits<double>::infinity();
+        for(int i = 0; i < Size[0]; i++)
+        {
+            for(int j = 0; j < Size[1]; j++)
+            {
+                if(!bin_map[i][j]) continue;
+                double dx = (double)i - (double)pos_[0];
+                double dy = (double)j - (double)pos_[1];
+                double d = std::sqrt(dx*dx + dy*dy);
+                if(d < best) best = d;
+            }
+        }
+        return best;
+    }
+
+    Eigen::Vector2i esdf::getNearestObstacleIndex(Eigen::Vector2i pos_)
+    {
+        double best = std::numeric_limits<double>::infinity();
+        Eigen::Vector2i best_idx(-1,-1);
+        for(int i = 0; i < Size[0]; i++)
+        {
+            for(int j = 0; j < Size[1]; j++)
+            {
+                if(!bin_map[i][j]) continue;
+                double dx = (double)i - (double)pos_[0];
+                double dy = (double)j - (double)pos_[1];
+                double d = std::sqrt(dx*dx + dy*dy);
+                if(d < best)
+                {
+                    best = d;
+                    best_idx[0] = i;
+                    best_idx[1] = j;
+                }
+            }
+        }
+        return best_idx;
     }
     esdf::esdf()
     {

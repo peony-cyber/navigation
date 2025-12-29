@@ -1,3 +1,4 @@
+# Deprecated launch file. Use 'astar.launch.py' instead.
 import os
 
 from ament_index_python.packages import get_package_share_directory
@@ -14,8 +15,7 @@ def generate_launch_description():
     declare_param_file_cmd=DeclareLaunchArgument(
       'param_file',
       default_value= config_path
-      # 'Full path to the ROS2 parameters file'
-    )  #声明后可直接在命令行传入参数文件
+    )
 
     plan_manager = Node(
         package='path_searching',
@@ -26,20 +26,7 @@ def generate_launch_description():
         parameters=[LaunchConfiguration('param_file')],
     )
 
-    # pid_follower = Node(
-    #     package='path_following',
-    #     executable='pid_follower',
-    #     name='pid_follower',
-    #     output='screen',
-    # )
-
     return LaunchDescription([
         declare_param_file_cmd,
         plan_manager,
-        # pid_follower,
-        # If needed add map_server or rviz nodes here:
-        # Node(package='nav2_map_server', executable='map_server', name='map_server',
-        #      output='screen', parameters=['/path/to/your/map.yaml']),
-        # Node(package='rviz2', executable='rviz2', name='rviz2', output='screen',
-        #      arguments=['-d', '/path/to/config.rviz']),
     ])
