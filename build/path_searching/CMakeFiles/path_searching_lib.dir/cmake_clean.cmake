@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o"
   "CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o.d"
-  "CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o"
-  "CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o.d"
   "CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o"
   "CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o.d"
   "CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o"

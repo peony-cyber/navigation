@@ -223,6 +223,19 @@ plan_manager/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/plan_manager.dir/build.make CMakeFiles/plan_manager.dir/build
 .PHONY : plan_manager/fast
 
+#=============================================================================
+# Target rules for targets named esdf_benchmark
+
+# Build rule for target.
+esdf_benchmark: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esdf_benchmark
+.PHONY : esdf_benchmark
+
+# fast build rule for target.
+esdf_benchmark/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esdf_benchmark.dir/build.make CMakeFiles/esdf_benchmark.dir/build
+.PHONY : esdf_benchmark/fast
+
 src/Astar.o: src/Astar.cpp.o
 .PHONY : src/Astar.o
 
@@ -247,29 +260,29 @@ src/Astar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_searching_lib.dir/build.make CMakeFiles/path_searching_lib.dir/src/Astar.cpp.s
 .PHONY : src/Astar.cpp.s
 
-src/bucketedqueue.o: src/bucketedqueue.cpp.o
-.PHONY : src/bucketedqueue.o
+src/benchmark_esdf.o: src/benchmark_esdf.cpp.o
+.PHONY : src/benchmark_esdf.o
 
 # target to build an object file
-src/bucketedqueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_searching_lib.dir/build.make CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o
-.PHONY : src/bucketedqueue.cpp.o
+src/benchmark_esdf.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esdf_benchmark.dir/build.make CMakeFiles/esdf_benchmark.dir/src/benchmark_esdf.cpp.o
+.PHONY : src/benchmark_esdf.cpp.o
 
-src/bucketedqueue.i: src/bucketedqueue.cpp.i
-.PHONY : src/bucketedqueue.i
+src/benchmark_esdf.i: src/benchmark_esdf.cpp.i
+.PHONY : src/benchmark_esdf.i
 
 # target to preprocess a source file
-src/bucketedqueue.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_searching_lib.dir/build.make CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.i
-.PHONY : src/bucketedqueue.cpp.i
+src/benchmark_esdf.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esdf_benchmark.dir/build.make CMakeFiles/esdf_benchmark.dir/src/benchmark_esdf.cpp.i
+.PHONY : src/benchmark_esdf.cpp.i
 
-src/bucketedqueue.s: src/bucketedqueue.cpp.s
-.PHONY : src/bucketedqueue.s
+src/benchmark_esdf.s: src/benchmark_esdf.cpp.s
+.PHONY : src/benchmark_esdf.s
 
 # target to generate assembly for a file
-src/bucketedqueue.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_searching_lib.dir/build.make CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.s
-.PHONY : src/bucketedqueue.cpp.s
+src/benchmark_esdf.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esdf_benchmark.dir/build.make CMakeFiles/esdf_benchmark.dir/src/benchmark_esdf.cpp.s
+.PHONY : src/benchmark_esdf.cpp.s
 
 src/esdf_map.o: src/esdf_map.cpp.o
 .PHONY : src/esdf_map.o
@@ -358,14 +371,15 @@ help:
 	@echo "... test"
 	@echo "... path_searching_uninstall"
 	@echo "... uninstall"
+	@echo "... esdf_benchmark"
 	@echo "... path_searching_lib"
 	@echo "... plan_manager"
 	@echo "... src/Astar.o"
 	@echo "... src/Astar.i"
 	@echo "... src/Astar.s"
-	@echo "... src/bucketedqueue.o"
-	@echo "... src/bucketedqueue.i"
-	@echo "... src/bucketedqueue.s"
+	@echo "... src/benchmark_esdf.o"
+	@echo "... src/benchmark_esdf.i"
+	@echo "... src/benchmark_esdf.s"
 	@echo "... src/esdf_map.o"
 	@echo "... src/esdf_map.i"
 	@echo "... src/esdf_map.s"

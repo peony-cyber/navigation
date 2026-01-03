@@ -83,24 +83,10 @@ CMakeFiles/path_searching_lib.dir/src/Astar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_searching_lib.dir/src/Astar.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peony/navigation_ws/src/path_searching/src/Astar.cpp -o CMakeFiles/path_searching_lib.dir/src/Astar.cpp.s
 
-CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o: CMakeFiles/path_searching_lib.dir/flags.make
-CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o: /home/peony/navigation_ws/src/path_searching/src/bucketedqueue.cpp
-CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o: CMakeFiles/path_searching_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o -MF CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o.d -o CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o -c /home/peony/navigation_ws/src/path_searching/src/bucketedqueue.cpp
-
-CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/peony/navigation_ws/src/path_searching/src/bucketedqueue.cpp > CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.i
-
-CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/peony/navigation_ws/src/path_searching/src/bucketedqueue.cpp -o CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.s
-
 CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o: CMakeFiles/path_searching_lib.dir/flags.make
 CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o: /home/peony/navigation_ws/src/path_searching/src/esdf_map.cpp
 CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o: CMakeFiles/path_searching_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o -MF CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o.d -o CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o -c /home/peony/navigation_ws/src/path_searching/src/esdf_map.cpp
 
 CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.s: cmake_force
 CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o: CMakeFiles/path_searching_lib.dir/flags.make
 CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o: /home/peony/navigation_ws/src/path_searching/src/smoother.cpp
 CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o: CMakeFiles/path_searching_lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o -MF CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o.d -o CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o -c /home/peony/navigation_ws/src/path_searching/src/smoother.cpp
 
 CMakeFiles/path_searching_lib.dir/src/smoother.cpp.i: cmake_force
@@ -128,7 +114,6 @@ CMakeFiles/path_searching_lib.dir/src/smoother.cpp.s: cmake_force
 # Object files for target path_searching_lib
 path_searching_lib_OBJECTS = \
 "CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o" \
-"CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o" \
 "CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o" \
 "CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o"
 
@@ -136,12 +121,11 @@ path_searching_lib_OBJECTS = \
 path_searching_lib_EXTERNAL_OBJECTS =
 
 libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o
-libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o
 libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o
 libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o
 libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/build.make
 libpath_searching_lib.a: CMakeFiles/path_searching_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libpath_searching_lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/peony/navigation_ws/build/path_searching/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libpath_searching_lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/path_searching_lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/path_searching_lib.dir/link.txt --verbose=$(VERBOSE)
 

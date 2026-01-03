@@ -23,7 +23,7 @@ namespace mpc_follower
         odom_sub_ = this->create_subscription<nav_msgs::msg::Odometry>(
             "/odom", 1, std::bind(&MpcController::updateRobotState, this,std::placeholders::_1));
         path_sub_ = this->create_subscription<nav_msgs::msg::Path>(
-            "/spath", 10, std::bind(&MpcController::onReferencePath,this,std::placeholders::_1));
+            "/sPath", 10, std::bind(&MpcController::onReferencePath,this,std::placeholders::_1));
         obstacle_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
             "/dynamic_obstacles", 10, std::bind(&MpcController::detectObstacles,this,std::placeholders::_1));  //        
         cmd_vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
@@ -66,7 +66,9 @@ void MpcController::loadParameters()
     params_.GlobalInitNoise= declare_parameter("global_init_noise", GlobalInitNoise);
     params_.ObstacleInflation = declare_parameter("obstacle_inflation", ObstacleInflation);
     params_.Wobs          = declare_parameter("Wobs", Wobs);
-}
+    // 是否启用转弯半径约束  全向禁用
+    params_.UseTurningRadius = declare_parameter("use_turning_radius", false);
+} 
     
 //配置全局优化器
 void MpcController::configureGlobalOptimizer()
@@ -120,7 +122,11 @@ void MpcController::configureLocalOptimizer()
 
     // 应用约束
     local_optimizer_.add_inequality_constraint(MpcController::accelerationConstraints, this, params_.OptTolerance);
-    local_optimizer_.add_inequality_constraint(MpcController::turningRadiusConstraint, this, params_.OptTolerance);
+    // 仅当配置启用时加入转弯半径约束（对全向/舵轮平台通常禁用）
+    if (params_.UseTurningRadius)
+    {
+        local_optimizer_.add_inequality_constraint(MpcController::turningRadiusConstraint, this, params_.OptTolerance);
+    }
 
     // 局部优化参数
     local_optimizer_.set_xtol_rel(params_.OptTolerance);
@@ -196,7 +202,7 @@ double MpcController::objectiveFunction(const std::vector<double> &x, std::vecto
         }
 
        // 转弯半径成本
-        if (fabs(current.omega) > kEps)
+        if (fabs(current.omega) > kEps)  // 舵轮可以考虑转弯半径给0
         {
             double v = hypot(current.vx, current.vy);
             double radius = fabs( v / current.omega);
@@ -405,8 +411,8 @@ Control MpcController::computeControl()
     }
 
     // 保存最终优化结果
-    opt_result_ = local_x0;
-    opt_fval_ = local_fval;
+    opt_result_ = local_x0; // 优化控制序列
+    opt_fval_ = local_fval; // 保存最终成本值
 
     // 返回第一个控制量
     Control u;
@@ -422,6 +428,9 @@ void MpcController::updateRobotState(const nav_msgs::msg::Odometry::SharedPtr ms
     current_state_.vy = msg->twist.twist.linear.y;
     current_state_.omega = msg->twist.twist.angular.z;
 
+    // 更新时间戳以便 controlLoop 能识别新到达的 odom
+    current_state_.stamp = msg->header.stamp;
+
     current_state_.x = msg->pose.pose.position.x;
     current_state_.y = msg->pose.pose.position.y;
     tf2::Quaternion q(
@@ -430,7 +439,7 @@ void MpcController::updateRobotState(const nav_msgs::msg::Odometry::SharedPtr ms
         msg->pose.pose.orientation.z,
         msg->pose.pose.orientation.w);
     current_state_.theta = tf2::getYaw(q);
-}
+} 
 
 void MpcController::onReferencePath(const nav_msgs::msg::Path::SharedPtr msg)
 {
@@ -592,6 +601,8 @@ void MpcController::controlLoop()
 
     Control u = computeControl();   // 1. 求解 MPC
     cmdVelPublish(u);
+    // 更新历史控制量，供下次优化使用
+    previous_control_ = u;
     // publishVisualization();         // 3. 可视化
 }
 

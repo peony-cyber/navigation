@@ -1,14 +1,12 @@
 /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+/home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark
 /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
 /home/peony/navigation_ws/install/path_searching/include/ulitys.h
 /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
-/home/peony/navigation_ws/install/path_searching/include/dynamicvoronoi.h
 /home/peony/navigation_ws/install/path_searching/include/Astar.h
-/home/peony/navigation_ws/install/path_searching/include/point.h
 /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
 /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
 /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
-/home/peony/navigation_ws/install/path_searching/include/bucketedqueue.h
 /home/peony/navigation_ws/install/path_searching/include/smoother.h
 /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
 /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py

@@ -1,0 +1,136 @@
+[0.009s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[0.058s] -- The C compiler identification is GNU 11.4.0
+[0.101s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.156s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.156s] -- Detecting C compile features
+[0.156s] -- Detecting C compile features - done
+[0.158s] -- Detecting CXX compiler ABI info
+[0.209s] -- Detecting CXX compiler ABI info - done
+[0.214s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.214s] -- Detecting CXX compile features
+[0.214s] -- Detecting CXX compile features - done
+[0.216s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.302s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.378s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.382s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.387s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.403s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.427s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.428s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.487s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.507s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.536s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.541s] -- Looking for pthread.h
+[0.587s] -- Looking for pthread.h - found
+[0.588s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.636s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.637s] -- Found Threads: TRUE  
+[0.666s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.683s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.710s] -- Found tf2: 0.25.17 (/opt/ros/humble/share/tf2/cmake)
+[0.716s] -- Found tf2_ros: 0.25.17 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.764s] -- Found tf2_geometry_msgs: 0.25.17 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.769s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.770s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.770s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.773s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.774s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[0.776s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.797s] -- Checking for module 'eigen3'
+[0.808s] --   Found eigen3, version 3.4.0
+[0.832s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.832s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.856s] -- Checking for module 'flann'
+[0.867s] --   Found flann, version 1.9.1
+[0.897s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.897s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.534s] -- Checking for module 'libusb-1.0'
+[1.544s] --   Found libusb-1.0, version 1.0.25
+[1.573s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.574s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.617s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.716s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.720s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.725s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.818s] -- Found Qhull version 8.0.2
+[1.915s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.004s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.004s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.005s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.005s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.006s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.006s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.006s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.007s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.007s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.008s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.008s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.009s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.009s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.010s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.010s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.011s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.011s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.012s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.013s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.013s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.014s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.014s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.014s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.014s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.015s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.022s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.069s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.070s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.070s] -- Configured cppcheck include dirs: /home/peony/navigation_ws/src/mpc_follower/include
+[2.070s] -- Configured cppcheck exclude dirs and/or files: 
+[2.071s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.071s] -- Configured cpplint exclude dirs and/or files: 
+[2.072s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.072s] -- Added test 'lint_cmake' to check CMake code style
+[2.072s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.074s] -- Added test 'uncrustify' to check C / C++ code style
+[2.074s] -- Configured uncrustify additional arguments: 
+[2.074s] -- Added test 'xmllint' to check XML markup files
+[2.075s] -- Configuring done
+[2.098s] -- Generating done
+[2.104s] -- Build files have been written to: /home/peony/navigation_ws/build/mpc_follower
+[2.118s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[2.120s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[2.159s] [ 66%] [32mBuilding CXX object CMakeFiles/mpc_node.dir/src/mpc_node.cpp.o[0m
+[2.160s] [ 66%] [32mBuilding CXX object CMakeFiles/mpc_node.dir/src/mpc_controller.cpp.o[0m
+[12.772s] [100%] [32m[1mLinking CXX executable mpc_node[0m
+[13.757s] [100%] Built target mpc_node
+[13.769s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[13.776s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower
+[13.780s] -- Install configuration: ""
+[13.781s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/lib/mpc_follower/mpc_node
+[13.787s] -- Set runtime path of "/home/peony/navigation_ws/install/mpc_follower/lib/mpc_follower/mpc_node" to ""
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/include/
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/include//mpc_controller.h
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/include//robot_model.h
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/include//mpc_follower
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg/
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg//mpc_params.yaml
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch/
+[13.787s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch//mpc_follower.launch.py
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/package_run_dependencies/mpc_follower
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/parent_prefix_path/mpc_follower
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.sh
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.dsv
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.sh
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.dsv
+[13.788s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.bash
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.sh
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.zsh
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.dsv
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.dsv
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/packages/mpc_follower
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig.cmake
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig-version.cmake
+[13.789s] -- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.xml
+[13.791s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower

@@ -67,6 +67,7 @@ namespace mpc_follower
         double GlobalInitNoise;
         double ObstacleInflation, Wobs;
         int    N;   // 预测步数
+        bool   UseTurningRadius; // 是否启用转弯半径约束（对全向平台通常禁用）
         } params_;
 
         void loadParameters();   // 加载参数

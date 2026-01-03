@@ -33,14 +33,17 @@ find_package(pcl_conversions REQUIRED)
 # pkg_check_modules(NLOPT REQUIRED nlopt) 
 
 add_executable(mpc_node src/mpc_node.cpp src/mpc_controller.cpp)
+# add_executable(benchmark_mpc src/benchmark_mpc.cpp)
 
 include_directories(
   include
   ${EIGEN3_INCLUDE_DIRS}
   ${NLOPT_INCLUDE_DIRS}
 )
-find_path(NLOPT_INCLUDE_DIR nlopt.hpp PATHS /usr/include /usr/local/include)
-find_library(NLOPT_LIBRARY nlopt PATHS /usr/lib /usr/local/lib)
+# find_path(NLOPT_INCLUDE_DIR nlopt.hpp PATHS /usr/include /usr/local/include)
+# find_library(NLOPT_LIBRARY nlopt PATHS /usr/lib /usr/local/lib)
+find_path(NLOPT_INCLUDE_DIR NAMES nlopt.hpp)
+find_library(NLOPT_LIBRARY NAMES nlopt) 
 
 if(NOT NLOPT_INCLUDE_DIR OR NOT NLOPT_LIBRARY)
   message(FATAL_ERROR "nlopt not found")
@@ -48,6 +51,7 @@ endif()
 
 target_include_directories(mpc_node PRIVATE ${NLOPT_INCLUDE_DIR})
 target_link_libraries(mpc_node ${NLOPT_LIBRARY})
+# target_link_libraries(benchmark_mpc ${PROJECT_NAME})
 
 
 ament_target_dependencies(mpc_node 

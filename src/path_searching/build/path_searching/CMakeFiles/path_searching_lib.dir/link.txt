@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpath_searching_lib.a CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o CMakeFiles/path_searching_lib.dir/src/bucketedqueue.cpp.o CMakeFiles/path_searching_lib.dir/src/dynamicvoronoi.cpp.o CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o
-/usr/bin/ranlib libpath_searching_lib.a

@@ -1,0 +1,208 @@
+[0.071s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.071s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a175ad68340>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a175ad2fa00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a175ad2fa00>>)
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.182s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.182s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/peony/navigation_ws'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/mpc_follower) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mpc_follower' with type 'ros.ament_cmake' and name 'mpc_follower'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/path_searching) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/path_searching' with type 'ros.ament_cmake' and name 'path_searching'
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.196s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.220s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 322 installed packages in /opt/ros/humble
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'mpc_follower' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'mpc_follower' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/peony/navigation_ws/build/mpc_follower', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/peony/navigation_ws/install/mpc_follower', 'merge_install': False, 'path': '/home/peony/navigation_ws/src/mpc_follower', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_clean_cache' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_clean_first' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'cmake_force_configure' from command line to 'False'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'ament_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'catkin_cmake_args' from command line to 'None'
+[0.250s] Level 5:colcon.colcon_core.verb:set package 'path_searching' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.250s] DEBUG:colcon.colcon_core.verb:Building package 'path_searching' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/peony/navigation_ws/build/path_searching', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/peony/navigation_ws/install/path_searching', 'merge_install': False, 'path': '/home/peony/navigation_ws/src/path_searching', 'symlink_install': False, 'test_result_base': None}
+[0.250s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.250s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/peony/navigation_ws/src/mpc_follower' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/peony/navigation_ws/src/mpc_follower'
+[0.252s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.252s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.252s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.255s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/peony/navigation_ws/src/path_searching' with build type 'ament_cmake'
+[0.255s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/peony/navigation_ws/src/path_searching'
+[0.255s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.255s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.260s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[0.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[2.369s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[2.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[2.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[2.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[14.020s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[14.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower
+[14.042s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_follower)
+[14.043s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower
+[14.044s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower' for CMake module files
+[14.044s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower' for CMake config files
+[14.044s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_follower', 'cmake_prefix_path')
+[14.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.ps1'
+[14.045s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.dsv'
+[14.045s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.sh'
+[14.046s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib'
+[14.046s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/bin'
+[14.046s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib/pkgconfig/mpc_follower.pc'
+[14.046s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib/python3.10/site-packages'
+[14.046s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/bin'
+[14.046s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.ps1'
+[14.047s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.dsv'
+[14.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.sh'
+[14.047s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.bash'
+[14.048s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.zsh'
+[14.048s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/peony/navigation_ws/install/mpc_follower/share/colcon-core/packages/mpc_follower)
+[14.049s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mpc_follower)
+[14.049s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower' for CMake module files
+[14.049s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower' for CMake config files
+[14.049s] Level 1:colcon.colcon_core.shell:create_environment_hook('mpc_follower', 'cmake_prefix_path')
+[14.049s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.ps1'
+[14.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.dsv'
+[14.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/hook/cmake_prefix_path.sh'
+[14.050s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib'
+[14.050s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/bin'
+[14.050s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib/pkgconfig/mpc_follower.pc'
+[14.050s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/lib/python3.10/site-packages'
+[14.050s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/mpc_follower/bin'
+[14.050s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.ps1'
+[14.051s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.dsv'
+[14.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.sh'
+[14.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.bash'
+[14.051s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.zsh'
+[14.052s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/peony/navigation_ws/install/mpc_follower/share/colcon-core/packages/mpc_follower)
+[20.160s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[20.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[20.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_searching)
+[20.184s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching' for CMake module files
+[20.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[20.184s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching' for CMake config files
+[20.185s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_searching', 'cmake_prefix_path')
+[20.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.ps1'
+[20.185s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.dsv'
+[20.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.sh'
+[20.185s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib'
+[20.185s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/bin'
+[20.185s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib/pkgconfig/path_searching.pc'
+[20.186s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib/python3.10/site-packages'
+[20.186s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/bin'
+[20.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.ps1'
+[20.186s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv'
+[20.186s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.sh'
+[20.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.bash'
+[20.187s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.zsh'
+[20.187s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/peony/navigation_ws/install/path_searching/share/colcon-core/packages/path_searching)
+[20.187s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(path_searching)
+[20.187s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching' for CMake module files
+[20.188s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching' for CMake config files
+[20.188s] Level 1:colcon.colcon_core.shell:create_environment_hook('path_searching', 'cmake_prefix_path')
+[20.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.ps1'
+[20.188s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.dsv'
+[20.188s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/peony/navigation_ws/install/path_searching/share/path_searching/hook/cmake_prefix_path.sh'
+[20.188s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib'
+[20.188s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/bin'
+[20.188s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib/pkgconfig/path_searching.pc'
+[20.189s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/lib/python3.10/site-packages'
+[20.189s] Level 1:colcon.colcon_core.environment:checking '/home/peony/navigation_ws/install/path_searching/bin'
+[20.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.ps1'
+[20.189s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv'
+[20.189s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.sh'
+[20.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.bash'
+[20.190s] INFO:colcon.colcon_core.shell:Creating package script '/home/peony/navigation_ws/install/path_searching/share/path_searching/package.zsh'
+[20.190s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/peony/navigation_ws/install/path_searching/share/colcon-core/packages/path_searching)
+[20.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.190s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.190s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.194s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.194s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.194s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.202s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.202s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/peony/navigation_ws/install/local_setup.ps1'
+[20.203s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/peony/navigation_ws/install/_local_setup_util_ps1.py'
+[20.204s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/peony/navigation_ws/install/setup.ps1'
+[20.204s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/peony/navigation_ws/install/local_setup.sh'
+[20.204s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/peony/navigation_ws/install/_local_setup_util_sh.py'
+[20.205s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/peony/navigation_ws/install/setup.sh'
+[20.205s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/peony/navigation_ws/install/local_setup.bash'
+[20.205s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/peony/navigation_ws/install/setup.bash'
+[20.206s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/peony/navigation_ws/install/local_setup.zsh'
+[20.206s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/peony/navigation_ws/install/setup.zsh'
