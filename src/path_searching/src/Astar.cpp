@@ -132,13 +132,15 @@ namespace navi_planner
         return NO_PATH;
     }
 
-    void Astar::setParam() {
+    void Astar::setParam(double obstacle_weight) {
         lambda_heu_ = 2.0;
         allocate_num_ = 500000;
+        obstacle_weight_ = obstacle_weight;
         // nh.param("astar/lambda_heu", lambda_heu_, 2.0);
         // nh.param("astar/allocate_num", allocate_num_, 500000);
         RCLCPP_INFO(rclcpp::get_logger("Astar"),"lambda_heu:%f",lambda_heu_);
         RCLCPP_INFO(rclcpp::get_logger("Astar"),"allocate_num_:%d",allocate_num_);
+        RCLCPP_INFO(rclcpp::get_logger("Astar"),"obstacle_weight_:%f",obstacle_weight_);
     }
 
     void Astar::retrievePath(NodePtr end_node) {
@@ -167,7 +169,7 @@ namespace navi_planner
 
     double Astar::getDistCost(double dist_)
     {
-        return 10.0f/(dist_ + 0.1f);
+        return obstacle_weight_ / (dist_ + 0.1f);
     }
 
     void Astar::init() {
@@ -215,7 +217,9 @@ namespace navi_planner
 
     Astar::Astar()
     {
-        ;
+        lambda_heu_ = 2.0;
+        allocate_num_ = 500000;
+        obstacle_weight_ = 10.0;
     }
 
     Astar::~Astar()

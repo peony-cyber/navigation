@@ -1,0 +1,78 @@
+[0.009s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[0.060s] [ 12%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o[0m
+[0.967s] [ 25%] [32m[1mLinking CXX static library libpath_searching_lib.a[0m
+[1.047s] [ 50%] Built target path_searching_lib
+[1.058s] [35m[1mConsolidate compiler generated dependencies of target plan_manager[0m
+[1.063s] [ 62%] [32m[1mLinking CXX executable esdf_benchmark[0m
+[1.080s] [ 75%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[4.528s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.528s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.528s]                  from [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:1[m[K:
+[4.528s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In constructor ‘[01m[KPlanManager::PlanManager()[m[K’:
+[4.528s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 5 has type ‘[01m[Knavi_planner::Astar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[4.528s]    41 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"planner_1 地址: %p"[m[K, [32m[K&planner_1[m[K);
+[4.528s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[4.528s]       |                                                           [32m[K|[m[K
+[4.528s]       |                                                           [32m[Knavi_planner::Astar*[m[K
+[4.528s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[4.528s]    41 |     RCLCPP_INFO(this->get_logger(), "planner_1 地址: [01;36m[K%p[m[K", &planner_1);
+[4.528s]       |                                                      [01;36m[K~^[m[K
+[4.528s]       |                                                       [01;36m[K|[m[K
+[4.528s]       |                                                       [01;36m[Kvoid*[m[K
+[6.177s] [ 87%] Built target esdf_benchmark
+[11.221s] [100%] [32m[1mLinking CXX executable plan_manager[0m
+[12.271s] [100%] Built target plan_manager
+[12.283s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[12.285s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[12.289s] -- Install configuration: ""
+[12.289s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+[12.297s] -- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager" to ""
+[12.297s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark
+[12.298s] -- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark" to ""
+[12.298s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/ulitys.h
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/Astar.h
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
+[12.303s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/include/smoother.h
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/debug_astar.launch.py
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh
+[12.304s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv
+[12.304s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake
+[12.305s] -- Up-to-date: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml
+[12.305s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching

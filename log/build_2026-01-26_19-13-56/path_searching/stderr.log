@@ -1,0 +1,71 @@
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:1[m[K:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In constructor ‘[01m[KPlanManager::PlanManager()[m[K’:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 5 has type ‘[01m[Knavi_planner::Astar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   41 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"planner_1 地址: %p"[m[K, [32m[K&planner_1[m[K);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+      |                                                           [32m[K|[m[K
+      |                                                           [32m[Knavi_planner::Astar*[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   41 |     RCLCPP_INFO(this->get_logger(), "planner_1 地址: [01;36m[K%p[m[K", &planner_1);
+      |                                                      [01;36m[K~^[m[K
+      |                                                       [01;36m[K|[m[K
+      |                                                       [01;36m[Kvoid*[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In member function ‘[01m[Kvoid PlanManager::plan(Eigen::Vector2d, Eigen::Vector2d)[m[K’:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:160:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstart_m[m[K’ was not declared in this scope; did you mean ‘[01m[Kstart_[m[K’?
+  160 |     int sx = (int)(([01;31m[Kstart_m[m[K.x() - map_origin_x) / resolution);
+      |                     [01;31m[K^~~~~~~[m[K
+      |                     [32m[Kstart_[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:160:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_x[m[K’ was not declared in this scope
+  160 |     int sx = (int)((start_m.x() - [01;31m[Kmap_origin_x[m[K) / resolution);
+      |                                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:160:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kresolution[m[K’ was not declared in this scope
+  160 |     int sx = (int)((start_m.x() - map_origin_x) / [01;31m[Kresolution[m[K);
+      |                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:161:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_origin_y[m[K’ was not declared in this scope
+  161 |     int sy = (int)((start_m.y() - [01;31m[Kmap_origin_y[m[K) / resolution);
+      |                                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:162:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_m[m[K’ was not declared in this scope; did you mean ‘[01m[Kgoal_[m[K’?
+  162 |     int gx = (int)(([01;31m[Kgoal_m[m[K.x()   - map_origin_x) / resolution);
+      |                     [01;31m[K^~~~~~[m[K
+      |                     [32m[Kgoal_[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:166:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwcwidth[m[K’?
+  166 |     if (sx<0||sx>=[01;31m[Kwidth[m[K||sy<0||sy>=height||
+      |                   [01;31m[K^~~~~[m[K
+      |                   [32m[Kwcwidth[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:166:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+  166 |     if (sx<0||sx>=width||sy<0||sy>=[01;31m[Kheight[m[K||
+      |                                    [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:1[m[K:
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:169:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope
+  169 |         RCLCPP_ERROR([01;31m[Knode_[m[K->get_logger(),
+      |                      [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:169:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  169 |         [01;31m[KRCLCPP_ERROR[m[K(node_->get_logger(),
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:172:16:[m[K [01;31m[Kerror: [m[Kreturn-statement with a value, in function returning ‘[01m[Kvoid[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  172 |         return [01;31m[Kfalse[m[K;
+      |                [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/plan_manager.dir/build.make:76：CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:167：CMakeFiles/plan_manager.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

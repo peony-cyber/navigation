@@ -1,0 +1,461 @@
+[0.000000] (-) TimerEvent: {}
+[0.000117] (mpc_follower) JobQueued: {'identifier': 'mpc_follower', 'dependencies': OrderedDict()}
+[0.000138] (path_searching) JobQueued: {'identifier': 'path_searching', 'dependencies': OrderedDict()}
+[0.000507] (mpc_follower) JobStarted: {'identifier': 'mpc_follower'}
+[0.003320] (path_searching) JobStarted: {'identifier': 'path_searching'}
+[0.005702] (mpc_follower) JobProgress: {'identifier': 'mpc_follower', 'progress': 'cmake'}
+[0.006155] (mpc_follower) JobProgress: {'identifier': 'mpc_follower', 'progress': 'build'}
+[0.006687] (mpc_follower) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/mpc_follower', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/mpc_follower', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/peony/navigation_ws/install/path_searching/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '19162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/peony/navigation_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2211,unix/peony:/tmp/.ICE-unix/2211'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23fed415_6385_4ba2_a1c9_8a019453a553'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/mpc_follower'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble')]), 'shell': False}
+[0.008811] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'cmake'}
+[0.009405] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '/home/peony/navigation_ws/src/path_searching', '-DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/peony/navigation_ws/install/path_searching/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '19162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/peony/navigation_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2211,unix/peony:/tmp/.ICE-unix/2211'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23fed415_6385_4ba2_a1c9_8a019453a553'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble')]), 'shell': False}
+[0.041743] (path_searching) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.053265] (mpc_follower) StdoutLine: {'line': b'[100%] Built target mpc_node\n'}
+[0.061561] (mpc_follower) CommandEnded: {'returncode': 0}
+[0.061901] (mpc_follower) JobProgress: {'identifier': 'mpc_follower', 'progress': 'install'}
+[0.068188] (mpc_follower) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peony/navigation_ws/build/mpc_follower'], 'cwd': '/home/peony/navigation_ws/build/mpc_follower', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/peony/navigation_ws/install/path_searching/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '19162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/peony/navigation_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2211,unix/peony:/tmp/.ICE-unix/2211'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23fed415_6385_4ba2_a1c9_8a019453a553'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/mpc_follower'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble')]), 'shell': False}
+[0.072653] (mpc_follower) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.072793] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/lib/mpc_follower/mpc_node\n'}
+[0.072912] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/include/\n'}
+[0.072987] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/include//mpc_controller.h\n'}
+[0.073029] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/include//robot_model.h\n'}
+[0.073061] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/include//mpc_follower\n'}
+[0.073093] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg/\n'}
+[0.073162] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg//mpc_params.yaml\n'}
+[0.073196] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch/\n'}
+[0.073225] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch//mpc_follower.launch.py\n'}
+[0.073286] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/package_run_dependencies/mpc_follower\n'}
+[0.073318] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/parent_prefix_path/mpc_follower\n'}
+[0.073372] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.sh\n'}
+[0.073400] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.dsv\n'}
+[0.073429] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.sh\n'}
+[0.073478] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.dsv\n'}
+[0.073536] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.bash\n'}
+[0.073565] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.sh\n'}
+[0.073592] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.zsh\n'}
+[0.073619] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.dsv\n'}
+[0.073649] (mpc_follower) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.dsv\n'}
+[0.073677] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/packages/mpc_follower\n'}
+[0.073710] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig.cmake\n'}
+[0.073736] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig-version.cmake\n'}
+[0.073763] (mpc_follower) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.xml\n'}
+[0.074865] (path_searching) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.075516] (mpc_follower) CommandEnded: {'returncode': 0}
+[0.079293] (path_searching) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.083926] (mpc_follower) JobEnded: {'identifier': 'mpc_follower', 'rc': 0}
+[0.099847] (-) TimerEvent: {}
+[0.122215] (path_searching) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.126097] (path_searching) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.126241] (path_searching) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.126437] (path_searching) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.128094] (path_searching) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.176732] (path_searching) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.180742] (path_searching) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.180909] (path_searching) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.181163] (path_searching) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.182770] (path_searching) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199927] (-) TimerEvent: {}
+[0.265009] (path_searching) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.300022] (-) TimerEvent: {}
+[0.311751] (path_searching) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.335336] (path_searching) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.337969] (path_searching) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.342575] (path_searching) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.348950] (path_searching) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.357099] (path_searching) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.379542] (path_searching) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.380929] (path_searching) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400094] (-) TimerEvent: {}
+[0.436775] (path_searching) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.454408] (path_searching) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.481100] (path_searching) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.485865] (path_searching) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.500175] (-) TimerEvent: {}
+[0.532345] (path_searching) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.532782] (path_searching) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.577495] (path_searching) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.578112] (path_searching) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.600253] (-) TimerEvent: {}
+[0.605201] (path_searching) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.621521] (path_searching) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.630775] (path_searching) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.683434] (path_searching) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.18 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[0.689387] (path_searching) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.694495] (path_searching) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.695229] (path_searching) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.695293] (path_searching) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.700332] (-) TimerEvent: {}
+[0.706099] (path_searching) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.716921] (path_searching) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.742385] (path_searching) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.742490] (path_searching) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.754200] (path_searching) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.765786] (path_searching) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.776870] (path_searching) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.800424] (-) TimerEvent: {}
+[0.807179] (path_searching) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.807235] (path_searching) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.827251] (path_searching) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[0.830574] (path_searching) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[0.900542] (-) TimerEvent: {}
+[0.923247] (path_searching) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[0.923414] (path_searching) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[0.924833] (path_searching) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[0.930166] (path_searching) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.939691] (path_searching) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[0.945710] (path_searching) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.000642] (-) TimerEvent: {}
+[1.008829] (path_searching) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.008986] (path_searching) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.054486] (path_searching) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.054681] (path_searching) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.098463] (path_searching) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.098621] (path_searching) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.100714] (-) TimerEvent: {}
+[1.141129] (path_searching) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.141267] (path_searching) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.184075] (path_searching) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.184221] (path_searching) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.200791] (-) TimerEvent: {}
+[1.227215] (path_searching) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.227491] (path_searching) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.271326] (path_searching) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.300952] (-) TimerEvent: {}
+[1.330852] (path_searching) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.331772] (path_searching) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.332943] (path_searching) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.333929] (path_searching) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.343277] (path_searching) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.346977] (path_searching) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.349362] (path_searching) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.352303] (path_searching) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.401159] (-) TimerEvent: {}
+[1.412826] (path_searching) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.424077] (path_searching) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.454381] (path_searching) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.454936] (path_searching) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.454986] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.501363] (-) TimerEvent: {}
+[1.501970] (path_searching) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.502055] (path_searching) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.502167] (path_searching) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.595138] (path_searching) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.599771] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.601436] (-) TimerEvent: {}
+[1.604330] (path_searching) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.691708] (path_searching) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.701472] (-) TimerEvent: {}
+[1.782142] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.801606] (-) TimerEvent: {}
+[1.865839] (path_searching) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.866441] (path_searching) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.866536] (path_searching) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.866925] (path_searching) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.866984] (path_searching) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.867341] (path_searching) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.867390] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.867774] (path_searching) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.867835] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.868212] (path_searching) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.868273] (path_searching) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.868670] (path_searching) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.868748] (path_searching) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.868844] (path_searching) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[1.868905] (path_searching) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.868995] (path_searching) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[1.869033] (path_searching) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.869410] (path_searching) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.869516] (path_searching) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.869887] (path_searching) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.869979] (path_searching) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.870348] (path_searching) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.870395] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.870783] (path_searching) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.870895] (path_searching) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.871274] (path_searching) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.871376] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.871757] (path_searching) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.871841] (path_searching) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.872219] (path_searching) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.872318] (path_searching) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.872707] (path_searching) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.872801] (path_searching) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.873175] (path_searching) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.873251] (path_searching) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.873639] (path_searching) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.873759] (path_searching) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.874169] (path_searching) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.874236] (path_searching) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.874607] (path_searching) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.874870] (path_searching) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.874974] (path_searching) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[1.875029] (path_searching) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[1.875126] (path_searching) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[1.875177] (path_searching) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.875285] (path_searching) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[1.875339] (path_searching) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.875729] (path_searching) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.875815] (path_searching) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.876198] (path_searching) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.876577] (path_searching) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[1.877551] (path_searching) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.889834] (path_searching) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.896459] (path_searching) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.901691] (-) TimerEvent: {}
+[1.911656] (path_searching) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.960898] (path_searching) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.001879] (-) TimerEvent: {}
+[2.022900] (path_searching) StdoutLine: {'line': b'-- Generating done\n'}
+[2.036375] (path_searching) StdoutLine: {'line': b'-- Build files have been written to: /home/peony/navigation_ws/build/path_searching\n'}
+[2.049923] (path_searching) CommandEnded: {'returncode': 0}
+[2.050565] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'build'}
+[2.051139] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/path_searching', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/peony/navigation_ws/install/path_searching/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '19162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/peony/navigation_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2211,unix/peony:/tmp/.ICE-unix/2211'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23fed415_6385_4ba2_a1c9_8a019453a553'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble')]), 'shell': False}
+[2.085798] (path_searching) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o\x1b[0m\n'}
+[2.085976] (path_searching) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o\x1b[0m\n'}
+[2.086098] (path_searching) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o\x1b[0m\n'}
+[2.101994] (-) TimerEvent: {}
+[2.202420] (-) TimerEvent: {}
+[2.302849] (-) TimerEvent: {}
+[2.403347] (-) TimerEvent: {}
+[2.503897] (-) TimerEvent: {}
+[2.604423] (-) TimerEvent: {}
+[2.704984] (-) TimerEvent: {}
+[2.805283] (-) TimerEvent: {}
+[2.905514] (-) TimerEvent: {}
+[3.005775] (-) TimerEvent: {}
+[3.106050] (-) TimerEvent: {}
+[3.206330] (-) TimerEvent: {}
+[3.306626] (-) TimerEvent: {}
+[3.406913] (-) TimerEvent: {}
+[3.507197] (-) TimerEvent: {}
+[3.607472] (-) TimerEvent: {}
+[3.707727] (-) TimerEvent: {}
+[3.807990] (-) TimerEvent: {}
+[3.908263] (-) TimerEvent: {}
+[4.008769] (-) TimerEvent: {}
+[4.109270] (-) TimerEvent: {}
+[4.187363] (path_searching) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:2\x1b[m\x1b[K:\n'}
+[4.187557] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid GenTraj(const std::vector<Eigen::Matrix<double, 2, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, float)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.187638] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:40:22:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.187698] (path_searching) StderrLine: {'line': b'   40 |   for (int j = 0 ; \x1b[01;35m\x1b[Kj < path.size()\x1b[m\x1b[K; ++j) {\n'}
+[4.187750] (path_searching) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.195950] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Knavi_planner::smoother::VV2D navi_planner::smoother::smooth(navi_planner::smoother::VV2D, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.196033] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:16:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.196093] (path_searching) StderrLine: {'line': b'   16 |         for(int j = 0 ; \x1b[01;35m\x1b[Kj < newPath.size()\x1b[m\x1b[K;j+=1)\n'}
+[4.196148] (path_searching) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.206864] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:82:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KR_3\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.206981] (path_searching) StderrLine: {'line': b'   82 |                     double \x1b[01;35m\x1b[KR_3\x1b[m\x1b[K = pow(R_2,1.5);\n'}
+[4.207055] (path_searching) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.207124] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:42:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Knext_node\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.207206] (path_searching) StderrLine: {'line': b'   42 |                 Eigen::Vector2d &\x1b[01;35m\x1b[Knext_node\x1b[m\x1b[K = Path_d_temp[j-1];\n'}
+[4.207294] (path_searching) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.207364] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:43:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klast_node\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.207433] (path_searching) StderrLine: {'line': b'   43 |                 Eigen::Vector2d &\x1b[01;35m\x1b[Klast_node\x1b[m\x1b[K = Path_d_temp[j+1];\n'}
+[4.207518] (path_searching) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.207681] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:14:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KObs_thre\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.207746] (path_searching) StderrLine: {'line': b'   14 |         double \x1b[01;35m\x1b[KObs_thre\x1b[m\x1b[K = 10;\n'}
+[4.207796] (path_searching) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.208032] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Knavi_planner::smoother::VV2D navi_planner::smoother::pathResampling(navi_planner::smoother::VV2D)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.208086] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:122:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.208135] (path_searching) StderrLine: {'line': b'  122 |         for(int i = 2 ; \x1b[01;35m\x1b[Ki < path_input.size()-1\x1b[m\x1b[K; i++)\n'}
+[4.208172] (path_searching) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.209330] (-) TimerEvent: {}
+[4.309740] (-) TimerEvent: {}
+[4.410262] (-) TimerEvent: {}
+[4.510687] (-) TimerEvent: {}
+[4.611169] (-) TimerEvent: {}
+[4.711641] (-) TimerEvent: {}
+[4.811980] (-) TimerEvent: {}
+[4.912486] (-) TimerEvent: {}
+[5.012945] (-) TimerEvent: {}
+[5.113362] (-) TimerEvent: {}
+[5.213844] (-) TimerEvent: {}
+[5.314333] (-) TimerEvent: {}
+[5.414830] (-) TimerEvent: {}
+[5.515294] (-) TimerEvent: {}
+[5.615777] (-) TimerEvent: {}
+[5.716266] (-) TimerEvent: {}
+[5.816763] (-) TimerEvent: {}
+[5.917246] (-) TimerEvent: {}
+[6.017697] (-) TimerEvent: {}
+[6.118199] (-) TimerEvent: {}
+[6.218677] (-) TimerEvent: {}
+[6.319129] (-) TimerEvent: {}
+[6.419569] (-) TimerEvent: {}
+[6.520026] (-) TimerEvent: {}
+[6.620507] (-) TimerEvent: {}
+[6.720967] (-) TimerEvent: {}
+[6.821454] (-) TimerEvent: {}
+[6.921932] (-) TimerEvent: {}
+[7.022398] (-) TimerEvent: {}
+[7.122868] (-) TimerEvent: {}
+[7.223346] (-) TimerEvent: {}
+[7.323951] (-) TimerEvent: {}
+[7.360240] (path_searching) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libpath_searching_lib.a\x1b[0m\n'}
+[7.424178] (-) TimerEvent: {}
+[7.451593] (path_searching) StdoutLine: {'line': b'[ 50%] Built target path_searching_lib\n'}
+[7.465329] (path_searching) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o\x1b[0m\n'}
+[7.465458] (path_searching) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/esdf_benchmark.dir/src/benchmark_esdf.cpp.o\x1b[0m\n'}
+[7.524273] (-) TimerEvent: {}
+[7.624508] (-) TimerEvent: {}
+[7.724774] (-) TimerEvent: {}
+[7.825074] (-) TimerEvent: {}
+[7.925386] (-) TimerEvent: {}
+[8.025689] (-) TimerEvent: {}
+[8.125979] (-) TimerEvent: {}
+[8.226268] (-) TimerEvent: {}
+[8.326558] (-) TimerEvent: {}
+[8.355547] (path_searching) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable esdf_benchmark\x1b[0m\n'}
+[8.426687] (-) TimerEvent: {}
+[8.526996] (-) TimerEvent: {}
+[8.627277] (-) TimerEvent: {}
+[8.727511] (-) TimerEvent: {}
+[8.827756] (-) TimerEvent: {}
+[8.928010] (-) TimerEvent: {}
+[9.028268] (-) TimerEvent: {}
+[9.128514] (-) TimerEvent: {}
+[9.228782] (-) TimerEvent: {}
+[9.329035] (-) TimerEvent: {}
+[9.429288] (-) TimerEvent: {}
+[9.529513] (-) TimerEvent: {}
+[9.629774] (-) TimerEvent: {}
+[9.730023] (-) TimerEvent: {}
+[9.830300] (-) TimerEvent: {}
+[9.930511] (-) TimerEvent: {}
+[10.030768] (-) TimerEvent: {}
+[10.131022] (-) TimerEvent: {}
+[10.231314] (-) TimerEvent: {}
+[10.331603] (-) TimerEvent: {}
+[10.431866] (-) TimerEvent: {}
+[10.532196] (-) TimerEvent: {}
+[10.632504] (-) TimerEvent: {}
+[10.732778] (-) TimerEvent: {}
+[10.833057] (-) TimerEvent: {}
+[10.933329] (-) TimerEvent: {}
+[11.033599] (-) TimerEvent: {}
+[11.133855] (-) TimerEvent: {}
+[11.234119] (-) TimerEvent: {}
+[11.334407] (-) TimerEvent: {}
+[11.434717] (-) TimerEvent: {}
+[11.534973] (-) TimerEvent: {}
+[11.635219] (-) TimerEvent: {}
+[11.735476] (-) TimerEvent: {}
+[11.835730] (-) TimerEvent: {}
+[11.935986] (-) TimerEvent: {}
+[12.036235] (-) TimerEvent: {}
+[12.136540] (-) TimerEvent: {}
+[12.236824] (-) TimerEvent: {}
+[12.337138] (-) TimerEvent: {}
+[12.437461] (-) TimerEvent: {}
+[12.537752] (-) TimerEvent: {}
+[12.638025] (-) TimerEvent: {}
+[12.738278] (-) TimerEvent: {}
+[12.838508] (-) TimerEvent: {}
+[12.938757] (-) TimerEvent: {}
+[13.039010] (-) TimerEvent: {}
+[13.139259] (-) TimerEvent: {}
+[13.239511] (-) TimerEvent: {}
+[13.339764] (-) TimerEvent: {}
+[13.440024] (-) TimerEvent: {}
+[13.540304] (-) TimerEvent: {}
+[13.640580] (-) TimerEvent: {}
+[13.740860] (-) TimerEvent: {}
+[13.841117] (-) TimerEvent: {}
+[13.940174] (path_searching) StdoutLine: {'line': b'[ 87%] Built target esdf_benchmark\n'}
+[13.941193] (-) TimerEvent: {}
+[14.041498] (-) TimerEvent: {}
+[14.141744] (-) TimerEvent: {}
+[14.241958] (-) TimerEvent: {}
+[14.342239] (-) TimerEvent: {}
+[14.442482] (-) TimerEvent: {}
+[14.542709] (-) TimerEvent: {}
+[14.642982] (-) TimerEvent: {}
+[14.743259] (-) TimerEvent: {}
+[14.843468] (-) TimerEvent: {}
+[14.943748] (-) TimerEvent: {}
+[15.043953] (-) TimerEvent: {}
+[15.144227] (-) TimerEvent: {}
+[15.244406] (-) TimerEvent: {}
+[15.344561] (-) TimerEvent: {}
+[15.444872] (-) TimerEvent: {}
+[15.545137] (-) TimerEvent: {}
+[15.645381] (-) TimerEvent: {}
+[15.745631] (-) TimerEvent: {}
+[15.845869] (-) TimerEvent: {}
+[15.946113] (-) TimerEvent: {}
+[16.046361] (-) TimerEvent: {}
+[16.146615] (-) TimerEvent: {}
+[16.246865] (-) TimerEvent: {}
+[16.347103] (-) TimerEvent: {}
+[16.447363] (-) TimerEvent: {}
+[16.547645] (-) TimerEvent: {}
+[16.647901] (-) TimerEvent: {}
+[16.748155] (-) TimerEvent: {}
+[16.848395] (-) TimerEvent: {}
+[16.948657] (-) TimerEvent: {}
+[17.048915] (-) TimerEvent: {}
+[17.149193] (-) TimerEvent: {}
+[17.249493] (-) TimerEvent: {}
+[17.349799] (-) TimerEvent: {}
+[17.450095] (-) TimerEvent: {}
+[17.550398] (-) TimerEvent: {}
+[17.650396] (path_searching) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable plan_manager\x1b[0m\n'}
+[17.650551] (-) TimerEvent: {}
+[17.750754] (-) TimerEvent: {}
+[17.851019] (-) TimerEvent: {}
+[17.951284] (-) TimerEvent: {}
+[18.051535] (-) TimerEvent: {}
+[18.151801] (-) TimerEvent: {}
+[18.252051] (-) TimerEvent: {}
+[18.352321] (-) TimerEvent: {}
+[18.452609] (-) TimerEvent: {}
+[18.552872] (-) TimerEvent: {}
+[18.653135] (-) TimerEvent: {}
+[18.703707] (path_searching) StdoutLine: {'line': b'[100%] Built target plan_manager\n'}
+[18.714824] (path_searching) CommandEnded: {'returncode': 0}
+[18.715229] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'install'}
+[18.715899] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peony/navigation_ws/build/path_searching'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/peony/navigation_ws/install/path_searching/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '19162'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/peony/navigation_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2211,unix/peony:/tmp/.ICE-unix/2211'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23fed415_6385_4ba2_a1c9_8a019453a553'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.145'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/navigation_ws/install/path_searching:/home/peony/navigation_ws/install/mpc_follower:/opt/ros/humble')]), 'shell': False}
+[18.720179] (path_searching) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.720301] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager\n'}
+[18.728277] (path_searching) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager" to ""\n'}
+[18.728351] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark\n'}
+[18.728746] (path_searching) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark" to ""\n'}
+[18.728790] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a\n'}
+[18.734222] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include\n'}
+[18.734317] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/ulitys.h\n'}
+[18.734430] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h\n'}
+[18.734489] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/Astar.h\n'}
+[18.734532] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline\n'}
+[18.734583] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h\n'}
+[18.734641] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h\n'}
+[18.734705] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h\n'}
+[18.734768] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/include/smoother.h\n'}
+[18.734860] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch\n'}
+[18.734930] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py\n'}
+[18.735004] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py\n'}
+[18.735069] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py\n'}
+[18.735133] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch_debug.py\n'}
+[18.735208] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg\n'}
+[18.735252] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml\n'}
+[18.735367] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh\n'}
+[18.735454] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv\n'}
+[18.735601] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching\n'}
+[18.735714] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching\n'}
+[18.735795] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh\n'}
+[18.735872] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv\n'}
+[18.735963] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh\n'}
+[18.736033] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv\n'}
+[18.736108] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash\n'}
+[18.736183] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh\n'}
+[18.736262] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh\n'}
+[18.736337] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv\n'}
+[18.736424] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv\n'}
+[18.736534] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching\n'}
+[18.736641] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[18.736717] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[18.736806] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[18.736884] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake\n'}
+[18.736951] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake\n'}
+[18.737026] (path_searching) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml\n'}
+[18.738362] (path_searching) CommandEnded: {'returncode': 0}
+[18.745032] (path_searching) JobEnded: {'identifier': 'path_searching', 'rc': 0}
+[18.745405] (-) EventReactorShutdown: {}

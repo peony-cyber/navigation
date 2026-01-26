@@ -21,6 +21,7 @@ private:
   double margin_;
   int allocate_num_;
   double tie_breaker_;
+  double obstacle_weight_;
 
   double resolution_, inv_resolution_;
   Eigen::Vector2i origin_, map_size_2d_;
@@ -38,7 +39,7 @@ public:
 
   enum { REACH_END = 1, NO_PATH = 2 };
 
-  void setParam();
+  void setParam(double obstacle_weight = 10.0);
   void init();
   void reset();
   int search(Eigen::Vector2i start_pt, Eigen::Vector2i end_pt);

@@ -1,0 +1,254 @@
+[0.009s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[0.054s] -- The C compiler identification is GNU 11.4.0
+[0.099s] -- The CXX compiler identification is GNU 11.4.0
+[0.106s] -- Detecting C compiler ABI info
+[0.161s] -- Detecting C compiler ABI info - done
+[0.166s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.166s] -- Detecting C compile features
+[0.166s] -- Detecting C compile features - done
+[0.168s] -- Detecting CXX compiler ABI info
+[0.217s] -- Detecting CXX compiler ABI info - done
+[0.221s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.221s] -- Detecting CXX compile features
+[0.221s] -- Detecting CXX compile features - done
+[0.223s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.307s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.357s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.381s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.384s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.389s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.395s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.404s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.428s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.430s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.492s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.510s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.537s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.542s] -- Looking for pthread.h
+[0.590s] -- Looking for pthread.h - found
+[0.590s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.638s] -- Found Threads: TRUE  
+[0.665s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.682s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.692s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.748s] -- Found tf2_eigen: 0.25.18 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.755s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.760s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.761s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.761s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.773s] -- Checking for module 'eigen3'
+[0.783s] --   Found eigen3, version 3.4.0
+[0.811s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.811s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.823s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.834s] -- Checking for module 'flann'
+[0.845s] --   Found flann, version 1.9.1
+[0.874s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.874s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.894s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[0.896s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[0.988s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[0.988s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[0.989s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[0.994s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.004s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.011s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.077s] -- Found X11: /usr/include   
+[1.077s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.123s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.123s] -- Looking for gethostbyname
+[1.168s] -- Looking for gethostbyname - found
+[1.168s] -- Looking for connect
+[1.215s] -- Looking for connect - found
+[1.215s] -- Looking for remove
+[1.260s] -- Looking for remove - found
+[1.260s] -- Looking for shmat
+[1.304s] -- Looking for shmat - found
+[1.304s] -- Looking for IceConnectionNumber in ICE
+[1.351s] -- Looking for IceConnectionNumber in ICE - found
+[1.410s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.410s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[1.412s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[1.412s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[1.421s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.424s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[1.426s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[1.429s] -- Found utf8cpp: /usr/include/utf8cpp  
+[1.485s] -- Checking for module 'libusb-1.0'
+[1.496s] --   Found libusb-1.0, version 1.0.25
+[1.526s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.527s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[1.527s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.571s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[1.571s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.571s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.666s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.670s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.674s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.762s] -- Found Qhull version 8.0.2
+[1.855s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.947s] -- looking for PCL_COMMON
+[1.948s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.948s] -- looking for PCL_KDTREE
+[1.948s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.948s] -- looking for PCL_OCTREE
+[1.948s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.948s] -- looking for PCL_SEARCH
+[1.949s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.949s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.949s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.949s] -- looking for PCL_FILTERS
+[1.950s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.950s] -- looking for PCL_2D
+[1.950s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.950s] -- looking for PCL_GEOMETRY
+[1.950s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.950s] -- looking for PCL_IO
+[1.951s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.951s] -- looking for PCL_FEATURES
+[1.951s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.951s] -- looking for PCL_ML
+[1.951s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.952s] -- looking for PCL_SEGMENTATION
+[1.952s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.952s] -- looking for PCL_VISUALIZATION
+[1.952s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.953s] -- looking for PCL_SURFACE
+[1.953s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.953s] -- looking for PCL_REGISTRATION
+[1.953s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.953s] -- looking for PCL_KEYPOINTS
+[1.954s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.954s] -- looking for PCL_TRACKING
+[1.954s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.954s] -- looking for PCL_RECOGNITION
+[1.955s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.955s] -- looking for PCL_STEREO
+[1.955s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.955s] -- looking for PCL_APPS
+[1.956s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.956s] -- looking for PCL_IN_HAND_SCANNER
+[1.956s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[1.956s] -- looking for PCL_MODELER
+[1.956s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[1.956s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.957s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[1.957s] -- looking for PCL_OUTOFCORE
+[1.957s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.957s] -- looking for PCL_PEOPLE
+[1.958s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[1.958s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[1.959s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.972s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.979s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.994s] -- Found OpenCV: /usr (found version "4.5.4") 
+[2.050s] -- Configuring done
+[2.114s] -- Generating done
+[2.128s] -- Build files have been written to: /home/peony/navigation_ws/build/path_searching
+[2.141s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[2.143s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[2.179s] [ 12%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/Astar.cpp.o[0m
+[2.179s] [ 37%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/smoother.cpp.o[0m
+[2.179s] [ 37%] [32mBuilding CXX object CMakeFiles/path_searching_lib.dir/src/esdf_map.cpp.o[0m
+[4.280s] In file included from [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:2[m[K:
+[4.280s] [01m[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:[m[K In function ‘[01m[Kvoid GenTraj(const std::vector<Eigen::Matrix<double, 2, 1> >&, std::vector<Eigen::Matrix<double, 3, 1> >&, float)[m[K’:
+[4.280s] [01m[K/home/peony/navigation_ws/src/path_searching/include/cubic_spline/cubic_spline_ros.h:40:22:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.280s]    40 |   for (int j = 0 ; [01;35m[Kj < path.size()[m[K; ++j) {
+[4.280s]       |                    [01;35m[K~~^~~~~~~~~~~~~[m[K
+[4.288s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:[m[K In member function ‘[01m[Knavi_planner::smoother::VV2D navi_planner::smoother::smooth(navi_planner::smoother::VV2D, double, double)[m[K’:
+[4.288s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:16:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.288s]    16 |         for(int j = 0 ; [01;35m[Kj < newPath.size()[m[K;j+=1)
+[4.288s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~[m[K
+[4.298s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:82:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KR_3[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.298s]    82 |                     double [01;35m[KR_3[m[K = pow(R_2,1.5);
+[4.298s]       |                            [01;35m[K^~~[m[K
+[4.298s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:42:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Knext_node[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.298s]    42 |                 Eigen::Vector2d &[01;35m[Knext_node[m[K = Path_d_temp[j-1];
+[4.298s]       |                                  [01;35m[K^~~~~~~~~[m[K
+[4.298s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:43:34:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klast_node[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.298s]    43 |                 Eigen::Vector2d &[01;35m[Klast_node[m[K = Path_d_temp[j+1];
+[4.298s]       |                                  [01;35m[K^~~~~~~~~[m[K
+[4.299s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:14:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KObs_thre[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[4.299s]    14 |         double [01;35m[KObs_thre[m[K = 10;
+[4.299s]       |                [01;35m[K^~~~~~~~[m[K
+[4.299s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:[m[K In member function ‘[01m[Knavi_planner::smoother::VV2D navi_planner::smoother::pathResampling(navi_planner::smoother::VV2D)[m[K’:
+[4.299s] [01m[K/home/peony/navigation_ws/src/path_searching/src/smoother.cpp:122:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Eigen::Matrix<double, 2, 1> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[4.300s]   122 |         for(int i = 2 ; [01;35m[Ki < path_input.size()-1[m[K; i++)
+[4.300s]       |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[7.545s] [ 50%] [32m[1mLinking CXX static library libpath_searching_lib.a[0m
+[7.617s] [ 50%] Built target path_searching_lib
+[7.632s] [ 75%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[7.632s] [ 75%] [32mBuilding CXX object CMakeFiles/esdf_benchmark.dir/src/benchmark_esdf.cpp.o[0m
+[8.521s] [ 87%] [32m[1mLinking CXX executable esdf_benchmark[0m
+[11.057s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[11.057s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[11.057s]                  from [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:1[m[K:
+[11.057s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In constructor ‘[01m[KPlanManager::PlanManager()[m[K’:
+[11.057s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%p[m[K’ expects argument of type ‘[01m[Kvoid*[m[K’, but argument 5 has type ‘[01m[Knavi_planner::Astar*[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[11.057s]    41 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"planner_1 地址: %p"[m[K, [32m[K&planner_1[m[K);
+[11.057s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~[m[K
+[11.058s]       |                                                           [32m[K|[m[K
+[11.058s]       |                                                           [32m[Knavi_planner::Astar*[m[K
+[11.058s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:41:55:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[11.058s]    41 |     RCLCPP_INFO(this->get_logger(), "planner_1 地址: [01;36m[K%p[m[K", &planner_1);
+[11.058s]       |                                                      [01;36m[K~^[m[K
+[11.058s]       |                                                       [01;36m[K|[m[K
+[11.058s]       |                                                       [01;36m[Kvoid*[m[K
+[13.808s] [ 87%] Built target esdf_benchmark
+[17.752s] [100%] [32m[1mLinking CXX executable plan_manager[0m
+[18.800s] [100%] Built target plan_manager
+[18.811s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[18.812s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[18.817s] -- Install configuration: ""
+[18.817s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+[18.824s] -- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager" to ""
+[18.824s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark
+[18.824s] -- Set runtime path of "/home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark" to ""
+[18.824s] -- Installing: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/ulitys.h
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/Astar.h
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
+[18.829s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/include/smoother.h
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_debug.launch.py
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh
+[18.830s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh
+[18.831s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake
+[18.832s] -- Installing: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml
+[18.834s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching

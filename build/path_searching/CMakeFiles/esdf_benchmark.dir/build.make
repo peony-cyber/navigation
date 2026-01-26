@@ -337,7 +337,7 @@ esdf_benchmark: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 esdf_benchmark: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 esdf_benchmark: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 esdf_benchmark: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-esdf_benchmark: /opt/ros/humble/lib/libfastcdr.so.1.0.24
+esdf_benchmark: /opt/ros/humble/lib/libfastcdr.so.1.0.29
 esdf_benchmark: /opt/ros/humble/lib/librmw.so
 esdf_benchmark: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
 esdf_benchmark: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so

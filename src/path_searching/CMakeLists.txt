@@ -62,6 +62,7 @@ install(TARGETS plan_manager esdf_benchmark ${PROJECT_NAME}_lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
+
 install(DIRECTORY include/ DESTINATION include)
 install(DIRECTORY launch DESTINATION share/${PROJECT_NAME})
 install(DIRECTORY cfg

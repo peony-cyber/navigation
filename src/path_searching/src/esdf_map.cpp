@@ -35,14 +35,14 @@ namespace ESDF_enviroment
     // }
     
     
-    void esdf::esdf_init(bool* bin_map_, int sizeX_, int sizeY_, Eigen::Vector2d offset_,bool enable_downstairs)
+    void esdf::esdf_init(bool* bin_map_, int sizeY_, int sizeX_, Eigen::Vector2d offset_,bool enable_downstairs)
     {
         this->enable_downstairs = enable_downstairs;
-        height_map_path = "/home/hustlyrm/sources/shared_maps/";
+        height_map_path = "/home/peony/navigation_ws/src/path_searching/maps/";
         // Use row-major representation: bin_map[row][col]
         // External args: sizeX_ = width (cols), sizeY_ = height (rows)
-        Size[0] = sizeY_; // rows
-        Size[1] = sizeX_; // cols
+        Size[0] = sizeY_; //传入的height row行数
+        Size[1] = sizeX_; //传入的width column列数
         Offset = offset_;
 
         bin_map = new bool*[Size[0]];
@@ -90,7 +90,7 @@ namespace ESDF_enviroment
                 for(int c = 0; c < Size[1]; c++)
                 {
                     // r = row (y), c = col (x)
-                    std::cout<<"read"<< r << "," << c <<std::endl;
+                    // std::cout<<"read"<< r << "," << c <<std::endl;
                     height_map[r][c] = height_conversion(img.at<cv::Vec3b>(r,c)[0]);
                     valid_map[r][c] = img.at<cv::Vec3b>(r,c)[2] < 128 ? true : false ;
                     // mark green channel for occupied cells

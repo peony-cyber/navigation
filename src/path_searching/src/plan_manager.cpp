@@ -25,23 +25,30 @@ public:
     esdf_1(new ESDF_enviroment::esdf),
     planner_1(),
     smoother_1()
-  {
+  {  
+    // 初始化ROS2相关
+    // this->declare_parameter("use_sim_time", false);
+    
+    
     this->declare_parameter<bool>("enable_downstairs", false);
     this->declare_parameter<double>("obstacle_expand_radius", 0.40);
     this->declare_parameter<double>("check_collision_radius", 0.50);
+    this->declare_parameter<double>("obstacle_cost_weight", 0.0);
 
     this->get_parameter("enable_downstairs", enable_downstaris);
     this->get_parameter("obstacle_expand_radius", obstacle_expand_radius);
     this->get_parameter("check_collision_radius", collision_radius);
+    this->get_parameter("obstacle_cost_weight", obstacle_cost_weight);
 
     RCLCPP_INFO(this->get_logger(), "[Params] [enable_downstairs] : %s", enable_downstaris ? "true" : "false");
     RCLCPP_INFO(this->get_logger(), "[Params] [obstacle_expand_radius] : %f", obstacle_expand_radius);
     RCLCPP_INFO(this->get_logger(), "[Params] [check_collision_radius] : %f", collision_radius);
+    RCLCPP_INFO(this->get_logger(), "[Params] [obstacle_cost_weight] : %f", obstacle_cost_weight);
 
     map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
       "/map", 1, std::bind(&PlanManager::map_callback, this, std::placeholders::_1));
     goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
-      "/move_base_simple/goal", 1, std::bind(&PlanManager::goal_callback, this, std::placeholders::_1));
+      "/goal_pose", 1, std::bind(&PlanManager::goal_callback, this, std::placeholders::_1));
     obstacle_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
       "/cloud_livox_obs", 1, std::bind(&PlanManager::setObstacle, this,std::placeholders::_1));
 
@@ -59,6 +66,7 @@ private:
   bool map_geted;
   Eigen::Vector2i map_size;
   Eigen::Vector2d map_offset;
+  double resolution;
   ESDF_enviroment::Ptr esdf_1;
   navi_planner::Astar planner_1;
   navi_planner::smoother smoother_1;
@@ -72,6 +80,7 @@ private:
   std::shared_ptr<tf2_ros::TransformListener> transform_listener_;
   bool enable_downstaris;
   double obstacle_expand_radius, collision_radius;
+  double obstacle_cost_weight;
 
   Eigen::Vector2d Index2pos(Eigen::Vector2i index_)
   {
@@ -113,6 +122,7 @@ private:
     map_size[1] = map->info.height;
     map_offset[0] = map->info.origin.position.x;
     map_offset[1] = map->info.origin.position.y;
+    resolution = map->info.resolution;
     std::cout << "map_size: "<< map_size << std::endl;
     std::cout << "map_offset: "<< map_offset << std::endl;
     RCLCPP_INFO(this->get_logger(), "before new bool[%d]", size);
@@ -124,27 +134,42 @@ private:
     }
     esdf_1->esdf_init(bin_map_, map->info.height, map->info.width, map_offset, enable_downstaris);
     RCLCPP_INFO(this->get_logger(), "ESDF map initialized");
-    // planner_1.setEnvironment(esdf_1);
-    RCLCPP_INFO(this->get_logger(), "A* planner initialized");
-    // planner_1.setParam();
-    RCLCPP_INFO(this->get_logger(), "A* planner parameters set");
-    // planner_1.init();
-    RCLCPP_INFO(this->get_logger(), "A* planner initialized completely");
-    // smoother_1.smoother_setEnvironment(esdf_1);
-    RCLCPP_INFO(this->get_logger(), "smoother initialized");
+    planner_1.setEnvironment(esdf_1);
+    // RCLCPP_INFO(this->get_logger(), "A* planner environment set");
+    planner_1.setParam(obstacle_cost_weight);
+    // RCLCPP_INFO(this->get_logger(), "A* planner parameters set");
+    planner_1.init();
+    // RCLCPP_INFO(this->get_logger(), "A* planner initialized completely");
+    smoother_1.smoother_setEnvironment(esdf_1);
+    // RCLCPP_INFO(this->get_logger(), "smoother initialized");
     map_geted = true;
   }
 
   void plan(Eigen::Vector2d start_, Eigen::Vector2d goal_)
   {
     if (!map_geted) return;
+    //米→像素
+    int sx = (int)((start_.x() - map_offset[0]) / resolution);
+    int sy = (int)((start_.y() - map_offset[1]) / resolution);
+    int gx = (int)((goal_.x()   - map_offset[0]) / resolution);
+    int gy = (int)((goal_.y()   - map_offset[1]) / resolution);
+
+    //越界保护
+    if (sx<0||sx>=map_size[0]||sy<0||sy>=map_size[1]||
+        gx<0||gx>=map_size[0]||gy<0||gy>=map_size[1])
+    {
+        RCLCPP_ERROR(this->get_logger(),
+                     "Goal/Start out of map sx=%d sy=%d gx=%d gy=%d  w=%d h=%d",
+                     sx,sy,gx,gy,map_size[0],map_size[1]);
+        return;
+    }
+    //
     std::vector<Eigen::Vector2d> Path_2d;
     RCLCPP_INFO(this->get_logger(), "start planning");
     Eigen::Vector2d start = start_;
     Eigen::Vector2d end = goal_;
     Eigen::Vector2i start_index = Pos2index(start);
     Eigen::Vector2i end_index = Pos2index(end);
-    // switching to grid-based search; no Voronoi preprocessing required
     auto beforeTime = std::chrono::steady_clock::now();
     auto result = planner_1.search(start_index, end_index);
     if (result == navi_planner::Astar::NO_PATH)
@@ -193,6 +218,7 @@ private:
   void goal_callback(const geometry_msgs::msg::PoseStamped::SharedPtr end)
   {
     if (!map_geted) return;
+    RCLCPP_INFO(this->get_logger(), "Goal received, planning...");
     goal[0] = end->pose.position.x;
     goal[1] = end->pose.position.y;
     getStart();
@@ -247,6 +273,9 @@ private:
 
     // recompute ESDF after obstacle updates
     esdf_1->updateDistanceField();
+    planner_1.setEnvironment(esdf_1);
+    planner_1.init();
+    smoother_1.smoother_setEnvironment(esdf_1);
 
     static unsigned int cnt_num = 0;
     if (detectCollision() || cnt_num > 5)
