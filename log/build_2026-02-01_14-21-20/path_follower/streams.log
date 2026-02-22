@@ -1,0 +1,157 @@
+[0.007s] Invoking command in '/home/peony/navigation_ws/build/path_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_follower
+[0.051s] -- The C compiler identification is GNU 11.4.0
+[0.094s] -- The CXX compiler identification is GNU 11.4.0
+[0.100s] -- Detecting C compiler ABI info
+[0.156s] -- Detecting C compiler ABI info - done
+[0.161s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.161s] -- Detecting C compile features
+[0.161s] -- Detecting C compile features - done
+[0.164s] -- Detecting CXX compiler ABI info
+[0.226s] -- Detecting CXX compiler ABI info - done
+[0.232s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.232s] -- Detecting CXX compile features
+[0.232s] -- Detecting CXX compile features - done
+[0.236s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.347s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.422s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.455s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.459s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.465s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.474s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.484s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.514s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.516s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.583s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.602s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.628s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.634s] -- Looking for pthread.h
+[0.681s] -- Looking for pthread.h - found
+[0.681s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.725s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.726s] -- Found Threads: TRUE  
+[0.762s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.783s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.794s] -- Found tf2_ros: 0.25.18 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.863s] -- Found tf2_eigen: 0.25.18 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.870s] -- Found tf2_geometry_msgs: 0.25.18 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.876s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.876s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.876s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.887s] -- Checking for module 'eigen3'
+[0.898s] --   Found eigen3, version 3.4.0
+[0.925s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.925s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.942s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.953s] -- Checking for module 'flann'
+[0.963s] --   Found flann, version 1.9.1
+[0.994s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.994s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.015s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.019s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.114s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.115s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.116s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.122s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.133s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.146s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.210s] -- Found X11: /usr/include   
+[1.210s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.256s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.257s] -- Looking for gethostbyname
+[1.300s] -- Looking for gethostbyname - found
+[1.300s] -- Looking for connect
+[1.343s] -- Looking for connect - found
+[1.343s] -- Looking for remove
+[1.385s] -- Looking for remove - found
+[1.385s] -- Looking for shmat
+[1.426s] -- Looking for shmat - found
+[1.426s] -- Looking for IceConnectionNumber in ICE
+[1.469s] -- Looking for IceConnectionNumber in ICE - found
+[1.531s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.532s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[1.534s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[1.535s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[1.543s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.546s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[1.548s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[1.551s] -- Found utf8cpp: /usr/include/utf8cpp  
+[1.614s] -- Checking for module 'libusb-1.0'
+[1.626s] --   Found libusb-1.0, version 1.0.25
+[1.657s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.658s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[1.658s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.704s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[1.704s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.705s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[1.797s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.801s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.806s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.901s] -- Found Qhull version 8.0.2
+[1.989s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.072s] -- looking for PCL_COMMON
+[2.072s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.072s] -- looking for PCL_KDTREE
+[2.073s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.073s] -- looking for PCL_OCTREE
+[2.073s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.073s] -- looking for PCL_SEARCH
+[2.073s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.073s] -- looking for PCL_SAMPLE_CONSENSUS
+[2.074s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.074s] -- looking for PCL_FILTERS
+[2.074s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.074s] -- looking for PCL_2D
+[2.074s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.074s] -- looking for PCL_GEOMETRY
+[2.075s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.075s] -- looking for PCL_IO
+[2.075s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.075s] -- looking for PCL_FEATURES
+[2.075s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.076s] -- looking for PCL_ML
+[2.076s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.076s] -- looking for PCL_SEGMENTATION
+[2.076s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.076s] -- looking for PCL_VISUALIZATION
+[2.077s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.077s] -- looking for PCL_SURFACE
+[2.077s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.077s] -- looking for PCL_REGISTRATION
+[2.078s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.078s] -- looking for PCL_KEYPOINTS
+[2.078s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.078s] -- looking for PCL_TRACKING
+[2.079s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.079s] -- looking for PCL_RECOGNITION
+[2.079s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.079s] -- looking for PCL_STEREO
+[2.080s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.080s] -- looking for PCL_APPS
+[2.080s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.081s] -- looking for PCL_IN_HAND_SCANNER
+[2.081s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.081s] -- looking for PCL_MODELER
+[2.081s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.081s] -- looking for PCL_POINT_CLOUD_EDITOR
+[2.081s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.081s] -- looking for PCL_OUTOFCORE
+[2.081s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.082s] -- looking for PCL_PEOPLE
+[2.082s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.082s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[2.092s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.107s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[2.115s] -- Found visualization_msgs: 4.9.0 (/opt/ros/humble/share/visualization_msgs/cmake)
+[2.132s] -- Found OpenCV: /usr (found version "4.5.4") 
+[2.176s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:53 (message):
+[2.176s]   ament_package_xml() package name 'path_follower' in '/package.xml' does not
+[2.176s]   match current PROJECT_NAME 'path_following'.  You must call project() with
+[2.177s]   the same package name before.
+[2.177s] Call Stack (most recent call first):
+[2.177s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[2.177s]   CMakeLists.txt:80 (ament_package)
+[2.177s] 
+[2.177s] [0m
+[2.177s] -- Configuring incomplete, errors occurred!
+[2.177s] See also "/home/peony/navigation_ws/build/path_follower/CMakeFiles/CMakeOutput.log".
+[2.192s] Invoked command in '/home/peony/navigation_ws/build/path_follower' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_follower

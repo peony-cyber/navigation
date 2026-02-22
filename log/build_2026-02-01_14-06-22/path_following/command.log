@@ -1,0 +1,2 @@
+Invoking command in '/home/peony/navigation_ws/build/path_following': /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following
+Invoked command in '/home/peony/navigation_ws/build/path_following' returned '1': /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following

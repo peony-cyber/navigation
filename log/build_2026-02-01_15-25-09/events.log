@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000342] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000370] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000389] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000537] (-) EventReactorShutdown: {}

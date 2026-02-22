@@ -1,0 +1,236 @@
+[0.000000] (-) TimerEvent: {}
+[0.000440] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000468] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000489] (path_following) JobQueued: {'identifier': 'path_following', 'dependencies': OrderedDict()}
+[0.000512] (path_following) JobStarted: {'identifier': 'path_following'}
+[0.005901] (path_following) JobProgress: {'identifier': 'path_following', 'progress': 'cmake'}
+[0.006636] (path_following) JobProgress: {'identifier': 'path_following', 'progress': 'build'}
+[0.007305] (path_following) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/path_following', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/path_following', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '2466'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2191,unix/peony:/tmp/.ICE-unix/2191'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4dc2667f_af0b_442d_9125_518cdfa91d46'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_following'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.047729] (path_following) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pid_follower\x1b[0m\n'}
+[0.071391] (path_following) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o\x1b[0m\n'}
+[0.072075] (path_following) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o\x1b[0m\n'}
+[0.099680] (-) TimerEvent: {}
+[0.199870] (-) TimerEvent: {}
+[0.300042] (-) TimerEvent: {}
+[0.400225] (-) TimerEvent: {}
+[0.500430] (-) TimerEvent: {}
+[0.600595] (-) TimerEvent: {}
+[0.700775] (-) TimerEvent: {}
+[0.800958] (-) TimerEvent: {}
+[0.901120] (-) TimerEvent: {}
+[1.001282] (-) TimerEvent: {}
+[1.101443] (-) TimerEvent: {}
+[1.201613] (-) TimerEvent: {}
+[1.301867] (-) TimerEvent: {}
+[1.402135] (-) TimerEvent: {}
+[1.502424] (-) TimerEvent: {}
+[1.602692] (-) TimerEvent: {}
+[1.702988] (-) TimerEvent: {}
+[1.803287] (-) TimerEvent: {}
+[1.903599] (-) TimerEvent: {}
+[2.004084] (-) TimerEvent: {}
+[2.017941] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.018108] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.018171] (path_following) StderrLine: {'line': b'   16 |     TrajFollower(\x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle &nh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)\n'}
+[2.018224] (path_following) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.018266] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.018319] (path_following) StderrLine: {'line': b'   16 |     TrajFollower\x1b[34m\x1b[K(\x1b[m\x1b[Kros::NodeHandle\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Knh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)\n'}
+[2.018360] (path_following) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~\x1b[m\x1b[K               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.018402] (path_following) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.019176] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.019245] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.019287] (path_following) StderrLine: {'line': b'   29 |     void manager(const \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::TimerEvent &event);\n'}
+[2.019323] (path_following) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.019355] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.019387] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent \x1b[01;31m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.019416] (path_following) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.019447] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.019476] (path_following) StderrLine: {'line': b'   29 |     void manager\x1b[34m\x1b[K(\x1b[m\x1b[Kconst ros::TimerEvent\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.019508] (path_following) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~\x1b[m\x1b[K                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.019538] (path_following) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.019566] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.019595] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent \x1b[01;31m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.019623] (path_following) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.019667] (path_following) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.020316] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kevent\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.020384] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent &\x1b[01;31m\x1b[Kevent\x1b[m\x1b[K);\n'}
+[2.020424] (path_following) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.024507] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.024604] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.024670] (path_following) StderrLine: {'line': b'   16 |     TrajFollower(\x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle &nh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)\n'}
+[2.024724] (path_following) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.024767] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.024831] (path_following) StderrLine: {'line': b'   16 |     TrajFollower\x1b[34m\x1b[K(\x1b[m\x1b[Kros::NodeHandle\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Knh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)\n'}
+[2.024872] (path_following) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~\x1b[m\x1b[K               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.024913] (path_following) StderrLine: {'line': b'      |                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.025823] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.025896] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.025936] (path_following) StderrLine: {'line': b'   29 |     void manager(const \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::TimerEvent &event);\n'}
+[2.025974] (path_following) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.026005] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.026035] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent \x1b[01;31m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.026064] (path_following) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.026093] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.026123] (path_following) StderrLine: {'line': b'   29 |     void manager\x1b[34m\x1b[K(\x1b[m\x1b[Kconst ros::TimerEvent\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.026152] (path_following) StderrLine: {'line': b'      |                 \x1b[34m\x1b[K~\x1b[m\x1b[K                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.026182] (path_following) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.026212] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[2.026240] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent \x1b[01;31m\x1b[K&\x1b[m\x1b[Kevent);\n'}
+[2.026270] (path_following) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.026301] (path_following) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[2.026968] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kevent\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.027031] (path_following) StderrLine: {'line': b'   29 |     void manager(const ros::TimerEvent &\x1b[01;31m\x1b[Kevent\x1b[m\x1b[K);\n'}
+[2.027069] (path_following) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.038991] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:51:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.039124] (path_following) StderrLine: {'line': b'   51 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher cmd_pub;\n'}
+[2.039175] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.039991] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:52:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.040062] (path_following) StderrLine: {'line': b'   52 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Timer plan_timer;\n'}
+[2.040100] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.040839] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.040910] (path_following) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber global_path_sub;\n'}
+[2.040947] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.044030] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktm\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.044095] (path_following) StderrLine: {'line': b'   54 |     std::shared_ptr<\x1b[01;31m\x1b[Ktf\x1b[m\x1b[K::TransformListener> tf_listener;\n'}
+[2.044136] (path_following) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.044186] (path_following) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Ktm\x1b[m\x1b[K\n'}
+[2.044230] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.044272] (path_following) StderrLine: {'line': b'   54 |     std::shared_ptr<tf::TransformListener\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_listener;\n'}
+[2.044315] (path_following) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.044702] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBuffer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.044804] (path_following) StderrLine: {'line': b'   55 |     std::unique_ptr<tf2_ros::\x1b[01;31m\x1b[KBuffer\x1b[m\x1b[K> tf_buffer_;\n'}
+[2.044864] (path_following) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.044917] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.044969] (path_following) StderrLine: {'line': b'   55 |     std::unique_ptr<tf2_ros::Buffer\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_buffer_;\n'}
+[2.045010] (path_following) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.045119] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.045157] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformListener\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.045195] (path_following) StderrLine: {'line': b'   56 |     std::shared_ptr<tf2_ros::\x1b[01;31m\x1b[KTransformListener\x1b[m\x1b[K> transform_listener_;\n'}
+[2.045223] (path_following) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.045254] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.045287] (path_following) StderrLine: {'line': b'   56 |     std::shared_ptr<tf2_ros::TransformListener\x1b[01;31m\x1b[K>\x1b[m\x1b[K transform_listener_;\n'}
+[2.045317] (path_following) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.045936] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:51:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.046004] (path_following) StderrLine: {'line': b'   51 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher cmd_pub;\n'}
+[2.046044] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.046940] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:52:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.046988] (path_following) StderrLine: {'line': b'   52 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Timer plan_timer;\n'}
+[2.047020] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.047119] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.047154] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/main.cpp:41:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTrajFollower::TrajFollower(std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>::element_type&, double&, double&, double&, double&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.047188] (path_following) StderrLine: {'line': b'   41 |     TrajFollower follower1(*nh, Kp, Ki, Kd, speed_ratio\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[2.047219] (path_following) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.047251] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2\x1b[m\x1b[K:\n'}
+[2.047282] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KTrajFollower::TrajFollower()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.047313] (path_following) StderrLine: {'line': b'   13 | class \x1b[01;36m\x1b[KTrajFollower\x1b[m\x1b[K\n'}
+[2.047345] (path_following) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.047375] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 5 provided\n'}
+[2.047403] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KTrajFollower::TrajFollower(const TrajFollower&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.047433] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 1 argument, 5 provided\n'}
+[2.047782] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.047821] (path_following) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber global_path_sub;\n'}
+[2.047849] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.051021] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktm\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.051073] (path_following) StderrLine: {'line': b'   54 |     std::shared_ptr<\x1b[01;31m\x1b[Ktf\x1b[m\x1b[K::TransformListener> tf_listener;\n'}
+[2.051118] (path_following) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.051161] (path_following) StderrLine: {'line': b'      |                     \x1b[32m\x1b[Ktm\x1b[m\x1b[K\n'}
+[2.051214] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.051257] (path_following) StderrLine: {'line': b'   54 |     std::shared_ptr<tf::TransformListener\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_listener;\n'}
+[2.051296] (path_following) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.051615] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KBuffer\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.051676] (path_following) StderrLine: {'line': b'   55 |     std::unique_ptr<tf2_ros::\x1b[01;31m\x1b[KBuffer\x1b[m\x1b[K> tf_buffer_;\n'}
+[2.051716] (path_following) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.051757] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.051808] (path_following) StderrLine: {'line': b'   55 |     std::unique_ptr<tf2_ros::Buffer\x1b[01;31m\x1b[K>\x1b[m\x1b[K tf_buffer_;\n'}
+[2.051849] (path_following) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.051889] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 2 is invalid\n'}
+[2.051995] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformListener\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Ktf2_ros\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.052043] (path_following) StderrLine: {'line': b'   56 |     std::shared_ptr<tf2_ros::\x1b[01;31m\x1b[KTransformListener\x1b[m\x1b[K> transform_listener_;\n'}
+[2.052095] (path_following) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.052134] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[2.052172] (path_following) StderrLine: {'line': b'   56 |     std::shared_ptr<tf2_ros::TransformListener\x1b[01;31m\x1b[K>\x1b[m\x1b[K transform_listener_;\n'}
+[2.052203] (path_following) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.053126] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.053284] (path_following) StderrLine: {'line': b'    4 | void TrajFollower::manager(const \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::TimerEvent &event)\n'}
+[2.053344] (path_following) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.053396] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.053446] (path_following) StderrLine: {'line': b'    4 | void TrajFollower::manager(const ros::TimerEvent \x1b[01;31m\x1b[K&\x1b[m\x1b[Kevent)\n'}
+[2.053523] (path_following) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.053566] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:49:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.053609] (path_following) StderrLine: {'line': b'    4 | void TrajFollower::manager\x1b[34m\x1b[K(\x1b[m\x1b[Kconst ros::TimerEvent\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kevent)\n'}
+[2.053666] (path_following) StderrLine: {'line': b'      |                           \x1b[34m\x1b[K~\x1b[m\x1b[K                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.053798] (path_following) StderrLine: {'line': b'      |                                                 \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.053856] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[Kevent\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.053906] (path_following) StderrLine: {'line': b'    4 | void TrajFollower::manager(const ros::TimerEvent &\x1b[01;31m\x1b[Kevent\x1b[m\x1b[K)\n'}
+[2.053940] (path_following) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.053978] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool TrajFollower::get_transform()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.054021] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:17:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTransformStamped\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.054060] (path_following) StderrLine: {'line': b'   17 |     geometry_msgs::\x1b[01;31m\x1b[KTransformStamped\x1b[m\x1b[K robot_global_pose =\n'}
+[2.054090] (path_following) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.054127] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[2.054157] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:41\x1b[m\x1b[K,\n'}
+[2.054193] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9\x1b[m\x1b[K,\n'}
+[2.054220] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.054249] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:157:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::TransformStamped\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.054279] (path_following) StderrLine: {'line': b'  157 | using \x1b[01;36m\x1b[KTransformStamped\x1b[m\x1b[K =\n'}
+[2.054307] (path_following) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.065281] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:22:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_global_pose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.065360] (path_following) StderrLine: {'line': b'   22 |     map2baselink(0, 3) = \x1b[01;31m\x1b[Krobot_global_pose\x1b[m\x1b[K.transform.translation.x;\n'}
+[2.065413] (path_following) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.089278] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TrajFollower::pub_cmd()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.089422] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:54:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTwist\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.089473] (path_following) StderrLine: {'line': b'   54 |     geometry_msgs::\x1b[01;31m\x1b[KTwist\x1b[m\x1b[K cmd_vel;\n'}
+[2.089506] (path_following) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.089537] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:54:20:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Ksuggested alternatives:\n'}
+[2.089571] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:54\x1b[m\x1b[K,\n'}
+[2.089600] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9\x1b[m\x1b[K,\n'}
+[2.089636] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.089669] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/kdl/frames.hpp:720:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[KKDL::Twist\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.089697] (path_following) StderrLine: {'line': b'  720 | class \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K {\n'}
+[2.089724] (path_following) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.089753] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:21\x1b[m\x1b[K,\n'}
+[2.089783] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:25\x1b[m\x1b[K,\n'}
+[2.089810] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7\x1b[m\x1b[K,\n'}
+[2.089837] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:8\x1b[m\x1b[K,\n'}
+[2.089868] (path_following) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.089897] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:135:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::Twist\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.089925] (path_following) StderrLine: {'line': b'  135 | using \x1b[01;36m\x1b[KTwist\x1b[m\x1b[K =\n'}
+[2.089953] (path_following) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.093733] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:56:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_vel\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.093791] (path_following) StderrLine: {'line': b'   56 |     \x1b[01;31m\x1b[Kcmd_vel\x1b[m\x1b[K.angular.z = 0;\n'}
+[2.093832] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.097596] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:60:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.097656] (path_following) StderrLine: {'line': b'   60 |     \x1b[01;31m\x1b[Kcmd_pub\x1b[m\x1b[K.publish(cmd_vel);\n'}
+[2.097708] (path_following) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.104152] (-) TimerEvent: {}
+[2.124675] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.124860] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:139:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPathConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.124909] (path_following) StderrLine: {'line': b'  139 | void TrajFollower::global_path_callback(const nav_msgs::\x1b[01;31m\x1b[KPathConstPtr\x1b[m\x1b[K &msg)\n'}
+[2.124942] (path_following) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.124972] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:139:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno declaration matches \xe2\x80\x98\x1b[01m\x1b[Kvoid TrajFollower::global_path_callback(const int&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.125003] (path_following) StderrLine: {'line': b'  139 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::global_path_callback(const nav_msgs::PathConstPtr &msg)\n'}
+[2.125031] (path_following) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.125059] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.125088] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:35:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate is: \xe2\x80\x98\x1b[01m\x1b[Kvoid TrajFollower::global_path_callback(const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.125116] (path_following) StderrLine: {'line': b'   35 |     void \x1b[01;36m\x1b[Kglobal_path_callback\x1b[m\x1b[K(const nav_msgs::msg::Path::ConstSharedPtr &msg);\n'}
+[2.125144] (path_following) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.125171] (path_following) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1\x1b[m\x1b[K:\n'}
+[2.125203] (path_following) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass TrajFollower\x1b[m\x1b[K\xe2\x80\x99 defined here\n'}
+[2.125231] (path_following) StderrLine: {'line': b'   13 | class \x1b[01;36m\x1b[KTrajFollower\x1b[m\x1b[K\n'}
+[2.125259] (path_following) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.204288] (-) TimerEvent: {}
+[2.304576] (-) TimerEvent: {}
+[2.341054] (path_following) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76\xef\xbc\x9aCMakeFiles/pid_follower.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.341217] (path_following) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[2.404695] (-) TimerEvent: {}
+[2.504965] (-) TimerEvent: {}
+[2.605227] (-) TimerEvent: {}
+[2.705497] (-) TimerEvent: {}
+[2.805773] (-) TimerEvent: {}
+[2.906038] (-) TimerEvent: {}
+[2.956370] (path_following) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90\xef\xbc\x9aCMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.956590] (path_following) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/pid_follower.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.956783] (path_following) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[2.958782] (path_following) CommandEnded: {'returncode': 2}
+[2.963594] (path_following) JobEnded: {'identifier': 'path_following', 'rc': 2}
+[2.973918] (-) EventReactorShutdown: {}

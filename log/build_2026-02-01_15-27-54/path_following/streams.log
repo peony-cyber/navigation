@@ -1,0 +1,115 @@
+[0.008s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.097s] -- The CXX compiler identification is GNU 11.4.0
+[0.103s] -- Detecting C compiler ABI info
+[0.160s] -- Detecting C compiler ABI info - done
+[0.165s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.165s] -- Detecting C compile features
+[0.165s] -- Detecting C compile features - done
+[0.168s] -- Detecting CXX compiler ABI info
+[0.233s] -- Detecting CXX compiler ABI info - done
+[0.239s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.239s] -- Detecting CXX compile features
+[0.239s] -- Detecting CXX compile features - done
+[0.241s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.350s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.414s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.443s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.446s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.451s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.457s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.465s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.486s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.487s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.545s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.562s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.588s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.592s] -- Looking for pthread.h
+[0.636s] -- Looking for pthread.h - found
+[0.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.680s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.681s] -- Found Threads: TRUE  
+[0.705s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.712s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.721s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[0.745s] -- Checking for module 'eigen3'
+[0.755s] --   Found eigen3, version 3.4.0
+[0.782s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.782s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.803s] -- Checking for module 'flann'
+[0.813s] --   Found flann, version 1.9.1
+[0.845s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.845s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.426s] -- Checking for module 'libusb-1.0'
+[1.437s] --   Found libusb-1.0, version 1.0.25
+[1.465s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.465s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.510s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.599s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.604s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.608s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.693s] -- Found Qhull version 8.0.2
+[1.777s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.858s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[1.859s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[1.859s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[1.859s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[1.860s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[1.860s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[1.860s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[1.860s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[1.861s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[1.861s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[1.862s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[1.862s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[1.863s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[1.863s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[1.864s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[1.864s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[1.865s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[1.865s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[1.866s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[1.866s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[1.866s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[1.867s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[1.867s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[1.867s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[1.868s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[1.886s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.886s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.887s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.932s] [33mCMake Warning (dev) at CMakeLists.txt:13 (find_package):
+[1.932s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[1.932s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[1.932s]   command to set the policy and suppress this warning.
+[1.932s] 
+[1.932s]   CMake variable PCL_ROOT is set to:
+[1.932s] 
+[1.932s]     /usr
+[1.932s] 
+[1.932s]   For compatibility, CMake is ignoring the variable.
+[1.932s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.932s] [0m
+[1.973s] -- Configuring done
+[1.997s] -- Generating done
+[2.003s] -- Build files have been written to: /home/peony/navigation_ws/build/path_following
+[2.015s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following
+[2.016s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[2.050s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o[0m
+[2.050s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o[0m
+[2.198s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.198s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:6:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: 没有那个文件或目录
+[2.198s]     6 | #include [01;31m[K<ros/ros.h>[m[K
+[2.198s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[2.198s] compilation terminated.
+[2.210s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90：CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] 错误 1
+[2.210s] gmake[2]: *** 正在等待未完成的任务....
+[2.297s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2[m[K:
+[2.297s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:6:10:[m[K [01;31m[Kfatal error: [m[Kros/ros.h: 没有那个文件或目录
+[2.297s]     6 | #include [01;31m[K<ros/ros.h>[m[K
+[2.297s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[2.297s] compilation terminated.
+[2.310s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76：CMakeFiles/pid_follower.dir/src/main.cpp.o] 错误 1
+[2.310s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pid_follower.dir/all] 错误 2
+[2.310s] gmake: *** [Makefile:146：all] 错误 2
+[2.313s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32

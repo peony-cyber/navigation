@@ -1,0 +1,19 @@
+[0.008s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.053s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o[0m
+[0.053s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o[0m
+[0.333s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2[m[K:
+[0.333s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.h: 没有那个文件或目录
+[0.333s]     9 | #include [01;31m[K<tf2_ros/transform_broadcaster.h>[m[K
+[0.333s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.333s] compilation terminated.
+[0.333s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[0.333s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.h: 没有那个文件或目录
+[0.334s]     9 | #include [01;31m[K<tf2_ros/transform_broadcaster.h>[m[K
+[0.334s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.334s] compilation terminated.
+[0.346s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90：CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] 错误 1
+[0.346s] gmake[2]: *** 正在等待未完成的任务....
+[0.346s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76：CMakeFiles/pid_follower.dir/src/main.cpp.o] 错误 1
+[0.346s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pid_follower.dir/all] 错误 2
+[0.346s] gmake: *** [Makefile:146：all] 错误 2
+[0.349s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32

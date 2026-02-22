@@ -1,0 +1,198 @@
+[0.010s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.053s] [35m[1mConsolidate compiler generated dependencies of target pid_follower[0m
+[0.080s] [ 33%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o[0m
+[0.080s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o[0m
+[2.053s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.053s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[2.053s]    16 |     TrajFollower([01;31m[Kros[m[K::NodeHandle &nh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+[2.053s]       |                  [01;31m[K^~~[m[K
+[2.053s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[2.053s]    16 |     TrajFollower[34m[K([m[Kros::NodeHandle[01;31m[K [m[K[32m[K&[m[Knh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+[2.053s]       |                 [34m[K~[m[K               [01;31m[K^[m[K[32m[K~[m[K
+[2.053s]       |                                 [32m[K)[m[K
+[2.054s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.054s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.054s]    29 |     void manager(const [01;31m[Kros[m[K::TimerEvent &event);
+[2.054s]       |                        [01;31m[K^~~[m[K
+[2.054s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[2.054s]    29 |     void manager(const ros::TimerEvent [01;31m[K&[m[Kevent);
+[2.054s]       |                                        [01;31m[K^[m[K
+[2.054s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[2.054s]    29 |     void manager[34m[K([m[Kconst ros::TimerEvent[01;31m[K [m[K[32m[K&[m[Kevent);
+[2.054s]       |                 [34m[K~[m[K                     [01;31m[K^[m[K[32m[K~[m[K
+[2.054s]       |                                       [32m[K)[m[K
+[2.054s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.054s]    29 |     void manager(const ros::TimerEvent [01;31m[K&[m[Kevent);
+[2.054s]       |                                        [01;31m[K^[m[K
+[2.054s]       |                                         [32m[K;[m[K
+[2.055s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kevent[m[K’ does not name a type
+[2.055s]    29 |     void manager(const ros::TimerEvent &[01;31m[Kevent[m[K);
+[2.055s]       |                                         [01;31m[K^~~~~[m[K
+[2.073s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.073s]    51 |     [01;31m[Kros[m[K::Publisher cmd_pub;
+[2.073s]       |     [01;31m[K^~~[m[K
+[2.073s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.073s]    52 |     [01;31m[Kros[m[K::Timer plan_timer;
+[2.073s]       |     [01;31m[K^~~[m[K
+[2.074s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.074s]    53 |     [01;31m[Kros[m[K::Subscriber global_path_sub;
+[2.074s]       |     [01;31m[K^~~[m[K
+[2.077s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[2.077s]    54 |     std::shared_ptr<[01;31m[Ktf[m[K::TransformListener> tf_listener;
+[2.077s]       |                     [01;31m[K^~[m[K
+[2.077s]       |                     [32m[Ktm[m[K
+[2.077s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.077s]    54 |     std::shared_ptr<tf::TransformListener[01;31m[K>[m[K tf_listener;
+[2.077s]       |                                          [01;31m[K^[m[K
+[2.077s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:30:[m[K [01;31m[Kerror: [m[K‘[01m[KBuffer[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[2.077s]    55 |     std::unique_ptr<tf2_ros::[01;31m[KBuffer[m[K> tf_buffer_;
+[2.077s]       |                              [01;31m[K^~~~~~[m[K
+[2.077s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.077s]    55 |     std::unique_ptr<tf2_ros::Buffer[01;31m[K>[m[K tf_buffer_;
+[2.077s]       |                                    [01;31m[K^[m[K
+[2.078s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[2.078s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:30:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformListener[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[2.078s]    56 |     std::shared_ptr<tf2_ros::[01;31m[KTransformListener[m[K> transform_listener_;
+[2.078s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.078s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.078s]    56 |     std::shared_ptr<tf2_ros::TransformListener[01;31m[K>[m[K transform_listener_;
+[2.078s]       |                                               [01;31m[K^[m[K
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.079s]     4 | void TrajFollower::manager(const [01;31m[Kros[m[K::TimerEvent &event)
+[2.079s]       |                                  [01;31m[K^~~[m[K
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:50:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[2.079s]     4 | void TrajFollower::manager(const ros::TimerEvent [01;31m[K&[m[Kevent)
+[2.079s]       |                                                  [01;31m[K^[m[K
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:49:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[2.079s]     4 | void TrajFollower::manager[34m[K([m[Kconst ros::TimerEvent[01;31m[K [m[K[32m[K&[m[Kevent)
+[2.079s]       |                           [34m[K~[m[K                     [01;31m[K^[m[K[32m[K~[m[K
+[2.079s]       |                                                 [32m[K)[m[K
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:4:51:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kevent[m[K’
+[2.079s]     4 | void TrajFollower::manager(const ros::TimerEvent &[01;31m[Kevent[m[K)
+[2.079s]       |                                                   [01;31m[K^~~~~[m[K
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:[m[K In member function ‘[01m[Kbool TrajFollower::get_transform()[m[K’:
+[2.079s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:17:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformStamped[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’?
+[2.079s]    17 |     geometry_msgs::[01;31m[KTransformStamped[m[K robot_global_pose =
+[2.079s]       |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.079s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/transform_stamped.hpp:7[m[K,
+[2.079s]                  from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:41[m[K,
+[2.079s]                  from [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9[m[K,
+[2.079s]                  from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.079s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:157:7:[m[K [01;36m[Knote: [m[K‘[01m[Kgeometry_msgs::msg::TransformStamped[m[K’ declared here
+[2.079s]   157 | using [01;36m[KTransformStamped[m[K =
+[2.079s]       |       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.080s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2[m[K:
+[2.080s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ has not been declared
+[2.080s]    16 |     TrajFollower([01;31m[Kros[m[K::NodeHandle &nh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+[2.080s]       |                  [01;31m[K^~~[m[K
+[2.080s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:16:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[2.080s]    16 |     TrajFollower[34m[K([m[Kros::NodeHandle[01;31m[K [m[K[32m[K&[m[Knh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+[2.080s]       |                 [34m[K~[m[K               [01;31m[K^[m[K[32m[K~[m[K
+[2.080s]       |                                 [32m[K)[m[K
+[2.081s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2[m[K:
+[2.081s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.081s]    29 |     void manager(const [01;31m[Kros[m[K::TimerEvent &event);
+[2.081s]       |                        [01;31m[K^~~[m[K
+[2.081s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[2.081s]    29 |     void manager(const ros::TimerEvent [01;31m[K&[m[Kevent);
+[2.081s]       |                                        [01;31m[K^[m[K
+[2.081s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:39:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[2.081s]    29 |     void manager[34m[K([m[Kconst ros::TimerEvent[01;31m[K [m[K[32m[K&[m[Kevent);
+[2.081s]       |                 [34m[K~[m[K                     [01;31m[K^[m[K[32m[K~[m[K
+[2.081s]       |                                       [32m[K)[m[K
+[2.081s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.081s]    29 |     void manager(const ros::TimerEvent [01;31m[K&[m[Kevent);
+[2.081s]       |                                        [01;31m[K^[m[K
+[2.081s]       |                                         [32m[K;[m[K
+[2.082s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:29:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kevent[m[K’ does not name a type
+[2.082s]    29 |     void manager(const ros::TimerEvent &[01;31m[Kevent[m[K);
+[2.082s]       |                                         [01;31m[K^~~~~[m[K
+[2.091s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:22:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_global_pose[m[K’ was not declared in this scope
+[2.091s]    22 |     map2baselink(0, 3) = [01;31m[Krobot_global_pose[m[K.transform.translation.x;
+[2.091s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.100s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.100s]    51 |     [01;31m[Kros[m[K::Publisher cmd_pub;
+[2.100s]       |     [01;31m[K^~~[m[K
+[2.101s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:52:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.101s]    52 |     [01;31m[Kros[m[K::Timer plan_timer;
+[2.101s]       |     [01;31m[K^~~[m[K
+[2.102s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kros[m[K’ does not name a type
+[2.102s]    53 |     [01;31m[Kros[m[K::Subscriber global_path_sub;
+[2.102s]       |     [01;31m[K^~~[m[K
+[2.105s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[2.105s]    54 |     std::shared_ptr<[01;31m[Ktf[m[K::TransformListener> tf_listener;
+[2.105s]       |                     [01;31m[K^~[m[K
+[2.105s]       |                     [32m[Ktm[m[K
+[2.105s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:54:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.106s]    54 |     std::shared_ptr<tf::TransformListener[01;31m[K>[m[K tf_listener;
+[2.106s]       |                                          [01;31m[K^[m[K
+[2.106s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:30:[m[K [01;31m[Kerror: [m[K‘[01m[KBuffer[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[2.106s]    55 |     std::unique_ptr<tf2_ros::[01;31m[KBuffer[m[K> tf_buffer_;
+[2.106s]       |                              [01;31m[K^~~~~~[m[K
+[2.106s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.106s]    55 |     std::unique_ptr<tf2_ros::Buffer[01;31m[K>[m[K tf_buffer_;
+[2.106s]       |                                    [01;31m[K^[m[K
+[2.106s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:55:36:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[2.106s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:30:[m[K [01;31m[Kerror: [m[K‘[01m[KTransformListener[m[K’ is not a member of ‘[01m[Ktf2_ros[m[K’
+[2.106s]    56 |     std::shared_ptr<tf2_ros::[01;31m[KTransformListener[m[K> transform_listener_;
+[2.106s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.106s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:56:47:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.106s]    56 |     std::shared_ptr<tf2_ros::TransformListener[01;31m[K>[m[K transform_listener_;
+[2.106s]       |                                               [01;31m[K^[m[K
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:41:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTrajFollower::TrajFollower(std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>::element_type&, double&, double&, double&, double&)[m[K’
+[2.108s]    41 |     TrajFollower follower1(*nh, Kp, Ki, Kd, speed_ratio[01;31m[K)[m[K;
+[2.108s]       |                                                        [01;31m[K^[m[K
+[2.108s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/main.cpp:2[m[K:
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KTrajFollower::TrajFollower()[m[K’
+[2.108s]    13 | class [01;36m[KTrajFollower[m[K
+[2.108s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 5 provided
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KTrajFollower::TrajFollower(const TrajFollower&)[m[K’
+[2.108s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 5 provided
+[2.115s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:[m[K In member function ‘[01m[Kvoid TrajFollower::pub_cmd()[m[K’:
+[2.115s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:54:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’
+[2.115s]    54 |     geometry_msgs::[01;31m[KTwist[m[K cmd_vel;
+[2.115s]       |                    [01;31m[K^~~~~[m[K
+[2.115s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:54:20:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.115s] In file included from [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:54[m[K,
+[2.115s]                  from [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:9[m[K,
+[2.115s]                  from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.115s] [01m[K/usr/include/kdl/frames.hpp:720:7:[m[K [01;36m[Knote: [m[K  ‘[01m[KKDL::Twist[m[K’
+[2.115s]   720 | class [01;36m[KTwist[m[K {
+[2.115s]       |       [01;36m[K^~~~~[m[K
+[2.115s] In file included from [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist_with_covariance__struct.hpp:21[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/detail/odometry__struct.hpp:25[m[K,
+[2.115s]                  from [01m[K/opt/ros/humble/include/nav_msgs/nav_msgs/msg/odometry.hpp:7[m[K,
+[2.115s]                  from [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:8[m[K,
+[2.115s]                  from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.115s] [01m[K/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__struct.hpp:135:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg::Twist[m[K’
+[2.115s]   135 | using [01;36m[KTwist[m[K =
+[2.115s]       |       [01;36m[K^~~~~[m[K
+[2.119s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:56:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel[m[K’ was not declared in this scope
+[2.119s]    56 |     [01;31m[Kcmd_vel[m[K.angular.z = 0;
+[2.119s]       |     [01;31m[K^~~~~~~[m[K
+[2.123s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:60:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub[m[K’ was not declared in this scope
+[2.123s]    60 |     [01;31m[Kcmd_pub[m[K.publish(cmd_vel);
+[2.123s]       |     [01;31m[K^~~~~~~[m[K
+[2.150s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:[m[K At global scope:
+[2.151s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:139:57:[m[K [01;31m[Kerror: [m[K‘[01m[KPathConstPtr[m[K’ in namespace ‘[01m[Knav_msgs[m[K’ does not name a type
+[2.151s]   139 | void TrajFollower::global_path_callback(const nav_msgs::[01;31m[KPathConstPtr[m[K &msg)
+[2.151s]       |                                                         [01;31m[K^~~~~~~~~~~~[m[K
+[2.151s] [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:139:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid TrajFollower::global_path_callback(const int&)[m[K’
+[2.151s]   139 | void [01;31m[KTrajFollower[m[K::global_path_callback(const nav_msgs::PathConstPtr &msg)
+[2.151s]       |      [01;31m[K^~~~~~~~~~~~[m[K
+[2.151s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.151s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:35:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid TrajFollower::global_path_callback(const ConstSharedPtr&)[m[K’
+[2.151s]    35 |     void [01;36m[Kglobal_path_callback[m[K(const nav_msgs::msg::Path::ConstSharedPtr &msg);
+[2.151s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.151s] In file included from [01m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp:1[m[K:
+[2.151s] [01m[K/home/peony/navigation_ws/src/path_following/include/TrajFollower.h:13:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass TrajFollower[m[K’ defined here
+[2.151s]    13 | class [01;36m[KTrajFollower[m[K
+[2.151s]       |       [01;36m[K^~~~~~~~~~~~[m[K
+[2.404s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76：CMakeFiles/pid_follower.dir/src/main.cpp.o] 错误 1
+[2.405s] gmake[2]: *** 正在等待未完成的任务....
+[2.999s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90：CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] 错误 1
+[3.000s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pid_follower.dir/all] 错误 2
+[3.000s] gmake: *** [Makefile:146：all] 错误 2
+[3.002s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32

@@ -9,8 +9,6 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     pkg_share = get_package_share_directory('path_searching')
-    config_path = os.path.join(pkg_share, 'cfg', 'plan_param.yaml')
-    print("Using config file:", config_path)
 
     ws_root = os.path.abspath(os.path.join(pkg_share, '..', '..', '..', '..'))
     config_path = os.path.join(ws_root, 'src', 'path_searching', 'cfg', 'plan_param.yaml')

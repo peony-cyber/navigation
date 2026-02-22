@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target mpc_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/mpc_node.dir/src/mpc_controller.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable mpc_node[0m
+[100%] Built target mpc_node

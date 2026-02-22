@@ -68,6 +68,8 @@ void MpcController::loadParameters()
     params_.Wobs          = declare_parameter("Wobs", Wobs);
     // 是否启用转弯半径约束  全向禁用
     params_.UseTurningRadius = declare_parameter("use_turning_radius", false);
+
+    std::cout << "Ts" << params_.Ts << std::endl;
 } 
     
 //配置全局优化器
@@ -346,7 +348,8 @@ RobotState MpcController::predictState(const RobotState &current, const Control 
     // 保持速度量为机体框架速度
     next.vx = u.vx;
     next.vy = u.vy;
-    next.omega = u.omega;
+    // next.omega = u.omega;
+    next.omega = 0.0;
     return next;
 }
 
@@ -567,7 +570,7 @@ void MpcController::cmdVelPublish(const Control &u)
     geometry_msgs::msg::Twist cmd_vel_msg;
     cmd_vel_msg.linear.x = u.vx;
     cmd_vel_msg.linear.y = u.vy;
-    cmd_vel_msg.angular.z = u.omega;
+    cmd_vel_msg.angular.z = 0.0; // 全向平台不考虑角速度控制
     cmd_vel_pub_->publish(cmd_vel_msg);
 }
         

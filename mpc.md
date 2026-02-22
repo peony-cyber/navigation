@@ -57,3 +57,8 @@
 ---
 
 如果你愿意，我可以先实现其中一项（例如：打印启动状态与在约束触发时记录日志，或实现 wheel‑level 可行性检测并作为局部约束）。告诉我想先做哪项，我就开始着手实现。
+
+hustrm@hustrm-NUC12WSHi5:~/rosprojectv4/slam_2026_charles/src/3d_mapping/src$ python3 localizer.py 
+Traceback (most recent call last):
+$ ros2 run 3d_mapping mapping_light 
+[INFO] [1769932098.567797882] [height_costmap_fusion_cpp]: Height costmap fusion (C++) started

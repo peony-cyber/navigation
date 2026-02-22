@@ -1,0 +1,41 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[31mCMake Error at CMakeLists.txt:30 (add_library):
+  Cannot find source file:
+
+    src/Astar.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+[0m
+[31mCMake Error at CMakeLists.txt:41 (add_executable):
+  Cannot find source file:
+
+    src/plan_manager.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+[0m
+[31mCMake Error at CMakeLists.txt:49 (add_executable):
+  Cannot find source file:
+
+    src/benchmark_esdf.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+
+[0m
+[31mCMake Error at CMakeLists.txt:30 (add_library):
+  No SOURCES given to target: path_following_lib
+
+[0m
+[31mCMake Error at CMakeLists.txt:41 (add_executable):
+  No SOURCES given to target: plan_manager
+
+[0m
+[31mCMake Error at CMakeLists.txt:49 (add_executable):
+  No SOURCES given to target: esdf_benchmark
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m

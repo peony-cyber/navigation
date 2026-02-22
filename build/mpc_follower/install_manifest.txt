@@ -1,6 +1,7 @@
 /home/peony/navigation_ws/install/mpc_follower/lib/mpc_follower/mpc_node
 /home/peony/navigation_ws/install/mpc_follower/include//mpc_controller.h
 /home/peony/navigation_ws/install/mpc_follower/include//robot_model.h
+/home/peony/navigation_ws/install/mpc_follower/include//utilities.h
 /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg//mpc_params.yaml
 /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch//mpc_follower.launch.py
 /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/package_run_dependencies/mpc_follower
