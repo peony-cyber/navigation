@@ -1,0 +1,270 @@
+[0.010s] Invoking command in '/home/peony/navigation_ws/build/vel_forwarder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/vel_forwarder -- -j32 -l32
+[0.042s] [  1%] Built target vel_forwarder__cpp
+[0.043s] [ 12%] Built target vel_forwarder__rosidl_generator_c
+[0.049s] [ 12%] Built target ament_cmake_python_copy_vel_forwarder
+[0.058s] [ 23%] Built target vel_forwarder__rosidl_typesupport_c
+[0.058s] [ 34%] Built target vel_forwarder__rosidl_typesupport_fastrtps_cpp
+[0.058s] [ 45%] Built target vel_forwarder__rosidl_typesupport_cpp
+[0.059s] [ 64%] Built target vel_forwarder__rosidl_typesupport_introspection_c
+[0.059s] [ 67%] Built target vel_forwarder__rosidl_typesupport_introspection_cpp
+[0.059s] [ 79%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target forwarder_node[0m
+[0.073s] [ 79%] Built target vel_forwarder
+[0.078s] [ 80%] [32mBuilding CXX object CMakeFiles/forwarder_node.dir/src/forwarder.cpp.o[0m
+[0.088s] [ 81%] Built target vel_forwarder__py
+[0.104s] [ 91%] Built target vel_forwarder__rosidl_generator_py
+[0.119s] [ 98%] Built target vel_forwarder__rosidl_typesupport_c__pyext
+[0.119s] [ 98%] Built target vel_forwarder__rosidl_typesupport_introspection_c__pyext
+[0.119s] [ 98%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c__pyext
+[0.169s] running egg_info
+[0.170s] writing vel_forwarder.egg-info/PKG-INFO
+[0.170s] writing dependency_links to vel_forwarder.egg-info/dependency_links.txt
+[0.170s] writing top-level names to vel_forwarder.egg-info/top_level.txt
+[0.171s] reading manifest file 'vel_forwarder.egg-info/SOURCES.txt'
+[0.171s] writing manifest file 'vel_forwarder.egg-info/SOURCES.txt'
+[0.188s] [ 98%] Built target ament_cmake_python_build_vel_forwarder_egg
+[4.497s] [100%] [32m[1mLinking CXX executable forwarder_node[0m
+[4.688s] [100%] Built target forwarder_node
+[4.700s] Invoked command in '/home/peony/navigation_ws/build/vel_forwarder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/vel_forwarder -- -j32 -l32
+[4.701s] Invoking command in '/home/peony/navigation_ws/build/vel_forwarder': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/vel_forwarder
+[4.707s] -- Install configuration: ""
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/rosidl_interfaces/vel_forwarder
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/uwb_pos.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__functions.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__functions.c
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__struct.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__functions.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__struct.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__functions.c
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__functions.c
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__functions.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__functions.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__functions.c
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__struct.h
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__functions.c
+[4.707s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__struct.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__functions.c
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__struct.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__struct.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__functions.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__struct.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__functions.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__functions.c
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__functions.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/game_data.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/position_data.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/health.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/vel.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/gimbal_angles.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_generator_c__visibility_control.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/buff_data.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/library_path.sh
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/library_path.dsv
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_c.so
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_fastrtps_c.h
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_c.so
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/uwb_pos.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/gimbal_angles.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/position_data.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/game_data.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/vel.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__traits.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__traits.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__traits.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__builder.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__traits.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__struct.hpp
+[4.709s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__traits.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__traits.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__traits.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/health.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/buff_data.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_fastrtps_cpp.hpp
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/dds_fastrtps
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_cpp.so
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.c
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_introspection_c.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_introspection_c.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.c
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.c
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_introspection_c.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.c
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_introspection_c.h
+[4.710s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_introspection_c.h
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.c
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_introspection_c.h
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_introspection_c.h
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.c
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.c
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_c.so
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_c.so
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.cpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_introspection_cpp.hpp
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_cpp.so
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_cpp.so
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/pythonpath.sh
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/pythonpath.dsv
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info
+[4.711s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/top_level.txt
+[4.711s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.711s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/PKG-INFO
+[4.711s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder
+[4.711s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/libvel_forwarder__rosidl_generator_py.so
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_health.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_position_data.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_vel.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_health_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_uwb_pos.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_buff_data.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_position_data_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_vel_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_game_data.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/__init__.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_gimbal_angles_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_gimbal_angles.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_buff_data_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_game_data_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_uwb_pos_s.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_c.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/__init__.py
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.712s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_introspection_c.c
+[4.728s] Listing '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder'...
+[4.728s] Listing '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg'...
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_py.so
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Vel.idl
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/BuffData.idl
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GameData.idl
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GimbalAngles.idl
+[4.731s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Health.idl
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/PositionData.idl
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/UWBPos.idl
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Vel.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/BuffData.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GameData.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GimbalAngles.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Health.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/PositionData.msg
+[4.732s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/UWBPos.msg
+[4.732s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/vel_forwarder/forwarder_node
+[4.735s] -- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/vel_forwarder/forwarder_node" to ""
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/package_run_dependencies/vel_forwarder
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/parent_prefix_path/vel_forwarder
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/ament_prefix_path.sh
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/ament_prefix_path.dsv
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/path.sh
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/path.dsv
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.bash
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.sh
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.zsh
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.dsv
+[4.735s] -- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/package.dsv
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/packages/vel_forwarder
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cExport.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cExport-noconfig.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cExport.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cppExport.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.735s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cExport.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cExport.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cppExport.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cppExport.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cppExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_pyExport.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_pyExport-noconfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_libraries-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_targets-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarderConfig.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarderConfig-version.cmake
+[4.736s] -- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/package.xml
+[4.738s] Invoked command in '/home/peony/navigation_ws/build/vel_forwarder' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/vel_forwarder

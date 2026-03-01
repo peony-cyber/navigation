@@ -6,4 +6,4 @@
     enable_downstairs: false
     check_collision_radius: 0.10
     obstacle_expand_radius: 0.19
-    obstacle_cost_weight: 10000.0
+    obstacle_cost_weight: 0.5

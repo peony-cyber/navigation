@@ -5,7 +5,12 @@ void TrajFollower::manager()
 {
     if (path_geted)
     {
-        get_transform();
+        // get_transform();
+          if (!get_transform())  // 检查返回值
+        {
+            RCLCPP_WARN(node_.get_logger(), "Skip cycle: no valid transform");
+            return;
+        }
         tranform_path();
         follow();
         pub_cmd();
@@ -19,7 +24,11 @@ bool TrajFollower::get_transform()
     geometry_msgs::msg::TransformStamped robot_global_pose;
     try
     {
-        robot_global_pose = tf_buffer_->lookupTransform(path_frame, "base_link", tf2::TimePointZero);
+        auto now = node_.get_clock()->now();
+        robot_global_pose = tf_buffer_->lookupTransform(
+            path_frame, "body", now, 
+            rclcpp::Duration::from_seconds(0.1));
+        // robot_global_pose = tf_buffer_->lookupTransform(path_frame, "body", tf2::TimePointZero);
     }
     catch (tf2::TransformException &ex)
     {

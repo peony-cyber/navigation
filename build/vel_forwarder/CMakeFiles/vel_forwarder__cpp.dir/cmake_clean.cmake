@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/vel_forwarder__cpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/buff_data.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/buff_data__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/buff_data__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/buff_data__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/buff_data__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/game_data__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/game_data__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/game_data__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/game_data__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/gimbal_angles__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/gimbal_angles__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/gimbal_angles__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/gimbal_angles__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/health__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/health__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/health__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/health__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/position_data__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/position_data__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/position_data__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/position_data__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/uwb_pos__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/uwb_pos__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/uwb_pos__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/uwb_pos__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/vel__builder.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/vel__struct.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/vel__traits.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/detail/vel__type_support.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/game_data.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/gimbal_angles.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/health.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/position_data.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/uwb_pos.hpp"
+  "rosidl_generator_cpp/vel_forwarder/msg/vel.hpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/vel_forwarder__cpp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

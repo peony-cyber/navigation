@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vel_forwarder/msg/BuffData.msg
+// generated code does not contain a copyright notice
+
+
+module vel_forwarder {
+  module msg {
+    @verbatim (language="comment", text=
+      "我队增益类型")
+    struct BuffData {
+      uint8 recoverybuff;
+
+      uint8 coolingbuff;
+
+      uint8 defencebuff;
+
+      uint8 vulnerabilitybuff;
+
+      uint16 attackbuff;
+
+      uint8 remainingenergy;
+    };
+  };
+};

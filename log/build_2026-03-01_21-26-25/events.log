@@ -1,0 +1,348 @@
+[0.000000] (-) TimerEvent: {}
+[0.000125] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000197] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000213] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000226] (vel_forwarder) JobQueued: {'identifier': 'vel_forwarder', 'dependencies': OrderedDict()}
+[0.000239] (vel_forwarder) JobStarted: {'identifier': 'vel_forwarder'}
+[0.004337] (vel_forwarder) JobProgress: {'identifier': 'vel_forwarder', 'progress': 'cmake'}
+[0.004932] (vel_forwarder) JobProgress: {'identifier': 'vel_forwarder', 'progress': 'build'}
+[0.004950] (vel_forwarder) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/vel_forwarder', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/vel_forwarder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '2438'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2218,unix/peony:/tmp/.ICE-unix/2218'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c8edf701_ff94_4684_808b_dda06b71117c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.269'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/vel_forwarder'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.042244] (vel_forwarder) StdoutLine: {'line': b'[  1%] Built target vel_forwarder__cpp\n'}
+[0.043073] (vel_forwarder) StdoutLine: {'line': b'[ 12%] Built target vel_forwarder__rosidl_generator_c\n'}
+[0.049550] (vel_forwarder) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_vel_forwarder\n'}
+[0.057317] (vel_forwarder) StdoutLine: {'line': b'[ 27%] Built target vel_forwarder__rosidl_typesupport_cpp\n'}
+[0.057470] (vel_forwarder) StdoutLine: {'line': b'[ 50%] Built target vel_forwarder__rosidl_typesupport_introspection_cpp\n'}
+[0.057558] (vel_forwarder) StdoutLine: {'line': b'[ 59%] Built target vel_forwarder__rosidl_typesupport_fastrtps_cpp\n'}
+[0.057612] (vel_forwarder) StdoutLine: {'line': b'[ 59%] Built target vel_forwarder__rosidl_typesupport_introspection_c\n'}
+[0.057688] (vel_forwarder) StdoutLine: {'line': b'[ 67%] Built target vel_forwarder__rosidl_typesupport_c\n'}
+[0.059095] (vel_forwarder) StdoutLine: {'line': b'[ 79%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c\n'}
+[0.071356] (vel_forwarder) StdoutLine: {'line': b'[ 79%] Built target vel_forwarder\n'}
+[0.073520] (vel_forwarder) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/forwarder_node.dir/src/forwarder.cpp.o\x1b[0m\n'}
+[0.084825] (vel_forwarder) StdoutLine: {'line': b'[ 81%] Built target vel_forwarder__py\n'}
+[0.099540] (-) TimerEvent: {}
+[0.101485] (vel_forwarder) StdoutLine: {'line': b'[ 91%] Built target vel_forwarder__rosidl_generator_py\n'}
+[0.116350] (vel_forwarder) StdoutLine: {'line': b'[ 93%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.116492] (vel_forwarder) StdoutLine: {'line': b'[ 96%] Built target vel_forwarder__rosidl_typesupport_introspection_c__pyext\n'}
+[0.116571] (vel_forwarder) StdoutLine: {'line': b'[ 98%] Built target vel_forwarder__rosidl_typesupport_c__pyext\n'}
+[0.166799] (vel_forwarder) StdoutLine: {'line': b'running egg_info\n'}
+[0.167131] (vel_forwarder) StdoutLine: {'line': b'writing vel_forwarder.egg-info/PKG-INFO\n'}
+[0.167262] (vel_forwarder) StdoutLine: {'line': b'writing dependency_links to vel_forwarder.egg-info/dependency_links.txt\n'}
+[0.167347] (vel_forwarder) StdoutLine: {'line': b'writing top-level names to vel_forwarder.egg-info/top_level.txt\n'}
+[0.168468] (vel_forwarder) StdoutLine: {'line': b"reading manifest file 'vel_forwarder.egg-info/SOURCES.txt'\n"}
+[0.168796] (vel_forwarder) StdoutLine: {'line': b"writing manifest file 'vel_forwarder.egg-info/SOURCES.txt'\n"}
+[0.185752] (vel_forwarder) StdoutLine: {'line': b'[ 98%] Built target ament_cmake_python_build_vel_forwarder_egg\n'}
+[0.199633] (-) TimerEvent: {}
+[0.299823] (-) TimerEvent: {}
+[0.399999] (-) TimerEvent: {}
+[0.500174] (-) TimerEvent: {}
+[0.600327] (-) TimerEvent: {}
+[0.700479] (-) TimerEvent: {}
+[0.800644] (-) TimerEvent: {}
+[0.900818] (-) TimerEvent: {}
+[1.001007] (-) TimerEvent: {}
+[1.101244] (-) TimerEvent: {}
+[1.201490] (-) TimerEvent: {}
+[1.301714] (-) TimerEvent: {}
+[1.401955] (-) TimerEvent: {}
+[1.502148] (-) TimerEvent: {}
+[1.602312] (-) TimerEvent: {}
+[1.702479] (-) TimerEvent: {}
+[1.802724] (-) TimerEvent: {}
+[1.902955] (-) TimerEvent: {}
+[2.003158] (-) TimerEvent: {}
+[2.103349] (-) TimerEvent: {}
+[2.203543] (-) TimerEvent: {}
+[2.303716] (-) TimerEvent: {}
+[2.403900] (-) TimerEvent: {}
+[2.504114] (-) TimerEvent: {}
+[2.604398] (-) TimerEvent: {}
+[2.704655] (-) TimerEvent: {}
+[2.804899] (-) TimerEvent: {}
+[2.905132] (-) TimerEvent: {}
+[3.005392] (-) TimerEvent: {}
+[3.105634] (-) TimerEvent: {}
+[3.205839] (-) TimerEvent: {}
+[3.306009] (-) TimerEvent: {}
+[3.406199] (-) TimerEvent: {}
+[3.506392] (-) TimerEvent: {}
+[3.606584] (-) TimerEvent: {}
+[3.706769] (-) TimerEvent: {}
+[3.806937] (-) TimerEvent: {}
+[3.907150] (-) TimerEvent: {}
+[4.007398] (-) TimerEvent: {}
+[4.107665] (-) TimerEvent: {}
+[4.207900] (-) TimerEvent: {}
+[4.308125] (-) TimerEvent: {}
+[4.408298] (-) TimerEvent: {}
+[4.508472] (-) TimerEvent: {}
+[4.586050] (vel_forwarder) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable forwarder_node\x1b[0m\n'}
+[4.608553] (-) TimerEvent: {}
+[4.708720] (-) TimerEvent: {}
+[4.785261] (vel_forwarder) StdoutLine: {'line': b'[100%] Built target forwarder_node\n'}
+[4.793889] (vel_forwarder) CommandEnded: {'returncode': 0}
+[4.794300] (vel_forwarder) JobProgress: {'identifier': 'vel_forwarder', 'progress': 'install'}
+[4.800829] (vel_forwarder) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peony/navigation_ws/build/vel_forwarder'], 'cwd': '/home/peony/navigation_ws/build/vel_forwarder', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/peony/navigation_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_GB.UTF-8'), ('SYSTEMD_EXEC_PID', '2438'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2218,unix/peony:/tmp/.ICE-unix/2218'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c8edf701_ff94_4684_808b_dda06b71117c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.269'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/vel_forwarder'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.805659] (vel_forwarder) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.805795] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/rosidl_interfaces/vel_forwarder\n'}
+[4.805890] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.805952] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.805996] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/uwb_pos.h\n'}
+[4.806041] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.806099] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__functions.h\n'}
+[4.806184] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.h\n'}
+[4.806254] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__functions.c\n'}
+[4.806326] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__struct.h\n'}
+[4.806396] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__functions.h\n'}
+[4.806467] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__struct.h\n'}
+[4.806536] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__functions.c\n'}
+[4.806609] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.h\n'}
+[4.806679] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__functions.c\n'}
+[4.806751] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__functions.h\n'}
+[4.806824] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.h\n'}
+[4.806894] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__functions.h\n'}
+[4.806966] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__functions.c\n'}
+[4.807041] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__struct.h\n'}
+[4.807113] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__functions.c\n'}
+[4.807196] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__struct.h\n'}
+[4.807264] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__functions.c\n'}
+[4.807337] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.h\n'}
+[4.807409] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__struct.h\n'}
+[4.807479] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__struct.h\n'}
+[4.807563] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.h\n'}
+[4.807632] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.h\n'}
+[4.807703] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__functions.h\n'}
+[4.807776] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.h\n'}
+[4.807845] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__struct.h\n'}
+[4.807915] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__functions.h\n'}
+[4.807990] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__functions.c\n'}
+[4.808063] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__functions.h\n'}
+[4.808172] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/game_data.h\n'}
+[4.808270] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/position_data.h\n'}
+[4.808333] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/health.h\n'}
+[4.808373] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/vel.h\n'}
+[4.808427] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/gimbal_angles.h\n'}
+[4.808494] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.808561] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/buff_data.h\n'}
+[4.808681] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/library_path.sh\n'}
+[4.808785] (-) TimerEvent: {}
+[4.808875] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/library_path.dsv\n'}
+[4.808989] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_c.so\n'}
+[4.809227] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_c.so" to ""\n'}
+[4.809280] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.809314] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.809362] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.809391] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809444] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809487] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809546] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809617] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809689] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809764] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_fastrtps_c.h\n'}
+[4.809835] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.809929] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_c.so\n'}
+[4.810148] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.810192] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.810236] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.810273] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/uwb_pos.hpp\n'}
+[4.810383] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/gimbal_angles.hpp\n'}
+[4.810455] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/position_data.hpp\n'}
+[4.810523] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/game_data.hpp\n'}
+[4.810592] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/vel.hpp\n'}
+[4.810658] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.810699] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.hpp\n'}
+[4.810775] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__builder.hpp\n'}
+[4.810846] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.hpp\n'}
+[4.810920] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__builder.hpp\n'}
+[4.810997] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__traits.hpp\n'}
+[4.811071] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__builder.hpp\n'}
+[4.811150] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__struct.hpp\n'}
+[4.811224] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__struct.hpp\n'}
+[4.811302] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__builder.hpp\n'}
+[4.811375] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__traits.hpp\n'}
+[4.811447] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.hpp\n'}
+[4.811520] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__struct.hpp\n'}
+[4.811598] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__traits.hpp\n'}
+[4.811674] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__builder.hpp\n'}
+[4.811746] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__builder.hpp\n'}
+[4.811820] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__struct.hpp\n'}
+[4.811896] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__builder.hpp\n'}
+[4.811968] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__struct.hpp\n'}
+[4.812043] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__struct.hpp\n'}
+[4.812136] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.hpp\n'}
+[4.812209] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__traits.hpp\n'}
+[4.812287] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__struct.hpp\n'}
+[4.812373] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.hpp\n'}
+[4.812437] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.hpp\n'}
+[4.812511] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__traits.hpp\n'}
+[4.812586] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__traits.hpp\n'}
+[4.812659] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.hpp\n'}
+[4.812733] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__traits.hpp\n'}
+[4.812810] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[4.812878] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/health.hpp\n'}
+[4.812950] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/buff_data.hpp\n'}
+[4.813063] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.813108] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.813183] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.813321] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.813391] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813453] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813485] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813538] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813586] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813652] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813726] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.813798] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/dds_fastrtps\n'}
+[4.813903] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.814170] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.814274] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.814348] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.814417] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.814455] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.814488] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.c\n'}
+[4.814546] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_introspection_c.h\n'}
+[4.814592] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_introspection_c.h\n'}
+[4.814632] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.c\n'}
+[4.814690] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.c\n'}
+[4.814746] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_introspection_c.h\n'}
+[4.814823] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.c\n'}
+[4.814901] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_introspection_c.h\n'}
+[4.814978] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_introspection_c.h\n'}
+[4.815051] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.c\n'}
+[4.815143] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_introspection_c.h\n'}
+[4.815218] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_introspection_c.h\n'}
+[4.815299] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.c\n'}
+[4.815386] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.c\n'}
+[4.815492] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_c.so\n'}
+[4.815695] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.815731] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_c.so\n'}
+[4.815912] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_c.so" to ""\n'}
+[4.815948] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder\n'}
+[4.815996] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg\n'}
+[4.816030] (vel_forwarder) StdoutLine: {'line': b'-- Up-to-date: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail\n'}
+[4.816075] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__type_support.cpp\n'}
+[4.816126] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__type_support.cpp\n'}
+[4.816182] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.816268] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.816338] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/gimbal_angles__type_support.cpp\n'}
+[4.816423] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__type_support.cpp\n'}
+[4.816496] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__type_support.cpp\n'}
+[4.816580] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/game_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.816654] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/health__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.816731] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/position_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.816807] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/buff_data__type_support.cpp\n'}
+[4.816885] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__type_support.cpp\n'}
+[4.816965] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/vel__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.817042] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/include/vel_forwarder/vel_forwarder/msg/detail/uwb_pos__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.817149] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_cpp.so\n'}
+[4.817372] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.817415] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_cpp.so\n'}
+[4.817589] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_typesupport_cpp.so" to ""\n'}
+[4.817632] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/pythonpath.sh\n'}
+[4.817701] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/pythonpath.dsv\n'}
+[4.817776] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info\n'}
+[4.817891] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.817969] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.818048] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.818106] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.818188] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder\n'}
+[4.818237] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/libvel_forwarder__rosidl_generator_py.so\n'}
+[4.818346] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.818431] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg\n'}
+[4.818495] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_health.py\n'}
+[4.818558] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_position_data.py\n'}
+[4.818635] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_vel.py\n'}
+[4.818711] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_health_s.c\n'}
+[4.818784] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_uwb_pos.py\n'}
+[4.818855] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_buff_data.py\n'}
+[4.818930] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_position_data_s.c\n'}
+[4.819000] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_vel_s.c\n'}
+[4.819066] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_game_data.py\n'}
+[4.819160] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/__init__.py\n'}
+[4.819217] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_gimbal_angles_s.c\n'}
+[4.819289] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_gimbal_angles.py\n'}
+[4.819361] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_buff_data_s.c\n'}
+[4.819432] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_game_data_s.c\n'}
+[4.819503] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_uwb_pos_s.c\n'}
+[4.819573] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.819665] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.819751] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_c.c\n'}
+[4.819842] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/__init__.py\n'}
+[4.819901] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.819997] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/_vel_forwarder_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.842913] (vel_forwarder) StdoutLine: {'line': b"Listing '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder'...\n"}
+[4.843020] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/__init__.py'...\n"}
+[4.843076] (vel_forwarder) StdoutLine: {'line': b"Listing '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg'...\n"}
+[4.843142] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/__init__.py'...\n"}
+[4.843177] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_buff_data.py'...\n"}
+[4.843206] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_game_data.py'...\n"}
+[4.843234] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_gimbal_angles.py'...\n"}
+[4.843261] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_health.py'...\n"}
+[4.843288] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_position_data.py'...\n"}
+[4.843313] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_uwb_pos.py'...\n"}
+[4.843339] (vel_forwarder) StdoutLine: {'line': b"Compiling '/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/msg/_vel.py'...\n"}
+[4.845761] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.845977] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.846076] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.846457] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.846560] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.846771] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/local/lib/python3.10/dist-packages/vel_forwarder/vel_forwarder_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[4.846827] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_py.so\n'}
+[4.847023] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/libvel_forwarder__rosidl_generator_py.so" to ""\n'}
+[4.847079] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Vel.idl\n'}
+[4.847185] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/BuffData.idl\n'}
+[4.847275] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GameData.idl\n'}
+[4.847362] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GimbalAngles.idl\n'}
+[4.847451] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Health.idl\n'}
+[4.847559] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/PositionData.idl\n'}
+[4.847642] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/UWBPos.idl\n'}
+[4.847731] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Vel.msg\n'}
+[4.847804] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/BuffData.msg\n'}
+[4.847897] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GameData.msg\n'}
+[4.848010] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/GimbalAngles.msg\n'}
+[4.848137] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/Health.msg\n'}
+[4.848240] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/PositionData.msg\n'}
+[4.848323] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/msg/UWBPos.msg\n'}
+[4.848460] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/lib/vel_forwarder/forwarder_node\n'}
+[4.850985] (vel_forwarder) StdoutLine: {'line': b'-- Set runtime path of "/home/peony/navigation_ws/install/vel_forwarder/lib/vel_forwarder/forwarder_node" to ""\n'}
+[4.851058] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/package_run_dependencies/vel_forwarder\n'}
+[4.851168] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/parent_prefix_path/vel_forwarder\n'}
+[4.851267] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/ament_prefix_path.sh\n'}
+[4.851446] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/ament_prefix_path.dsv\n'}
+[4.851534] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/path.sh\n'}
+[4.851702] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/environment/path.dsv\n'}
+[4.851789] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.bash\n'}
+[4.851863] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.sh\n'}
+[4.851953] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.zsh\n'}
+[4.852027] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/local_setup.dsv\n'}
+[4.852104] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/package.dsv\n'}
+[4.852251] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/ament_index/resource_index/packages/vel_forwarder\n'}
+[4.852366] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cExport.cmake\n'}
+[4.852456] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.852547] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.852633] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.852724] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_cppExport.cmake\n'}
+[4.852813] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.852911] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.853001] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.853093] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.853196] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cExport.cmake\n'}
+[4.853284] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.853379] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.853467] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.853556] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cppExport.cmake\n'}
+[4.853644] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarder__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.853733] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_pyExport.cmake\n'}
+[4.853822] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/export_vel_forwarder__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.853909] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake-extras.cmake\n'}
+[4.853982] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.854078] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.854178] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.854264] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.854349] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.854427] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.854516] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarderConfig.cmake\n'}
+[4.854582] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/cmake/vel_forwarderConfig-version.cmake\n'}
+[4.854667] (vel_forwarder) StdoutLine: {'line': b'-- Installing: /home/peony/navigation_ws/install/vel_forwarder/share/vel_forwarder/package.xml\n'}
+[4.856751] (vel_forwarder) CommandEnded: {'returncode': 0}
+[4.868852] (vel_forwarder) JobEnded: {'identifier': 'vel_forwarder', 'rc': 0}
+[4.869182] (-) EventReactorShutdown: {}

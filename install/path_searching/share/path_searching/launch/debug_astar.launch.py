@@ -82,7 +82,7 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_tf_pub',
         output='screen',
-        arguments=['0.5', '0.5', '0', '0', '0', '0', 'map', 'base_link'],
+        arguments=['0.5', '0.5', '0', '0', '0', '0', 'map', 'body'],
     )
     
     # 使用TimerAction来延迟启动某些节点

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from vel_forwarder/msg/UWBPos.msg
+// generated code does not contain a copyright notice
+
+
+module vel_forwarder {
+  module msg {
+    struct UWBPos {
+      int16 x;
+
+      int16 y;
+    };
+  };
+};

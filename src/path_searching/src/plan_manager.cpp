@@ -14,7 +14,7 @@
 #include <pcl/point_types.h>
 #include <tf2_ros/buffer.h>
 #include <tf2_ros/transform_listener.h>
-
+#include <chrono>
 
 class PlanManager : public rclcpp::Node
 {
@@ -54,7 +54,10 @@ public:
 
     path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/sPath", 1);
 
-    tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+    // tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
+    tf_buffer_ = std::make_unique<tf2_ros::Buffer>(
+    this->get_clock(),
+    tf2::Duration(std::chrono::seconds(30)));
     transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     start = Eigen::Vector2d::Zero();
@@ -204,7 +207,7 @@ private:
     {
       // lookup latest transform from base_link to map
       geometry_msgs::msg::TransformStamped robot_global_pose =
-        tf_buffer_->lookupTransform("map", "base_link", rclcpp::Time(0));
+        tf_buffer_->lookupTransform("map", "body", rclcpp::Time(0));
       double pose_x = robot_global_pose.transform.translation.x;
       double pose_y = robot_global_pose.transform.translation.y;
       start = Eigen::Vector2d(pose_x, pose_y);

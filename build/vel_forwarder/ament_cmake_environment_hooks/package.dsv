@@ -1,0 +1,4 @@
+source;share/vel_forwarder/local_setup.bash
+source;share/vel_forwarder/local_setup.dsv
+source;share/vel_forwarder/local_setup.sh
+source;share/vel_forwarder/local_setup.zsh

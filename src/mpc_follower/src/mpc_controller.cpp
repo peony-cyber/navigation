@@ -584,7 +584,7 @@ void MpcController::publishVisualization()
         predict_marker.ns = "mpc_predict";
         predict_marker.id = 0;
         predict_marker.type = visualization_msgs::msg::Marker::LINE_STRIP;
-}//没用到
+}//暂时没用
 
 
 void MpcController::controlLoop()
