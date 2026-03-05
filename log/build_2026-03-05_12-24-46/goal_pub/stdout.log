@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target multigoal_pub_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/multigoal_pub_node.dir/src/multigoal_pub.cpp.o[0m
+[100%] [32m[1mLinking CXX executable multigoal_pub_node[0m
+[100%] Built target multigoal_pub_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/lib/goal_pub/multigoal_pub_node
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cfg/goalpub_param.yaml
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/package_run_dependencies/goal_pub
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/parent_prefix_path/goal_pub
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/ament_prefix_path.sh
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/ament_prefix_path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/path.sh
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.bash
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.sh
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.zsh
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.dsv
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/package.dsv
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/packages/goal_pub
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cmake/goal_pubConfig.cmake
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cmake/goal_pubConfig-version.cmake
+-- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/package.xml

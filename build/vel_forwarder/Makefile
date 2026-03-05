@@ -315,17 +315,17 @@ vel_forwarder__rosidl_typesupport_cpp/fast:
 .PHONY : vel_forwarder__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_copy_vel_forwarder
+# Target rules for targets named ament_cmake_python_symlink_vel_forwarder
 
 # Build rule for target.
-ament_cmake_python_copy_vel_forwarder: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_vel_forwarder
-.PHONY : ament_cmake_python_copy_vel_forwarder
+ament_cmake_python_symlink_vel_forwarder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_vel_forwarder
+.PHONY : ament_cmake_python_symlink_vel_forwarder
 
 # fast build rule for target.
-ament_cmake_python_copy_vel_forwarder/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_vel_forwarder.dir/build.make CMakeFiles/ament_cmake_python_copy_vel_forwarder.dir/build
-.PHONY : ament_cmake_python_copy_vel_forwarder/fast
+ament_cmake_python_symlink_vel_forwarder/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_vel_forwarder.dir/build.make CMakeFiles/ament_cmake_python_symlink_vel_forwarder.dir/build
+.PHONY : ament_cmake_python_symlink_vel_forwarder/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_vel_forwarder_egg
@@ -1872,7 +1872,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_vel_forwarder_egg"
-	@echo "... ament_cmake_python_copy_vel_forwarder"
+	@echo "... ament_cmake_python_symlink_vel_forwarder"
 	@echo "... uninstall"
 	@echo "... vel_forwarder"
 	@echo "... vel_forwarder__cpp"

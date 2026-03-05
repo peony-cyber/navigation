@@ -1,0 +1,1 @@
+/home/peony/navigation_ws/build/goal_pub/ament_cmake_core/goal_pubConfig.cmake

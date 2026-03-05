@@ -1,0 +1,25 @@
+goal_publisher:
+  ros__parameters:
+    nav_goals: [
+      # R 组 (0-8)
+      0.004, 0.146,    # 0: R0 anti hero
+      0.081, 4.178,    # 1: R1 start
+      1.973, -1.235,   # 2: R2 self outpost
+      2.498, 2.587,    # 3: R3 circular highland patrol area
+      2.369, -2.304,   # 4: R4 supply area
+      2.750, 4.467,    # 5: R5 enemy outpost
+      7.842, -15.43,   # 6: R6 high land 2 patrol area
+      1.005, -15.38,   # 7: R7 supply area
+      -1.577, -12.7,   # 8: R8 Big Buff
+      
+      # B 组 (9-17)
+      7.311, -3.032,   # 9: B0 start
+      7.195, -4.477,   # 10: B1 self outpost
+      3.931, 0.853,    # 11: B2 circular highland patrol area
+      5.074, -3.216,   # 12: B3 high land 1 patrol area
+      4.930, 2.660,    # 13: B4 enemy outpost
+      4.704, -1.913,   # 14: B5 high land 2 patrol area
+      -0.319, -9.21,   # 15: B6 supply area
+      5.748, -8.817,   # 16: B7 Big Buff
+      8.639, -11.93    # 17: B8 anti hero
+    ]

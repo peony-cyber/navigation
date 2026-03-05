@@ -1,4 +1,1 @@
-float32 yaw
-float32 pitch
-
-std_msgs/Header header
+/home/peony/navigation_ws/src/vel_forwarder/msg/GimbalAngles.msg

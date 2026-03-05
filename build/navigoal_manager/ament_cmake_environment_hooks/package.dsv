@@ -1,0 +1,4 @@
+source;share/navigoal_manager/local_setup.bash
+source;share/navigoal_manager/local_setup.dsv
+source;share/navigoal_manager/local_setup.sh
+source;share/navigoal_manager/local_setup.zsh

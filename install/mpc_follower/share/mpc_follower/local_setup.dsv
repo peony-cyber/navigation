@@ -1,2 +1,1 @@
-source;share/mpc_follower/environment/ament_prefix_path.sh
-source;share/mpc_follower/environment/path.sh
+/home/peony/navigation_ws/build/mpc_follower/ament_cmake_environment_hooks/local_setup.dsv

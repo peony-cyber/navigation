@@ -1,4 +1,0 @@
-Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
-Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
-Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
-Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching

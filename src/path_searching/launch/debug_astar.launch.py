@@ -85,6 +85,13 @@ def generate_launch_description():
         arguments=['0.5', '0.5', '0', '0', '0', '0', 'map', 'body'],
     )
     
+    static_tf_pub2 = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_pub2',
+        output='screen',
+        arguments=['0.5', '0.5', '0', '-1.570796', '0', '0', 'body', 'base_link'],
+    )
     # 使用TimerAction来延迟启动某些节点
     delayed_map_server = TimerAction(
         period=2.0,  # 延迟2秒启动地图服务器
@@ -106,6 +113,7 @@ def generate_launch_description():
         # 先启动plan_manager
         plan_manager,
         static_tf_pub,
+        static_tf_pub2,
         # 然后启动RViz
         delayed_rviz,
         # 最后启动地图服务器

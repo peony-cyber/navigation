@@ -57,7 +57,8 @@ public:
     // tf_buffer_ = std::make_unique<tf2_ros::Buffer>(this->get_clock());
     tf_buffer_ = std::make_unique<tf2_ros::Buffer>(
     this->get_clock(),
-    tf2::Duration(std::chrono::seconds(30)));
+    tf2::Duration(std::chrono::seconds(1)));
+
     transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
     start = Eigen::Vector2d::Zero();

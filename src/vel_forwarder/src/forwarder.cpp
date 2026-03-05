@@ -34,8 +34,10 @@ namespace vel_forwarder
         auto ly_msg = vel_forwarder::msg::Vel();
         
         // 注意：坐标系转换，xy 交换，x 取反
-        ly_msg.x = -speed_mapping(msg->linear.y);
-        ly_msg.y = speed_mapping(msg->linear.x);
+        // ly_msg.x = -speed_mapping(msg->linear.y);
+        // ly_msg.y = speed_mapping(msg->linear.x);
+        ly_msg.x = speed_mapping(msg->linear.x);
+        ly_msg.y = speed_mapping(msg->linear.y);
 
         RCLCPP_INFO(this->get_logger(), "Mapped ly_vel: x=%d, y=%d", 
                     static_cast<int>(ly_msg.x), static_cast<int>(ly_msg.y));

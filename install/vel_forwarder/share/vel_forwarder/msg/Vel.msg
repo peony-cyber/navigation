@@ -1,2 +1,1 @@
-int8 x
-int8 y
+/home/peony/navigation_ws/src/vel_forwarder/msg/Vel.msg

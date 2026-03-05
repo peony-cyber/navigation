@@ -9,6 +9,7 @@ Panels:
         - /Map1
         - /Map1/Topic1
         - /Axes1
+        - /Axes2
       Splitter Ratio: 0.5
     Tree Height: 549
   - Class: rviz_common/Selection
@@ -28,7 +29,7 @@ Panels:
     Experimental: false
     Name: Time
     SyncMode: 0
-    SyncSource: PointCloud2
+    SyncSource: ""
 Visualization Manager:
   Class: ""
   Displays:
@@ -100,12 +101,12 @@ Visualization Manager:
         Value: /sPath
       Value: true
     - Class: rviz_default_plugins/Axes
-      Enabled: true
+      Enabled: false
       Length: 1
       Name: Axes
       Radius: 0.10000000149011612
       Reference Frame: map
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -139,6 +140,13 @@ Visualization Manager:
         Value: /pointcloud
       Use Fixed Frame: true
       Use rainbow: true
+      Value: true
+    - Class: rviz_default_plugins/Axes
+      Enabled: true
+      Length: 1
+      Name: Axes
+      Radius: 0.10000000149011612
+      Reference Frame: body
       Value: true
   Enabled: true
   Global Options:
@@ -186,7 +194,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz_default_plugins/Orbit
-      Distance: 17.030048370361328
+      Distance: 19.073654174804688
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1

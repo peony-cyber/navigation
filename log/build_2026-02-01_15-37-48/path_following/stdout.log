@@ -1,3 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target pid_follower[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o[0m
-[ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o[0m

@@ -1,2 +1,1 @@
-int16 x
-int16 y
+/home/peony/navigation_ws/src/vel_forwarder/msg/UWBPos.msg

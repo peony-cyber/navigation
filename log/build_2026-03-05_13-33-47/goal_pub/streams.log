@@ -1,0 +1,16 @@
+[0.007s] Invoking command in '/home/peony/navigation_ws/build/goal_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/goal_pub -- -j32 -l32
+[0.037s] [35m[1mConsolidate compiler generated dependencies of target multigoal_pub_node[0m
+[0.049s] [ 50%] [32mBuilding CXX object CMakeFiles/multigoal_pub_node.dir/src/multigoal_pub.cpp.o[0m
+[1.294s] [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In constructor ‘[01m[Kgoal_pub::GoalPublisher::GoalPublisher()[m[K’:
+[1.295s] [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[1.295s]     7 |     [01;35m[Kthis->declare_parameter<std::vector<double>>("nav_goals",{})[m[K;
+[1.295s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.295s] [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[1.303s] [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In member function ‘[01m[Kvoid goal_pub::GoalPublisher::timerCallback()[m[K’:
+[1.303s] [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:35:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing PoseStamped = struct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::PoseStamped_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kframe_id[m[K’
+[1.303s]    35 |         pose_msg.[01;31m[Kframe_id[m[K = "map";
+[1.303s]       |                  [01;31m[K^~~~~~~~[m[K
+[1.731s] gmake[2]: *** [CMakeFiles/multigoal_pub_node.dir/build.make:76：CMakeFiles/multigoal_pub_node.dir/src/multigoal_pub.cpp.o] 错误 1
+[1.731s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/multigoal_pub_node.dir/all] 错误 2
+[1.731s] gmake: *** [Makefile:146：all] 错误 2
+[1.734s] Invoked command in '/home/peony/navigation_ws/build/goal_pub' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/goal_pub -- -j32 -l32

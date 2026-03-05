@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/peony/navigation_ws/build/vel_forwarder/rosidl_generator_py/vel_forwarder/vel_forwarder_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "vel_forwarder__rosidl_typesupport_introspection_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/vel_forwarder")

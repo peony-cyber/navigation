@@ -1,0 +1,5 @@
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In constructor ‘[01m[Kgoal_pub::GoalPublisher::GoalPublisher()[m[K’:
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+    7 |     [01;35m[Kthis->declare_parameter<std::vector<double>>("nav_goals",{})[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit

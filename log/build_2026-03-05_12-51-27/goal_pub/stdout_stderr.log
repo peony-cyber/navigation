@@ -1,0 +1,34 @@
+[35m[1mConsolidate compiler generated dependencies of target multigoal_pub_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/multigoal_pub_node.dir/src/multigoal_pub.cpp.o[0m
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In constructor ‘[01m[Kgoal_pub::GoalPublisher::GoalPublisher()[m[K’:
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+    7 |     [01;35m[Kthis->declare_parameter<std::vector<double>>("nav_goals",{})[m[K;
+      |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:7:49:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In lambda function:
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:24:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K,[m[K’ token
+   24 |         [this]()[01;31m[K,[m[Kbind(&GoalPublisher::goalCallback, this, std::placeholders::_1));
+      |                 [01;31m[K^[m[K
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:[m[K In constructor ‘[01m[Kgoal_pub::GoalPublisher::GoalPublisher()[m[K’:
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:22:37:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kgoal_pub::GoalPublisher::create_wall_timer(std::chrono::milliseconds, goal_pub::GoalPublisher::GoalPublisher()::<lambda()>, std::_Bind_helper<false, void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >), goal_pub::GoalPublisher*, const std::_Placeholder<1>&>::type)[m[K’
+   22 |     timer_ = [01;31m[Kthis->create_wall_timer([m[K
+      |              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+   23 | [01;31m[K        std::chrono::milliseconds(100),[m[K
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   24 | [01;31m[K        [this](),bind(&GoalPublisher::goalCallback, this, std::placeholders::_1))[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/goal_pub/include/goal_pub/multigoal_pub.h:2[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)[m[K’
+  238 |   [01;36m[Kcreate_wall_timer[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/peony/navigation_ws/src/goal_pub/src/multigoal_pub.cpp:24:22:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[Kstd::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >); _BoundArgs = {goal_pub::GoalPublisher*, const std::_Placeholder<1>&}; typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type = std::_Bind_helper<false, void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >), goal_pub::GoalPublisher*, const std::_Placeholder<1>&>::type; std::__is_socketlike<_Func> = std::__is_socketlike<void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >), void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >)>; typename std::decay<_Tp>::type = void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >)](((goal_pub::GoalPublisher*)this), std::placeholders::_1)[m[K’ (type ‘[01m[Kstd::_Bind_helper<false, void (goal_pub::GoalPublisher::*)(std::shared_ptr<std_msgs::msg::UInt8_<std::allocator<void> > >), goal_pub::GoalPublisher*, const std::_Placeholder<1>&>::type[m[K’) to type ‘[01m[Krclcpp::CallbackGroup::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::CallbackGroup>[m[K’}
+   24 |         [this](),[01;36m[Kbind(&GoalPublisher::goalCallback, this, std::placeholders::_1)[m[K);
+      |                  [01;36m[K~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/multigoal_pub_node.dir/build.make:76：CMakeFiles/multigoal_pub_node.dir/src/multigoal_pub.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/multigoal_pub_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

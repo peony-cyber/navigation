@@ -1,0 +1,25 @@
+[0.021s] Invoking command in '/home/peony/navigation_ws/build/navigoal_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/navigoal_manager -- -j32 -l32
+[0.069s] [100%] Built target goal_manager_node
+[0.078s] Invoked command in '/home/peony/navigation_ws/build/navigoal_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/navigoal_manager -- -j32 -l32
+[0.087s] Invoking command in '/home/peony/navigation_ws/build/navigoal_manager': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/navigoal_manager
+[0.092s] -- Install configuration: ""
+[0.092s] -- Execute custom install script
+[0.092s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/lib/navigoal_manager/goal_manager_node
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/launch/navigoal_pub.launch.py
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/cfg/navigoal_param.yaml
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/ament_index/resource_index/package_run_dependencies/navigoal_manager
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/ament_index/resource_index/parent_prefix_path/navigoal_manager
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/environment/ament_prefix_path.sh
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/environment/ament_prefix_path.dsv
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/environment/path.sh
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/environment/path.dsv
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/local_setup.bash
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/local_setup.sh
+[0.093s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/local_setup.zsh
+[0.094s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/local_setup.dsv
+[0.094s] -- Symlinking: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/package.dsv
+[0.101s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/ament_index/resource_index/packages/navigoal_manager
+[0.101s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/cmake/navigoal_managerConfig.cmake
+[0.101s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/cmake/navigoal_managerConfig-version.cmake
+[0.101s] -- Up-to-date symlink: /home/peony/navigation_ws/install/navigoal_manager/share/navigoal_manager/package.xml
+[0.102s] Invoked command in '/home/peony/navigation_ws/build/navigoal_manager' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/navigoal_manager
