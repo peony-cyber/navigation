@@ -1,0 +1,129 @@
+[0.010s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[0.029s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.127s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.142s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.176s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.180s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.187s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.210s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.246s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.248s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.330s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.370s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.396s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.410s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.481s] -- Found tf2_eigen: 0.25.19 (/opt/ros/humble/share/tf2_eigen/cmake)
+[0.483s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.487s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.488s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.488s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.499s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.525s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.682s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[0.769s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.774s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.774s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.864s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.867s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.871s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.954s] -- Found Qhull version 8.0.2
+[1.047s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.142s] -- looking for PCL_COMMON
+[1.142s] -- looking for PCL_KDTREE
+[1.142s] -- looking for PCL_OCTREE
+[1.142s] -- looking for PCL_SEARCH
+[1.142s] -- looking for PCL_SAMPLE_CONSENSUS
+[1.143s] -- looking for PCL_FILTERS
+[1.143s] -- looking for PCL_2D
+[1.143s] -- looking for PCL_GEOMETRY
+[1.143s] -- looking for PCL_IO
+[1.143s] -- looking for PCL_FEATURES
+[1.144s] -- looking for PCL_ML
+[1.144s] -- looking for PCL_SEGMENTATION
+[1.144s] -- looking for PCL_VISUALIZATION
+[1.144s] -- looking for PCL_SURFACE
+[1.145s] -- looking for PCL_REGISTRATION
+[1.145s] -- looking for PCL_KEYPOINTS
+[1.145s] -- looking for PCL_TRACKING
+[1.146s] -- looking for PCL_RECOGNITION
+[1.146s] -- looking for PCL_STEREO
+[1.146s] -- looking for PCL_APPS
+[1.146s] -- looking for PCL_IN_HAND_SCANNER
+[1.147s] -- looking for PCL_MODELER
+[1.147s] -- looking for PCL_POINT_CLOUD_EDITOR
+[1.147s] -- looking for PCL_OUTOFCORE
+[1.147s] -- looking for PCL_PEOPLE
+[1.148s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[1.165s] -- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)
+[1.174s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.253s] -- Configuring done
+[1.358s] -- Generating done
+[1.372s] -- Build files have been written to: /home/peony/navigation_ws/build/path_searching
+[1.385s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_searching -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching
+[1.386s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[1.421s] [35m[1mConsolidate compiler generated dependencies of target path_searching_lib[0m
+[1.451s] [ 50%] Built target path_searching_lib
+[1.460s] [35m[1mConsolidate compiler generated dependencies of target esdf_benchmark[0m
+[1.460s] [35m[1mConsolidate compiler generated dependencies of target plan_manager[0m
+[1.475s] [ 75%] Built target esdf_benchmark
+[1.492s] [ 87%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[5.083s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In member function ‘[01m[Kvoid PlanManager::plan(Eigen::Vector2d, Eigen::Vector2d)[m[K’:
+[5.083s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:216:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.083s]   216 |     int [01;35m[Ksx[m[K = (int)((start_.x() - map_offset[0]) / resolution);
+[5.083s]       |         [01;35m[K^~[m[K
+[5.083s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:217:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ksy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.083s]   217 |     int [01;35m[Ksy[m[K = (int)((start_.y() - map_offset[1]) / resolution);
+[5.083s]       |         [01;35m[K^~[m[K
+[5.083s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:218:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.083s]   218 |     int [01;35m[Kgx[m[K = (int)((goal_.x()   - map_offset[0]) / resolution);
+[5.083s]       |         [01;35m[K^~[m[K
+[5.083s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:219:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kgy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[5.084s]   219 |     int [01;35m[Kgy[m[K = (int)((goal_.y()   - map_offset[1]) / resolution);
+[5.084s]       |         [01;35m[K^~[m[K
+[5.084s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:249:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbefore_smooth_end[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[5.084s]   249 |     auto [01;35m[Kbefore_smooth_end[m[K = Path_2d.back();
+[5.084s]       |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[11.781s] [100%] [32m[1mLinking CXX executable plan_manager[0m
+[12.979s] [100%] Built target plan_manager
+[12.990s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[12.997s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[13.001s] -- Install configuration: ""
+[13.002s] -- Execute custom install script
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/Astar.h
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
+[13.002s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/smoother.h
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/ulitys.h
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/debug_astar.launch.py
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/try_param.launch.py
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh
+[13.003s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh
+[13.004s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv
+[13.004s] -- Symlinking: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake
+[13.011s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml
+[13.012s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching

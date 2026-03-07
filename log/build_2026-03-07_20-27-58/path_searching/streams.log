@@ -1,0 +1,52 @@
+[0.007s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[0.051s] [ 50%] Built target path_searching_lib
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target plan_manager[0m
+[0.068s] [ 75%] Built target esdf_benchmark
+[0.087s] [ 87%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[3.505s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:[m[K In member function ‘[01m[Kvoid PlanManager::plan(Eigen::Vector2d, Eigen::Vector2d)[m[K’:
+[3.505s] [01m[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:257:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kbefore_smooth_end[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+[3.505s]   257 |     auto [01;35m[Kbefore_smooth_end[m[K = Path_2d.back();
+[3.505s]       |          [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[10.202s] [100%] [32m[1mLinking CXX executable plan_manager[0m
+[11.263s] [100%] Built target plan_manager
+[11.272s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_searching -- -j32 -l32
+[11.278s] Invoking command in '/home/peony/navigation_ws/build/path_searching': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching
+[11.282s] -- Install configuration: ""
+[11.282s] -- Execute custom install script
+[11.282s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/Astar.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/smoother.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/ulitys.h
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py
+[11.283s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/debug_astar.launch.py
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/try_param.launch.py
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv
+[11.284s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh
+[11.285s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv
+[11.285s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash
+[11.285s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh
+[11.285s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh
+[11.285s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv
+[11.285s] -- Symlinking: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv
+[11.290s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching
+[11.290s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.291s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake
+[11.291s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.291s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake
+[11.291s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake
+[11.291s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml
+[11.293s] Invoked command in '/home/peony/navigation_ws/build/path_searching' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_searching

@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000513] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000540] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000573] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000591] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000608] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000626] (path_searching) JobQueued: {'identifier': 'path_searching', 'dependencies': OrderedDict()}
+[0.000644] (path_searching) JobStarted: {'identifier': 'path_searching'}
+[0.009028] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'cmake'}
+[0.010226] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '/home/peony/navigation_ws/src/path_searching', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_searching'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2459'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2195,unix/peony:/tmp/.ICE-unix/2195'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04bf88ee_e536_4e4a_862c_3ea5cd99f695'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.029100] (path_searching) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099784] (-) TimerEvent: {}
+[0.127713] (path_searching) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.142363] (path_searching) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.176888] (path_searching) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.180098] (path_searching) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.187668] (path_searching) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.198250] (path_searching) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.199871] (-) TimerEvent: {}
+[0.210905] (path_searching) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.246952] (path_searching) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.248762] (path_searching) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299980] (-) TimerEvent: {}
+[0.330455] (path_searching) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.370936] (path_searching) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.396861] (path_searching) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.400053] (-) TimerEvent: {}
+[0.410479] (path_searching) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.481446] (path_searching) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.19 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[0.484087] (path_searching) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[0.487189] (path_searching) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.488194] (path_searching) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[0.488246] (path_searching) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.499795] (path_searching) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.500125] (-) TimerEvent: {}
+[0.525538] (path_searching) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.600253] (-) TimerEvent: {}
+[0.682417] (path_searching) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[0.700351] (-) TimerEvent: {}
+[0.769293] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.774099] (path_searching) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.774294] (path_searching) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.800439] (-) TimerEvent: {}
+[0.864233] (path_searching) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.867752] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.871523] (path_searching) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.900557] (-) TimerEvent: {}
+[0.954645] (path_searching) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.000665] (-) TimerEvent: {}
+[1.047295] (path_searching) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.100762] (-) TimerEvent: {}
+[1.142133] (path_searching) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.142408] (path_searching) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.142629] (path_searching) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.142829] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.143044] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.143259] (path_searching) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.143486] (path_searching) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.143690] (path_searching) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.143861] (path_searching) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.144104] (path_searching) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.144337] (path_searching) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.144523] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.144800] (path_searching) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.145067] (path_searching) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.145326] (path_searching) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.145609] (path_searching) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.145901] (path_searching) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.146148] (path_searching) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.146402] (path_searching) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.146586] (path_searching) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.147004] (path_searching) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.147139] (path_searching) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[1.147267] (path_searching) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.147388] (path_searching) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.147637] (path_searching) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.148767] (path_searching) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[1.165720] (path_searching) StdoutLine: {'line': b'-- Found pcl_ros: 2.4.5 (/opt/ros/humble/share/pcl_ros/cmake)\n'}
+[1.174413] (path_searching) StdoutLine: {'line': b'-- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[1.200869] (-) TimerEvent: {}
+[1.253701] (path_searching) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.300997] (-) TimerEvent: {}
+[1.358125] (path_searching) StdoutLine: {'line': b'-- Generating done\n'}
+[1.372698] (path_searching) StdoutLine: {'line': b'-- Build files have been written to: /home/peony/navigation_ws/build/path_searching\n'}
+[1.385218] (path_searching) CommandEnded: {'returncode': 0}
+[1.385754] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'build'}
+[1.386761] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/path_searching', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2459'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2195,unix/peony:/tmp/.ICE-unix/2195'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04bf88ee_e536_4e4a_862c_3ea5cd99f695'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.401052] (-) TimerEvent: {}
+[1.421527] (path_searching) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_searching_lib\x1b[0m\n'}
+[1.451356] (path_searching) StdoutLine: {'line': b'[ 50%] Built target path_searching_lib\n'}
+[1.460354] (path_searching) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target esdf_benchmark\x1b[0m\n'}
+[1.460569] (path_searching) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target plan_manager\x1b[0m\n'}
+[1.475285] (path_searching) StdoutLine: {'line': b'[ 75%] Built target esdf_benchmark\n'}
+[1.492825] (path_searching) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o\x1b[0m\n'}
+[1.501129] (-) TimerEvent: {}
+[1.601321] (-) TimerEvent: {}
+[1.701601] (-) TimerEvent: {}
+[1.801880] (-) TimerEvent: {}
+[1.902136] (-) TimerEvent: {}
+[2.002422] (-) TimerEvent: {}
+[2.102704] (-) TimerEvent: {}
+[2.202974] (-) TimerEvent: {}
+[2.303225] (-) TimerEvent: {}
+[2.403484] (-) TimerEvent: {}
+[2.503778] (-) TimerEvent: {}
+[2.604046] (-) TimerEvent: {}
+[2.704325] (-) TimerEvent: {}
+[2.804586] (-) TimerEvent: {}
+[2.904853] (-) TimerEvent: {}
+[3.005143] (-) TimerEvent: {}
+[3.105431] (-) TimerEvent: {}
+[3.205749] (-) TimerEvent: {}
+[3.306050] (-) TimerEvent: {}
+[3.406341] (-) TimerEvent: {}
+[3.506614] (-) TimerEvent: {}
+[3.606897] (-) TimerEvent: {}
+[3.707193] (-) TimerEvent: {}
+[3.807475] (-) TimerEvent: {}
+[3.907791] (-) TimerEvent: {}
+[4.008079] (-) TimerEvent: {}
+[4.108326] (-) TimerEvent: {}
+[4.208640] (-) TimerEvent: {}
+[4.308941] (-) TimerEvent: {}
+[4.409226] (-) TimerEvent: {}
+[4.509485] (-) TimerEvent: {}
+[4.609752] (-) TimerEvent: {}
+[4.710021] (-) TimerEvent: {}
+[4.810280] (-) TimerEvent: {}
+[4.910581] (-) TimerEvent: {}
+[5.010892] (-) TimerEvent: {}
+[5.083338] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PlanManager::plan(Eigen::Vector2d, Eigen::Vector2d)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.083590] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:216:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.083671] (path_searching) StderrLine: {'line': b'  216 |     int \x1b[01;35m\x1b[Ksx\x1b[m\x1b[K = (int)((start_.x() - map_offset[0]) / resolution);\n'}
+[5.083726] (path_searching) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.083779] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:217:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ksy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.083836] (path_searching) StderrLine: {'line': b'  217 |     int \x1b[01;35m\x1b[Ksy\x1b[m\x1b[K = (int)((start_.y() - map_offset[1]) / resolution);\n'}
+[5.083890] (path_searching) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.083944] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:218:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.083997] (path_searching) StderrLine: {'line': b'  218 |     int \x1b[01;35m\x1b[Kgx\x1b[m\x1b[K = (int)((goal_.x()   - map_offset[0]) / resolution);\n'}
+[5.084051] (path_searching) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.084104] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:219:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kgy\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.084156] (path_searching) StderrLine: {'line': b'  219 |     int \x1b[01;35m\x1b[Kgy\x1b[m\x1b[K = (int)((goal_.y()   - map_offset[1]) / resolution);\n'}
+[5.084210] (path_searching) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.084264] (path_searching) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/path_searching/src/plan_manager.cpp:249:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kbefore_smooth_end\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.084319] (path_searching) StderrLine: {'line': b'  249 |     auto \x1b[01;35m\x1b[Kbefore_smooth_end\x1b[m\x1b[K = Path_2d.back();\n'}
+[5.084372] (path_searching) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.111004] (-) TimerEvent: {}
+[5.211277] (-) TimerEvent: {}
+[5.311593] (-) TimerEvent: {}
+[5.411885] (-) TimerEvent: {}
+[5.512167] (-) TimerEvent: {}
+[5.612426] (-) TimerEvent: {}
+[5.712707] (-) TimerEvent: {}
+[5.812971] (-) TimerEvent: {}
+[5.913264] (-) TimerEvent: {}
+[6.013587] (-) TimerEvent: {}
+[6.113894] (-) TimerEvent: {}
+[6.214194] (-) TimerEvent: {}
+[6.314514] (-) TimerEvent: {}
+[6.414845] (-) TimerEvent: {}
+[6.515153] (-) TimerEvent: {}
+[6.615453] (-) TimerEvent: {}
+[6.715778] (-) TimerEvent: {}
+[6.816050] (-) TimerEvent: {}
+[6.916306] (-) TimerEvent: {}
+[7.016599] (-) TimerEvent: {}
+[7.116911] (-) TimerEvent: {}
+[7.217216] (-) TimerEvent: {}
+[7.317519] (-) TimerEvent: {}
+[7.417821] (-) TimerEvent: {}
+[7.518128] (-) TimerEvent: {}
+[7.618424] (-) TimerEvent: {}
+[7.718745] (-) TimerEvent: {}
+[7.819051] (-) TimerEvent: {}
+[7.919305] (-) TimerEvent: {}
+[8.019592] (-) TimerEvent: {}
+[8.119886] (-) TimerEvent: {}
+[8.220169] (-) TimerEvent: {}
+[8.320458] (-) TimerEvent: {}
+[8.420777] (-) TimerEvent: {}
+[8.521052] (-) TimerEvent: {}
+[8.621311] (-) TimerEvent: {}
+[8.721623] (-) TimerEvent: {}
+[8.821912] (-) TimerEvent: {}
+[8.922186] (-) TimerEvent: {}
+[9.022476] (-) TimerEvent: {}
+[9.122766] (-) TimerEvent: {}
+[9.223040] (-) TimerEvent: {}
+[9.323320] (-) TimerEvent: {}
+[9.423611] (-) TimerEvent: {}
+[9.523884] (-) TimerEvent: {}
+[9.624141] (-) TimerEvent: {}
+[9.724410] (-) TimerEvent: {}
+[9.824678] (-) TimerEvent: {}
+[9.924955] (-) TimerEvent: {}
+[10.025236] (-) TimerEvent: {}
+[10.125514] (-) TimerEvent: {}
+[10.225800] (-) TimerEvent: {}
+[10.326082] (-) TimerEvent: {}
+[10.426362] (-) TimerEvent: {}
+[10.526648] (-) TimerEvent: {}
+[10.626939] (-) TimerEvent: {}
+[10.727217] (-) TimerEvent: {}
+[10.827465] (-) TimerEvent: {}
+[10.927754] (-) TimerEvent: {}
+[11.028049] (-) TimerEvent: {}
+[11.128331] (-) TimerEvent: {}
+[11.228609] (-) TimerEvent: {}
+[11.328911] (-) TimerEvent: {}
+[11.429193] (-) TimerEvent: {}
+[11.529486] (-) TimerEvent: {}
+[11.629860] (-) TimerEvent: {}
+[11.730176] (-) TimerEvent: {}
+[11.781195] (path_searching) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable plan_manager\x1b[0m\n'}
+[11.830305] (-) TimerEvent: {}
+[11.930605] (-) TimerEvent: {}
+[12.030869] (-) TimerEvent: {}
+[12.131158] (-) TimerEvent: {}
+[12.231449] (-) TimerEvent: {}
+[12.331756] (-) TimerEvent: {}
+[12.432039] (-) TimerEvent: {}
+[12.532331] (-) TimerEvent: {}
+[12.632630] (-) TimerEvent: {}
+[12.732928] (-) TimerEvent: {}
+[12.833240] (-) TimerEvent: {}
+[12.933557] (-) TimerEvent: {}
+[12.979135] (path_searching) StdoutLine: {'line': b'[100%] Built target plan_manager\n'}
+[12.990818] (path_searching) CommandEnded: {'returncode': 0}
+[12.991234] (path_searching) JobProgress: {'identifier': 'path_searching', 'progress': 'install'}
+[12.997794] (path_searching) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peony/navigation_ws/build/path_searching'], 'cwd': '/home/peony/navigation_ws/build/path_searching', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2459'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2195,unix/peony:/tmp/.ICE-unix/2195'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/04bf88ee_e536_4e4a_862c_3ea5cd99f695'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/path_searching'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.002015] (path_searching) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.002326] (path_searching) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.002497] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/plan_manager\n'}
+[13.002622] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/path_searching/esdf_benchmark\n'}
+[13.002701] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/lib/libpath_searching_lib.a\n'}
+[13.002912] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/Astar.h\n'}
+[13.002973] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cpprobotics_types.h\n'}
+[13.003029] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline.h\n'}
+[13.003107] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/cubic_spline/cubic_spline_ros.h\n'}
+[13.003139] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/esdf_map.h\n'}
+[13.003195] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/smoother.h\n'}
+[13.003248] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/include/ulitys.h\n'}
+[13.003378] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar.launch.py\n'}
+[13.003433] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/astar_rviz_map_server.launch.py\n'}
+[13.003499] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/debug_astar.launch.py\n'}
+[13.003577] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/try_param.launch.py\n'}
+[13.003661] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/launch/voronoi_astar.launch.py\n'}
+[13.003891] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cfg/plan_param.yaml\n'}
+[13.003981] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.sh\n'}
+[13.004059] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/library_path.dsv\n'}
+[13.004149] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/package_run_dependencies/path_searching\n'}
+[13.004231] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/parent_prefix_path/path_searching\n'}
+[13.004308] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.sh\n'}
+[13.004380] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/ament_prefix_path.dsv\n'}
+[13.004456] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.sh\n'}
+[13.004528] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/environment/path.dsv\n'}
+[13.004653] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.bash\n'}
+[13.004819] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.sh\n'}
+[13.004899] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.zsh\n'}
+[13.004976] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/local_setup.dsv\n'}
+[13.005033] (path_searching) StdoutLine: {'line': b'-- Symlinking: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.dsv\n'}
+[13.011306] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/ament_index/resource_index/packages/path_searching\n'}
+[13.011403] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.011462] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.011525] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.011609] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig.cmake\n'}
+[13.011670] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/cmake/path_searchingConfig-version.cmake\n'}
+[13.011743] (path_searching) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/path_searching/share/path_searching/package.xml\n'}
+[13.013065] (path_searching) CommandEnded: {'returncode': 0}
+[13.033482] (path_searching) JobEnded: {'identifier': 'path_searching', 'rc': 0}
+[13.033749] (-) TimerEvent: {}
+[13.033788] (-) EventReactorShutdown: {}

@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000295] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000326] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000413] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000434] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000448] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000460] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000593] (-) EventReactorShutdown: {}

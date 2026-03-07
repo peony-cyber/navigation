@@ -149,17 +149,77 @@ private:
     map_geted = true;
   }
 
-  void plan(Eigen::Vector2d start_, Eigen::Vector2d goal_)
-  {
+  // void plan(Eigen::Vector2d start_, Eigen::Vector2d goal_)
+  // {
+  //   if (!map_geted) return;
+  //   //米→像素
+  //   int sx = (int)((start_.x() - map_offset[0]) / resolution);
+  //   int sy = (int)((start_.y() - map_offset[1]) / resolution);
+  //   int gx = (int)((goal_.x()   - map_offset[0]) / resolution);
+  //   int gy = (int)((goal_.y()   - map_offset[1]) / resolution);
+
+  //   //越界保护
+  //   if (sx<0||sx>=map_size[0]||sy<0||sy>=map_size[1]||
+  //       gx<0||gx>=map_size[0]||gy<0||gy>=map_size[1])
+  //   {
+  //       RCLCPP_ERROR(this->get_logger(),
+  //                    "Goal/Start out of map sx=%d sy=%d gx=%d gy=%d  w=%d h=%d",
+  //                    sx,sy,gx,gy,map_size[0],map_size[1]);
+  //       return;
+  //   }
+  //   //
+  //   std::vector<Eigen::Vector2d> Path_2d;
+  //   RCLCPP_INFO(this->get_logger(), "start planning");
+  //   Eigen::Vector2d start = start_;
+  //   Eigen::Vector2d end = goal_;
+  //   Eigen::Vector2i start_index = Pos2index(start);
+  //   Eigen::Vector2i end_index = Pos2index(end);
+  //   auto beforeTime = std::chrono::steady_clock::now();
+  //   auto result = planner_1.search(start_index, end_index);
+  //   if (result == navi_planner::Astar::NO_PATH)
+  //   {
+  //     planner_1.reset();
+  //     return;
+  //   }
+  //   auto endTime = std::chrono::steady_clock::now();
+  //   double duration_millsecond = std::chrono::duration<double, std::milli>(endTime - beforeTime).count();
+  //   std::cout << "A* searching cost: " << duration_millsecond << "ms" << std::endl;
+  //   std::vector<Eigen::Vector2i> Path_2i;
+  //   Path_2i = planner_1.getPath();
+  //   Path_2d.push_back(start);
+  //   for (auto p : Path_2i)
+  //   {
+  //     Path_2d.push_back(Index2pos(p));
+  //   }
+  //   Path_2d.push_back(end);
+  //   beforeTime = std::chrono::steady_clock::now();
+  //   Path_2d = smoother_1.smooth(Path_2d, 0.3f, 0.04f);
+  //   endTime = std::chrono::steady_clock::now();
+  //   duration_millsecond = std::chrono::duration<double, std::milli>(endTime - beforeTime).count();
+  //   std::cout << "smooth cost: " << duration_millsecond << "ms" << std::endl;
+  //   planner_1.reset();
+  //   path_now = Path_2d;
+  //   Path_pub(Path_2d);
+  // }
+void plan(Eigen::Vector2d start_, Eigen::Vector2d goal_)
+{
     if (!map_geted) return;
-    //米→像素
+
+    // 1. 记录原始点击坐标
+    RCLCPP_INFO(this->get_logger(), "--- Planning Start ---");
+    RCLCPP_INFO(this->get_logger(), "[Stage 0] Input Goal (meters): X:%.4f, Y:%.4f", goal_.x(), goal_.y());
+
+    // 2. 检查分辨率一致性 (对比 resolution 和 20.0f)
+    double inv_res = 1.0 / resolution;
+    RCLCPP_INFO(this->get_logger(), "[Stage 1] Res Check: map_res:%.4f (inv:%.2f), hardcoded:20.00", resolution, inv_res);
+
     int sx = (int)((start_.x() - map_offset[0]) / resolution);
     int sy = (int)((start_.y() - map_offset[1]) / resolution);
     int gx = (int)((goal_.x()   - map_offset[0]) / resolution);
     int gy = (int)((goal_.y()   - map_offset[1]) / resolution);
 
-    //越界保护
-    if (sx<0||sx>=map_size[0]||sy<0||sy>=map_size[1]||
+    // 越界保护... (保留原逻辑)
+     if (sx<0||sx>=map_size[0]||sy<0||sy>=map_size[1]||
         gx<0||gx>=map_size[0]||gy<0||gy>=map_size[1])
     {
         RCLCPP_ERROR(this->get_logger(),
@@ -167,41 +227,46 @@ private:
                      sx,sy,gx,gy,map_size[0],map_size[1]);
         return;
     }
-    //
-    std::vector<Eigen::Vector2d> Path_2d;
-    RCLCPP_INFO(this->get_logger(), "start planning");
-    Eigen::Vector2d start = start_;
-    Eigen::Vector2d end = goal_;
-    Eigen::Vector2i start_index = Pos2index(start);
-    Eigen::Vector2i end_index = Pos2index(end);
-    auto beforeTime = std::chrono::steady_clock::now();
+
+    Eigen::Vector2i start_index = Pos2index(start_);
+    Eigen::Vector2i end_index = Pos2index(goal_);
+    
+    // 3. 检查像素化后的坐标 (看是否因为取整产生巨大位移)
+    Eigen::Vector2d reprojected_goal = Index2pos(end_index);
+    RCLCPP_INFO(this->get_logger(), "[Stage 2] Pixel Goal: [%d, %d], Reprojected: [%.4f, %.4f]", 
+                end_index.x(), end_index.y(), reprojected_goal.x(), reprojected_goal.y());
+
     auto result = planner_1.search(start_index, end_index);
-    if (result == navi_planner::Astar::NO_PATH)
-    {
-      planner_1.reset();
-      return;
+    if (result == navi_planner::Astar::NO_PATH) {
+        planner_1.reset();
+        return;
     }
-    auto endTime = std::chrono::steady_clock::now();
-    double duration_millsecond = std::chrono::duration<double, std::milli>(endTime - beforeTime).count();
-    std::cout << "A* searching cost: " << duration_millsecond << "ms" << std::endl;
-    std::vector<Eigen::Vector2i> Path_2i;
-    Path_2i = planner_1.getPath();
-    Path_2d.push_back(start);
-    for (auto p : Path_2i)
-    {
-      Path_2d.push_back(Index2pos(p));
-    }
-    Path_2d.push_back(end);
-    beforeTime = std::chrono::steady_clock::now();
+
+    std::vector<Eigen::Vector2i> Path_2i = planner_1.getPath();
+    std::vector<Eigen::Vector2d> Path_2d;
+    Path_2d.push_back(start_);
+    for (auto p : Path_2i) Path_2d.push_back(Index2pos(p));
+    
+    // 4. A* 原始路径终点
+    RCLCPP_INFO(this->get_logger(), "[Stage 3] A* Raw End: [%.4f, %.4f]", Path_2d.back().x(), Path_2d.back().y());
+
+    // 5. 加入原始目标点（平滑前）
+    Path_2d.push_back(goal_);
+
+    // 6. 执行平滑
+    auto before_smooth_end = Path_2d.back();
     Path_2d = smoother_1.smooth(Path_2d, 0.3f, 0.04f);
-    endTime = std::chrono::steady_clock::now();
-    duration_millsecond = std::chrono::duration<double, std::milli>(endTime - beforeTime).count();
-    std::cout << "smooth cost: " << duration_millsecond << "ms" << std::endl;
+    
+    // 7. 检查平滑后的终点
+    RCLCPP_INFO(this->get_logger(), "[Stage 4] Smoothed End: [%.4f, %.4f]", Path_2d.back().x(), Path_2d.back().y());
+
+    double final_error = (Path_2d.back() - goal_).norm();
+    RCLCPP_INFO(this->get_logger(), "--- Final Deviation: %.4f meters ---", final_error);
+
     planner_1.reset();
     path_now = Path_2d;
     Path_pub(Path_2d);
-  }
-
+}
   void getStart()
   {
     try
