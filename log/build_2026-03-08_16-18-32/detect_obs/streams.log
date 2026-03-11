@@ -1,0 +1,10 @@
+[0.007s] Invoking command in '/home/peony/navigation_ws/build/detect_obs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/detect_obs -- -j32 -l32
+[0.046s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o[0m
+[0.182s] [01m[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/point_cloud2.hpp: 没有那个文件或目录
+[0.182s]     2 | #include [01;31m[K<sensor_msgs/msg/point_cloud2.hpp>[m[K
+[0.182s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.182s] compilation terminated.
+[0.194s] gmake[2]: *** [CMakeFiles/obstacle_processor.dir/build.make:76：CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o] 错误 1
+[0.194s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/obstacle_processor.dir/all] 错误 2
+[0.194s] gmake: *** [Makefile:146：all] 错误 2
+[0.196s] Invoked command in '/home/peony/navigation_ws/build/detect_obs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/detect_obs -- -j32 -l32

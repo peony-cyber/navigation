@@ -1,0 +1,10 @@
+/home/peony/navigation_ws/build/test_car/CMakeFiles/uninstall.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/test_car_uninstall.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/test_car.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/test.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/edit_cache.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/rebuild_cache.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/list_install_components.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/install.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/install/local.dir
+/home/peony/navigation_ws/build/test_car/CMakeFiles/install/strip.dir

@@ -32,8 +32,11 @@ GoalManager::GoalManager() : Node("goal_manager")
     // 订阅来自ly_goal的目标位姿
     ly_goal_subscription_ = this->create_subscription<std_msgs::msg::UInt8>(
         "/ly/navi/goal", 10, std::bind(&GoalManager::goalCallback, this, std::placeholders::_1));
+    ly_goal_pose_subscription_ = this->create_subscription<std_msgs::msg::UInt16MultiArray>(
+        "/ly/navi/goal_pose", 10, std::bind(&GoalManager::goalPoseCallback, this, std::placeholders::_1));
     // 发布目标位姿到/goal
     goal_publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/goal_pose", 10);
+
 }
 
 void GoalManager::goalCallback(const std_msgs::msg::UInt8::SharedPtr msg)
@@ -65,6 +68,20 @@ void GoalManager::goalCallback(const std_msgs::msg::UInt8::SharedPtr msg)
 
     goal_publisher_->publish(pose_msg);
 }
+
+void GoalManager::goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr msg)
+{
+    RCLCPP_INFO(this->get_logger(), "Received goal pose array with size: %zu", msg->data.size());
+    if (msg->data.size() < 2)
+    {
+        RCLCPP_ERROR(this->get_logger(), "Received invalid goal pose array, size must be at least 2");
+        return;
+    }
+    geometry_msgs::msg::PoseStamped pose_msg;
+    pose_msg.pose.position.x = static_cast<double>(msg->data[0]) / 100.0; // 假设输入是厘米，转换为米
+    pose_msg.pose.position.y = static_cast<double>(msg->data[1]) / 100.0;
+    RCLCPP_INFO(this->get_logger(), "Parsed goal pose: (%f, %f)", pose_msg.pose.position.x, pose_msg.pose.position.y);
+    goal_publisher_->publish(pose_msg);
 }
 int main(int argc, char *argv[])
 {

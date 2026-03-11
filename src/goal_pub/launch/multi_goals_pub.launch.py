@@ -23,6 +23,7 @@ def generate_launch_description():
         name='goal_publisher',
         parameters=[config_path]
     )
+    print(f"Loading params from: {config_path}")
 
 
     return LaunchDescription([

@@ -1,0 +1,10 @@
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/uninstall.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/detect_obs_uninstall.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/obstacle_processor.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/test.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/edit_cache.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/rebuild_cache.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/list_install_components.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/install.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/install/local.dir
+/home/peony/navigation_ws/build/detect_obs/CMakeFiles/install/strip.dir

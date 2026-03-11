@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000164] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000379] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000398] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000411] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000424] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000435] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000451] (detect_obs) JobQueued: {'identifier': 'detect_obs', 'dependencies': OrderedDict()}
+[0.000765] (detect_obs) JobStarted: {'identifier': 'detect_obs'}
+[0.008219] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'cmake'}
+[0.008842] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'build'}
+[0.009466] (detect_obs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/detect_obs', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/detect_obs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/peony/ws_livox/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2477'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/peony/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2251,unix/peony:/tmp/.ICE-unix/2251'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b3f3bc4_8691_4f79_8b35_7e2ae3cc56ec'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/detect_obs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/peony/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[0.054847] (detect_obs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_processor\x1b[0m\n'}
+[0.080441] (detect_obs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o\x1b[0m\n'}
+[0.099603] (-) TimerEvent: {}
+[0.199794] (-) TimerEvent: {}
+[0.300071] (-) TimerEvent: {}
+[0.400360] (-) TimerEvent: {}
+[0.500623] (-) TimerEvent: {}
+[0.600853] (-) TimerEvent: {}
+[0.701055] (-) TimerEvent: {}
+[0.801283] (-) TimerEvent: {}
+[0.901573] (-) TimerEvent: {}
+[1.001857] (-) TimerEvent: {}
+[1.102053] (-) TimerEvent: {}
+[1.202243] (-) TimerEvent: {}
+[1.302465] (-) TimerEvent: {}
+[1.402707] (-) TimerEvent: {}
+[1.502957] (-) TimerEvent: {}
+[1.603140] (-) TimerEvent: {}
+[1.703340] (-) TimerEvent: {}
+[1.803597] (-) TimerEvent: {}
+[1.903958] (-) TimerEvent: {}
+[2.004287] (-) TimerEvent: {}
+[2.104591] (-) TimerEvent: {}
+[2.204882] (-) TimerEvent: {}
+[2.305202] (-) TimerEvent: {}
+[2.405482] (-) TimerEvent: {}
+[2.505661] (-) TimerEvent: {}
+[2.605839] (-) TimerEvent: {}
+[2.706060] (-) TimerEvent: {}
+[2.806259] (-) TimerEvent: {}
+[2.906487] (-) TimerEvent: {}
+[3.006761] (-) TimerEvent: {}
+[3.107044] (-) TimerEvent: {}
+[3.207288] (-) TimerEvent: {}
+[3.307567] (-) TimerEvent: {}
+[3.407821] (-) TimerEvent: {}
+[3.508058] (-) TimerEvent: {}
+[3.608283] (-) TimerEvent: {}
+[3.708575] (-) TimerEvent: {}
+[3.808857] (-) TimerEvent: {}
+[3.909176] (-) TimerEvent: {}
+[4.009583] (-) TimerEvent: {}
+[4.109837] (-) TimerEvent: {}
+[4.210060] (-) TimerEvent: {}
+[4.310365] (-) TimerEvent: {}
+[4.410605] (-) TimerEvent: {}
+[4.510775] (-) TimerEvent: {}
+[4.611025] (-) TimerEvent: {}
+[4.711452] (-) TimerEvent: {}
+[4.811711] (-) TimerEvent: {}
+[4.911976] (-) TimerEvent: {}
+[5.012289] (-) TimerEvent: {}
+[5.112567] (-) TimerEvent: {}
+[5.212819] (-) TimerEvent: {}
+[5.313065] (-) TimerEvent: {}
+[5.413409] (-) TimerEvent: {}
+[5.513812] (-) TimerEvent: {}
+[5.614064] (-) TimerEvent: {}
+[5.714346] (-) TimerEvent: {}
+[5.814608] (-) TimerEvent: {}
+[5.914872] (-) TimerEvent: {}
+[6.015128] (-) TimerEvent: {}
+[6.115396] (-) TimerEvent: {}
+[6.215651] (-) TimerEvent: {}
+[6.315901] (-) TimerEvent: {}
+[6.416177] (-) TimerEvent: {}
+[6.516453] (-) TimerEvent: {}
+[6.616770] (-) TimerEvent: {}
+[6.717045] (-) TimerEvent: {}
+[6.817344] (-) TimerEvent: {}
+[6.917622] (-) TimerEvent: {}
+[7.017881] (-) TimerEvent: {}
+[7.118145] (-) TimerEvent: {}
+[7.218402] (-) TimerEvent: {}
+[7.318725] (-) TimerEvent: {}
+[7.419193] (-) TimerEvent: {}
+[7.519669] (-) TimerEvent: {}
+[7.620031] (-) TimerEvent: {}
+[7.699004] (detect_obs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable obstacle_processor\x1b[0m\n'}
+[7.720100] (-) TimerEvent: {}
+[7.820285] (-) TimerEvent: {}
+[7.920596] (-) TimerEvent: {}
+[8.020883] (-) TimerEvent: {}
+[8.121093] (-) TimerEvent: {}
+[8.154006] (detect_obs) StdoutLine: {'line': b'[100%] Built target obstacle_processor\n'}
+[8.166461] (detect_obs) CommandEnded: {'returncode': 0}
+[8.166934] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'install'}
+[8.172861] (detect_obs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/peony/navigation_ws/build/detect_obs'], 'cwd': '/home/peony/navigation_ws/build/detect_obs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/peony/ws_livox/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2477'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/peony/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2251,unix/peony:/tmp/.ICE-unix/2251'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b3f3bc4_8691_4f79_8b35_7e2ae3cc56ec'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/detect_obs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/peony/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[8.177169] (detect_obs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.177504] (detect_obs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.177670] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/lib/detect_obs/obstacle_processor\n'}
+[8.177781] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/package_run_dependencies/detect_obs\n'}
+[8.177878] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/parent_prefix_path/detect_obs\n'}
+[8.177968] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.sh\n'}
+[8.178050] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.dsv\n'}
+[8.178138] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.sh\n'}
+[8.178225] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.dsv\n'}
+[8.178459] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.bash\n'}
+[8.178569] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.sh\n'}
+[8.178650] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.zsh\n'}
+[8.178729] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.dsv\n'}
+[8.178785] (detect_obs) StdoutLine: {'line': b'-- Symlinking: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.dsv\n'}
+[8.193817] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/packages/detect_obs\n'}
+[8.193916] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig.cmake\n'}
+[8.193978] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig-version.cmake\n'}
+[8.194045] (detect_obs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.xml\n'}
+[8.196083] (detect_obs) CommandEnded: {'returncode': 0}
+[8.206694] (detect_obs) JobEnded: {'identifier': 'detect_obs', 'rc': 0}
+[8.207077] (-) EventReactorShutdown: {}

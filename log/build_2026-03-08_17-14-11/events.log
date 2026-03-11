@@ -1,0 +1,212 @@
+[0.000000] (-) TimerEvent: {}
+[0.000196] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000218] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000233] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000247] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000260] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000273] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000290] (detect_obs) JobQueued: {'identifier': 'detect_obs', 'dependencies': OrderedDict()}
+[0.000306] (detect_obs) JobStarted: {'identifier': 'detect_obs'}
+[0.006209] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'cmake'}
+[0.006768] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'build'}
+[0.007378] (detect_obs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/detect_obs', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/detect_obs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/peony/ws_livox/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2477'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/peony/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2251,unix/peony:/tmp/.ICE-unix/2251'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b3f3bc4_8691_4f79_8b35_7e2ae3cc56ec'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/detect_obs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/peony/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[0.029648] (detect_obs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099286] (-) TimerEvent: {}
+[0.109535] (detect_obs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.114322] (detect_obs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.133540] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.135594] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.139318] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.144644] (detect_obs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.152148] (detect_obs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.170947] (detect_obs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.171733] (detect_obs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199391] (-) TimerEvent: {}
+[0.250992] (detect_obs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.278995] (detect_obs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.286375] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.290266] (detect_obs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.299486] (-) TimerEvent: {}
+[0.300588] (detect_obs) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.310719] (detect_obs) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.333180] (detect_obs) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.357086] (detect_obs) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.399595] (-) TimerEvent: {}
+[0.499865] (-) TimerEvent: {}
+[0.592277] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.596008] (detect_obs) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.599929] (-) TimerEvent: {}
+[0.700148] (-) TimerEvent: {}
+[0.701514] (detect_obs) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.706273] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.711292] (detect_obs) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.800259] (-) TimerEvent: {}
+[0.809932] (detect_obs) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[0.900369] (-) TimerEvent: {}
+[0.909771] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.000473] (-) TimerEvent: {}
+[1.013914] (detect_obs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:16 (find_package):\n'}
+[1.014066] (detect_obs) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[1.014108] (detect_obs) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[1.014145] (detect_obs) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[1.014182] (detect_obs) StderrLine: {'line': b'\n'}
+[1.014214] (detect_obs) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[1.014245] (detect_obs) StderrLine: {'line': b'\n'}
+[1.014274] (detect_obs) StderrLine: {'line': b'    /usr\n'}
+[1.014310] (detect_obs) StderrLine: {'line': b'\n'}
+[1.014344] (detect_obs) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[1.014375] (detect_obs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[1.014406] (detect_obs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.028934] (detect_obs) StdoutLine: {'line': b'-- Found livox_ros_driver2: 1.0.0 (/home/peony/ws_livox/install/livox_ros_driver2/share/livox_ros_driver2/cmake)\n'}
+[1.100574] (-) TimerEvent: {}
+[1.116348] (detect_obs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.139172] (detect_obs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.145517] (detect_obs) StdoutLine: {'line': b'-- Build files have been written to: /home/peony/navigation_ws/build/detect_obs\n'}
+[1.171858] (detect_obs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obstacle_processor\x1b[0m\n'}
+[1.194925] (detect_obs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o\x1b[0m\n'}
+[1.200653] (-) TimerEvent: {}
+[1.300880] (-) TimerEvent: {}
+[1.401114] (-) TimerEvent: {}
+[1.501395] (-) TimerEvent: {}
+[1.601679] (-) TimerEvent: {}
+[1.701960] (-) TimerEvent: {}
+[1.802227] (-) TimerEvent: {}
+[1.902473] (-) TimerEvent: {}
+[2.002736] (-) TimerEvent: {}
+[2.102986] (-) TimerEvent: {}
+[2.203239] (-) TimerEvent: {}
+[2.303494] (-) TimerEvent: {}
+[2.403745] (-) TimerEvent: {}
+[2.504033] (-) TimerEvent: {}
+[2.604321] (-) TimerEvent: {}
+[2.704637] (-) TimerEvent: {}
+[2.804936] (-) TimerEvent: {}
+[2.905221] (-) TimerEvent: {}
+[3.005467] (-) TimerEvent: {}
+[3.105725] (-) TimerEvent: {}
+[3.205962] (-) TimerEvent: {}
+[3.306219] (-) TimerEvent: {}
+[3.406478] (-) TimerEvent: {}
+[3.506728] (-) TimerEvent: {}
+[3.606974] (-) TimerEvent: {}
+[3.707226] (-) TimerEvent: {}
+[3.807486] (-) TimerEvent: {}
+[3.907748] (-) TimerEvent: {}
+[4.008011] (-) TimerEvent: {}
+[4.108272] (-) TimerEvent: {}
+[4.208522] (-) TimerEvent: {}
+[4.308766] (-) TimerEvent: {}
+[4.377812] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KObstacleProcessor::ObstacleProcessor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.378162] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:26:104:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[4.378226] (detect_obs) StderrLine: {'line': b'   26 |             "/livox/lidar", 10, std::bind(&ObstacleProcessor::pc_callback, this, std::placeholders::_1)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.378273] (detect_obs) StderrLine: {'line': b'      |                                                                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.378307] (detect_obs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[4.378340] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.378374] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:1\x1b[m\x1b[K:\n'}
+[4.378406] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.378439] (detect_obs) StderrLine: {'line': b'  363 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr<_Yp>& __r) noexcept\n'}
+[4.378470] (detect_obs) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.378503] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.378534] (detect_obs) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = const std::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >&; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.378568] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:363:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >::_Assignable<const std::shared_ptr<_Tp>&> std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >::operator=<_Yp>(const std::shared_ptr<_Tp>&) [with _Yp = rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.378602] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:26:104:\x1b[m\x1b[K   required from here\n'}
+[4.378636] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.378668] (detect_obs) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[4.378701] (detect_obs) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.378731] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.378765] (detect_obs) StderrLine: {'line': b'  374 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(auto_ptr<_Yp>&& __r)\n'}
+[4.378794] (detect_obs) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.378825] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:374:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.378855] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:26:104:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::auto_ptr<_Up>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.378900] (detect_obs) StderrLine: {'line': b'   26 |             "/livox/lidar", 10, std::bind(&ObstacleProcessor::pc_callback, this, std::placeholders::_1)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.378934] (detect_obs) StderrLine: {'line': b'      |                                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.378965] (detect_obs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[4.379002] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.379030] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:1\x1b[m\x1b[K:\n'}
+[4.379060] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379093] (detect_obs) StderrLine: {'line': b'  391 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr<_Yp>&& __r) noexcept\n'}
+[4.379123] (detect_obs) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.379153] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.379181] (detect_obs) StderrLine: {'line': b'/usr/include/c++/11/bits/shared_ptr.h: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> template<class _Arg> using _Assignable = typename std::enable_if<std::is_assignable<std::__shared_ptr<_Tp>&, _Arg>::value, std::shared_ptr<_Tp>&>::type [with _Arg = std::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.379226] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:391:2:\x1b[m\x1b[K   required by substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp> std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >::_Assignable<std::shared_ptr<_Tp> > std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >::operator=<_Yp>(std::shared_ptr<_Tp>&&) [with _Yp = rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379262] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:26:104:\x1b[m\x1b[K   required from here\n'}
+[4.379293] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:130:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379324] (detect_obs) StderrLine: {'line': b'  130 |         using \x1b[01;31m\x1b[K_Assignable\x1b[m\x1b[K = typename enable_if<\n'}
+[4.379352] (detect_obs) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.379385] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379419] (detect_obs) StderrLine: {'line': b'  399 |         \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(unique_ptr<_Yp, _Del>&& __r)\n'}
+[4.379447] (detect_obs) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.379477] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:399:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.379505] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:26:104:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kstd::unique_ptr<_Tp, _Dp>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379538] (detect_obs) StderrLine: {'line': b'   26 |             "/livox/lidar", 10, std::bind(&ObstacleProcessor::pc_callback, this, std::placeholders::_1)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.379569] (detect_obs) StderrLine: {'line': b'      |                                                                                                        \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.379599] (detect_obs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/memory:77\x1b[m\x1b[K,\n'}
+[4.379630] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[4.379661] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:1\x1b[m\x1b[K:\n'}
+[4.379692] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379721] (detect_obs) StderrLine: {'line': b'  359 |       shared_ptr& \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(const shared_ptr&) noexcept = default;\n'}
+[4.379750] (detect_obs) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.379777] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:359:29:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379809] (detect_obs) StderrLine: {'line': b'  359 |       shared_ptr& operator=(\x1b[01;36m\x1b[Kconst shared_ptr&\x1b[m\x1b[K) noexcept = default;\n'}
+[4.379836] (detect_obs) StderrLine: {'line': b'      |                             \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.379864] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.379907] (detect_obs) StderrLine: {'line': b'  383 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(shared_ptr&& __r) noexcept\n'}
+[4.379939] (detect_obs) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.379968] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:383:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void>, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, std::allocator<void> > > >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::Subscription<sensor_msgs::msg::PointCloud2_<std::allocator<void> > > >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.380001] (detect_obs) StderrLine: {'line': b'  383 |       operator=(\x1b[01;36m\x1b[Kshared_ptr&& __r\x1b[m\x1b[K) noexcept\n'}
+[4.380030] (detect_obs) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.380771] (detect_obs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[4.380821] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[4.380848] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[4.380880] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[4.380921] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[4.380950] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[4.380981] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[4.381010] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[4.381037] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[4.381068] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[4.381096] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.381125] (detect_obs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:1\x1b[m\x1b[K:\n'}
+[4.381152] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ObstacleProcessor::pc_callback(livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.381183] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:34:85:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kwidth\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.381213] (detect_obs) StderrLine: {'line': b'   34 |         RCLCPP_INFO(this->get_logger(), "Received point cloud with %d points", msg->\x1b[01;31m\x1b[Kwidth\x1b[m\x1b[K * msg->height);\n'}
+[4.381240] (detect_obs) StderrLine: {'line': b'      |                                                                                     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.381268] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:34:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kheight\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.381297] (detect_obs) StderrLine: {'line': b'   34 |         RCLCPP_INFO(this->get_logger(), "Received point cloud with %d points", msg->width * msg->\x1b[01;31m\x1b[Kheight\x1b[m\x1b[K);\n'}
+[4.381325] (detect_obs) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.386606] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:36:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KfromROSMsg(std::__shared_ptr_access<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type&, std::__shared_ptr_access<pcl::PointCloud<pcl::PointXYZ>, __gnu_cxx::_S_atomic, false, false>::element_type&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.386692] (detect_obs) StderrLine: {'line': b'   36 |         \x1b[01;31m\x1b[Kpcl::fromROSMsg(*msg, *cloud)\x1b[m\x1b[K;\n'}
+[4.386730] (detect_obs) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.386763] (detect_obs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:4\x1b[m\x1b[K:\n'}
+[4.386794] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:568:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> void pcl::fromROSMsg(const PointCloud2&, pcl::PointCloud<PointT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.386830] (detect_obs) StderrLine: {'line': b'  568 |   void \x1b[01;36m\x1b[KfromROSMsg\x1b[m\x1b[K(const sensor_msgs::msg::PointCloud2 &cloud, pcl::PointCloud<T> &pcl_cloud)\n'}
+[4.386890] (detect_obs) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.386932] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pcl_conversions/pcl_conversions/pcl_conversions.h:568:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.386962] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:36:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[K((const std::__shared_ptr_access<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator*()\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr_access<livox_ros_driver2::msg::CustomMsg_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klivox_ros_driver2::msg::CustomMsg_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99}) to type \xe2\x80\x98\x1b[01m\x1b[Kconst PointCloud2&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst sensor_msgs::msg::PointCloud2_<std::allocator<void> >&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[4.386995] (detect_obs) StderrLine: {'line': b'   36 |         pcl::fromROSMsg(\x1b[01;36m\x1b[K*msg\x1b[m\x1b[K, *cloud);\n'}
+[4.387023] (detect_obs) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.408862] (-) TimerEvent: {}
+[4.509134] (-) TimerEvent: {}
+[4.609387] (-) TimerEvent: {}
+[4.709639] (-) TimerEvent: {}
+[4.809955] (-) TimerEvent: {}
+[4.910200] (-) TimerEvent: {}
+[5.010457] (-) TimerEvent: {}
+[5.110729] (-) TimerEvent: {}
+[5.210969] (-) TimerEvent: {}
+[5.311233] (-) TimerEvent: {}
+[5.411517] (-) TimerEvent: {}
+[5.511787] (-) TimerEvent: {}
+[5.612158] (-) TimerEvent: {}
+[5.712427] (-) TimerEvent: {}
+[5.812693] (-) TimerEvent: {}
+[5.912950] (-) TimerEvent: {}
+[6.013203] (-) TimerEvent: {}
+[6.113460] (-) TimerEvent: {}
+[6.213779] (-) TimerEvent: {}
+[6.253394] (detect_obs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/obstacle_processor.dir/build.make:76\xef\xbc\x9aCMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[6.253592] (detect_obs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/obstacle_processor.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.253837] (detect_obs) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[6.256543] (detect_obs) CommandEnded: {'returncode': 2}
+[6.262777] (detect_obs) JobEnded: {'identifier': 'detect_obs', 'rc': 2}
+[6.273113] (-) EventReactorShutdown: {}

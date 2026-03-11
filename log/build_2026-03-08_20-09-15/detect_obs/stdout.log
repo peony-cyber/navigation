@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle_processor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable obstacle_processor[0m
+[100%] Built target obstacle_processor
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/lib/detect_obs/obstacle_processor
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/package_run_dependencies/detect_obs
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/parent_prefix_path/detect_obs
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.sh
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.dsv
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.bash
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.sh
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.zsh
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.dsv
+-- Symlinking: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.dsv
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/packages/detect_obs
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig.cmake
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig-version.cmake
+-- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.xml

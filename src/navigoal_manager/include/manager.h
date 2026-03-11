@@ -20,7 +20,9 @@ private:
     std::vector<std::pair<double, double>> b_goals;
 
     void goalCallback(const std_msgs::msg::UInt8::SharedPtr msg);
+    void goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr msg);
     rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr ly_goal_subscription_;
+    rclcpp::Subscription<std_msgs::msg::UInt16MultiArray>::SharedPtr ly_goal_pose_subscription_;
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_publisher_;
 };
 }  // namespace navigoal_manager    

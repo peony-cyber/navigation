@@ -1,0 +1,16 @@
+/home/peony/navigation_ws/install/detect_obs/lib/detect_obs/obstacle_processor
+/home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/package_run_dependencies/detect_obs
+/home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/parent_prefix_path/detect_obs
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.sh
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.dsv
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.sh
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.dsv
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.bash
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.sh
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.zsh
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.dsv
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.dsv
+/home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/packages/detect_obs
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig.cmake
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig-version.cmake
+/home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.xml

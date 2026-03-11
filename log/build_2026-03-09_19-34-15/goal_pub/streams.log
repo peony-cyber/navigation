@@ -1,0 +1,26 @@
+[0.011s] Invoking command in '/home/peony/navigation_ws/build/goal_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/goal_pub -- -j32 -l32
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target multigoal_pub_node[0m
+[0.072s] [100%] Built target multigoal_pub_node
+[0.083s] Invoked command in '/home/peony/navigation_ws/build/goal_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/goal_pub -- -j32 -l32
+[0.092s] Invoking command in '/home/peony/navigation_ws/build/goal_pub': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/goal_pub
+[0.098s] -- Install configuration: ""
+[0.099s] -- Execute custom install script
+[0.099s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/lib/goal_pub/multigoal_pub_node
+[0.099s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/launch/multi_goals_pub.launch.py
+[0.099s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cfg/goalpub_param.yaml
+[0.099s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/package_run_dependencies/goal_pub
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/parent_prefix_path/goal_pub
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/ament_prefix_path.sh
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/ament_prefix_path.dsv
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/path.sh
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/environment/path.dsv
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.bash
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.sh
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.zsh
+[0.100s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/local_setup.dsv
+[0.100s] -- Symlinking: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/package.dsv
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/ament_index/resource_index/packages/goal_pub
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cmake/goal_pubConfig.cmake
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/cmake/goal_pubConfig-version.cmake
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/goal_pub/share/goal_pub/package.xml
+[0.111s] Invoked command in '/home/peony/navigation_ws/build/goal_pub' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/goal_pub

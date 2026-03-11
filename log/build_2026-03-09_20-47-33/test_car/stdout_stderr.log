@@ -1,0 +1,48 @@
+[35m[1mConsolidate compiler generated dependencies of target test_car[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/TrajFollower.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/test_car/include/TrajFollower.h:10[m[K,
+                 from [01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:1[m[K:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In member function ‘[01m[Kvoid TrajFollower::follow()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:99:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   99 |     RCLCPP_INFO(node_.get_logger(), [01;35m[K"Distance to target: %.2f, nodes left: %d"[m[K, dist, [32m[Knum_left[m[K);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~~~~[m[K
+      |                                                                                       [32m[K|[m[K
+      |                                                                                       [32m[Klong unsigned int[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:99:77:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   99 |     RCLCPP_INFO(node_.get_logger(), "Distance to target: %.2f, nodes left: [01;36m[K%d[m[K", dist, num_left);
+      |                                                                            [01;36m[K~^[m[K
+      |                                                                             [01;36m[K|[m[K
+      |                                                                             [01;36m[Kint[m[K
+      |                                                                            [32m[K%ld[m[K
+[100%] [32m[1mLinking CXX executable test_car[0m
+[100%] Built target test_car
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/peony/navigation_ws/install/test_car/lib/test_car/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/package_run_dependencies/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/parent_prefix_path/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.bash
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.zsh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/packages/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig.cmake
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig-version.cmake
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.xml

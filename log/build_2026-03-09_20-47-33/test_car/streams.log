@@ -1,0 +1,52 @@
+[0.008s] Invoking command in '/home/peony/navigation_ws/build/test_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/test_car -- -j32 -l32
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target test_car[0m
+[0.055s] [ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/main.cpp.o[0m
+[0.055s] [ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/TrajFollower.cpp.o[0m
+[2.376s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.377s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.377s]                  from [01m[K/home/peony/navigation_ws/src/test_car/include/TrajFollower.h:10[m[K,
+[2.377s]                  from [01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:1[m[K:
+[2.377s] [01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In member function ‘[01m[Kvoid TrajFollower::follow()[m[K’:
+[2.377s] [01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:99:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Klong unsigned int[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.377s]    99 |     RCLCPP_INFO(node_.get_logger(), [01;35m[K"Distance to target: %.2f, nodes left: %d"[m[K, dist, [32m[Knum_left[m[K);
+[2.377s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K        [32m[K~~~~~~~~[m[K
+[2.377s]       |                                                                                       [32m[K|[m[K
+[2.377s]       |                                                                                       [32m[Klong unsigned int[m[K
+[2.377s] [01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:99:77:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.377s]    99 |     RCLCPP_INFO(node_.get_logger(), "Distance to target: %.2f, nodes left: [01;36m[K%d[m[K", dist, num_left);
+[2.377s]       |                                                                            [01;36m[K~^[m[K
+[2.377s]       |                                                                             [01;36m[K|[m[K
+[2.377s]       |                                                                             [01;36m[Kint[m[K
+[2.377s]       |                                                                            [32m[K%ld[m[K
+[5.955s] [100%] [32m[1mLinking CXX executable test_car[0m
+[6.519s] [100%] Built target test_car
+[6.530s] Invoked command in '/home/peony/navigation_ws/build/test_car' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/test_car -- -j32 -l32
+[6.537s] Invoking command in '/home/peony/navigation_ws/build/test_car': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/test_car
+[6.541s] -- Install configuration: ""
+[6.542s] -- Execute custom install script
+[6.542s] -- Symlinking: /home/peony/navigation_ws/install/test_car/lib/test_car/test_car
+[6.548s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/package_run_dependencies/test_car
+[6.554s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/parent_prefix_path/test_car
+[6.559s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.sh
+[6.564s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.dsv
+[6.569s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.sh
+[6.576s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.dsv
+[6.582s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.bash
+[6.589s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.sh
+[6.595s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.zsh
+[6.601s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.dsv
+[6.606s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.dsv
+[6.612s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/packages/test_car
+[6.618s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig.cmake
+[6.624s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig-version.cmake
+[6.631s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.xml
+[6.638s] Invoked command in '/home/peony/navigation_ws/build/test_car' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/test_car

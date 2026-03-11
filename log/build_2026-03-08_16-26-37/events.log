@@ -1,0 +1,160 @@
+[0.000000] (-) TimerEvent: {}
+[0.000463] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000486] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000500] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000513] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000525] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000538] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000553] (detect_obs) JobQueued: {'identifier': 'detect_obs', 'dependencies': OrderedDict()}
+[0.000569] (detect_obs) JobStarted: {'identifier': 'detect_obs'}
+[0.006005] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'cmake'}
+[0.006338] (detect_obs) JobProgress: {'identifier': 'detect_obs', 'progress': 'build'}
+[0.006758] (detect_obs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/detect_obs', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/detect_obs', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HTTPS_PROXY', 'http://127.0.0.1:7897/'), ('no_proxy', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('all_proxy', 'socks://127.0.0.1:7897/'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/peony/ws_livox/install/livox_ros_driver2/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('NO_PROXY', 'localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,172.29.0.0/16,::1'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2477'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('https_proxy', 'http://127.0.0.1:7897/'), ('COLCON_PREFIX_PATH', '/home/peony/ws_livox/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('ALL_PROXY', 'socks://127.0.0.1:7897/'), ('http_proxy', 'http://127.0.0.1:7897/'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2251,unix/peony:/tmp/.ICE-unix/2251'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b3f3bc4_8691_4f79_8b35_7e2ae3cc56ec'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/detect_obs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/peony/ws_livox/install/livox_ros_driver2/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HTTP_PROXY', 'http://127.0.0.1:7897/'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/peony/ws_livox/install/livox_ros_driver2:/opt/ros/humble')]), 'shell': False}
+[0.025950] (detect_obs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.096042] (detect_obs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.099819] (-) TimerEvent: {}
+[0.100128] (detect_obs) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.116403] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.117683] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.121129] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.127280] (detect_obs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.136349] (detect_obs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.152791] (detect_obs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.153558] (detect_obs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.199897] (-) TimerEvent: {}
+[0.224812] (detect_obs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.249856] (detect_obs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.256619] (detect_obs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.260417] (detect_obs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.269108] (detect_obs) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.286940] (detect_obs) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.295462] (detect_obs) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.299980] (-) TimerEvent: {}
+[0.320915] (detect_obs) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.321068] (detect_obs) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.342728] (detect_obs) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[0.355483] (detect_obs) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.364262] (detect_obs) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.391490] (detect_obs) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.391662] (detect_obs) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.400054] (-) TimerEvent: {}
+[0.413563] (detect_obs) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[0.417972] (detect_obs) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[0.500166] (-) TimerEvent: {}
+[0.519364] (detect_obs) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[0.519520] (detect_obs) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[0.520964] (detect_obs) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[0.526717] (detect_obs) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.536814] (detect_obs) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[0.551476] (detect_obs) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[0.600266] (-) TimerEvent: {}
+[0.611571] (detect_obs) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[0.611850] (detect_obs) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[0.664897] (detect_obs) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[0.666106] (detect_obs) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[0.700375] (-) TimerEvent: {}
+[0.711681] (detect_obs) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[0.711896] (detect_obs) StdoutLine: {'line': b'-- Looking for connect\n'}
+[0.760078] (detect_obs) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[0.760254] (detect_obs) StdoutLine: {'line': b'-- Looking for remove\n'}
+[0.800488] (-) TimerEvent: {}
+[0.806794] (detect_obs) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[0.806942] (detect_obs) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[0.854357] (detect_obs) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[0.854591] (detect_obs) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[0.900592] (-) TimerEvent: {}
+[0.901268] (detect_obs) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[0.958253] (detect_obs) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[0.959874] (detect_obs) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[0.961773] (detect_obs) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[0.963196] (detect_obs) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[0.973630] (detect_obs) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[0.977392] (detect_obs) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[0.979795] (detect_obs) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[0.983639] (detect_obs) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.000668] (-) TimerEvent: {}
+[1.041197] (detect_obs) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.050115] (detect_obs) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.076181] (detect_obs) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.076887] (detect_obs) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[1.076957] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.100750] (-) TimerEvent: {}
+[1.122604] (detect_obs) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[1.122737] (detect_obs) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.122812] (detect_obs) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[1.200860] (-) TimerEvent: {}
+[1.215176] (detect_obs) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.219719] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.224577] (detect_obs) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.300960] (-) TimerEvent: {}
+[1.325227] (detect_obs) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.401068] (-) TimerEvent: {}
+[1.413467] (detect_obs) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.497253] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.497994] (detect_obs) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.498073] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.498604] (detect_obs) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.498662] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.499091] (detect_obs) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.499151] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.499555] (detect_obs) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.499623] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[1.500045] (detect_obs) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.500117] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[1.500530] (detect_obs) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.500614] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[1.500704] (detect_obs) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[1.500772] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.500862] (detect_obs) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[1.500909] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.501121] (-) TimerEvent: {}
+[1.501338] (detect_obs) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.501443] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[1.501868] (detect_obs) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.502094] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[1.502515] (detect_obs) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.502569] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[1.502983] (detect_obs) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.503109] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.503662] (detect_obs) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.503834] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[1.504389] (detect_obs) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.504489] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[1.504901] (detect_obs) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.505024] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[1.505427] (detect_obs) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.505526] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[1.505937] (detect_obs) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.506032] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[1.506442] (detect_obs) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.506591] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[1.506995] (detect_obs) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.507059] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[1.507465] (detect_obs) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.507799] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[1.507954] (detect_obs) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[1.508049] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[1.508155] (detect_obs) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[1.508237] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[1.508496] (detect_obs) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[1.508571] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[1.509120] (detect_obs) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.509220] (detect_obs) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[1.509644] (detect_obs) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.510044] (detect_obs) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[1.551558] (detect_obs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.562205] (detect_obs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.565256] (detect_obs) StdoutLine: {'line': b'-- Build files have been written to: /home/peony/navigation_ws/build/detect_obs\n'}
+[1.597009] (detect_obs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o\x1b[0m\n'}
+[1.601202] (-) TimerEvent: {}
+[1.701400] (-) TimerEvent: {}
+[1.745816] (detect_obs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/detect_obs/src/obstacle_processor.cpp:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kpcl_conversions/pcl_conversions.h: \xe6\xb2\xa1\xe6\x9c\x89\xe9\x82\xa3\xe4\xb8\xaa\xe6\x96\x87\xe4\xbb\xb6\xe6\x88\x96\xe7\x9b\xae\xe5\xbd\x95\n'}
+[1.745957] (detect_obs) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K<pcl_conversions/pcl_conversions.h>\x1b[m\x1b[K\n'}
+[1.746008] (detect_obs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.746041] (detect_obs) StderrLine: {'line': b'compilation terminated.\n'}
+[1.757319] (detect_obs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/obstacle_processor.dir/build.make:76\xef\xbc\x9aCMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[1.757520] (detect_obs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/obstacle_processor.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[1.757863] (detect_obs) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[1.760156] (detect_obs) CommandEnded: {'returncode': 2}
+[1.764859] (detect_obs) JobEnded: {'identifier': 'detect_obs', 'rc': 2}
+[1.775172] (-) EventReactorShutdown: {}

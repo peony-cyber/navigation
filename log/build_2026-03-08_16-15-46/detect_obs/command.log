@@ -1,0 +1,2 @@
+Invoking command in '/home/peony/navigation_ws/build/detect_obs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/detect_obs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/detect_obs
+Invoked command in '/home/peony/navigation_ws/build/detect_obs' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/detect_obs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/detect_obs

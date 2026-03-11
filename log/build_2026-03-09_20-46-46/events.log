@@ -1,0 +1,394 @@
+[0.000000] (-) TimerEvent: {}
+[0.000245] (-) JobUnselected: {'identifier': 'detect_obs'}
+[0.000274] (-) JobUnselected: {'identifier': 'goal_pub'}
+[0.000292] (-) JobUnselected: {'identifier': 'mpc_follower'}
+[0.000310] (-) JobUnselected: {'identifier': 'navigoal_manager'}
+[0.000327] (-) JobUnselected: {'identifier': 'path_following'}
+[0.000343] (-) JobUnselected: {'identifier': 'path_searching'}
+[0.000357] (-) JobUnselected: {'identifier': 'vel_forwarder'}
+[0.000372] (test_car) JobQueued: {'identifier': 'test_car', 'dependencies': OrderedDict()}
+[0.000679] (test_car) JobStarted: {'identifier': 'test_car'}
+[0.007313] (test_car) JobProgress: {'identifier': 'test_car', 'progress': 'cmake'}
+[0.007676] (test_car) Command: {'cmd': ['/usr/bin/cmake', '/home/peony/navigation_ws/src/test_car', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/test_car'], 'cwd': '/home/peony/navigation_ws/build/test_car', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2452'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2222,unix/peony:/tmp/.ICE-unix/2222'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/699811b2_2723_499f_806e_179d22054d51'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/test_car'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.067673] (test_car) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099795] (-) TimerEvent: {}
+[0.114195] (test_car) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.121577] (test_car) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.171926] (test_car) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.175817] (test_car) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.176075] (test_car) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.176514] (test_car) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.178626] (test_car) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199886] (-) TimerEvent: {}
+[0.230755] (test_car) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.233961] (test_car) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.234152] (test_car) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.234390] (test_car) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.239638] (test_car) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299991] (-) TimerEvent: {}
+[0.333945] (test_car) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.373307] (test_car) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.397913] (test_car) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.400056] (-) TimerEvent: {}
+[0.427605] (test_car) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.432222] (test_car) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.439592] (test_car) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.449918] (test_car) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.462201] (test_car) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500144] (-) TimerEvent: {}
+[0.507540] (test_car) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.538702] (test_car) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.541141] (test_car) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600233] (-) TimerEvent: {}
+[0.608105] (test_car) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.629954] (test_car) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.661310] (test_car) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.669127] (test_car) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.700329] (-) TimerEvent: {}
+[0.719170] (test_car) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.719368] (test_car) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.770084] (test_car) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.770736] (test_car) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.800430] (-) TimerEvent: {}
+[0.801286] (test_car) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.814789] (test_car) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.844147] (test_car) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.854551] (test_car) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.881303] (test_car) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.881429] (test_car) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.900506] (-) TimerEvent: {}
+[0.912852] (test_car) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.922701] (test_car) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.950996] (test_car) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.951138] (test_car) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.000620] (-) TimerEvent: {}
+[1.100887] (-) TimerEvent: {}
+[1.201111] (-) TimerEvent: {}
+[1.301350] (-) TimerEvent: {}
+[1.401620] (-) TimerEvent: {}
+[1.501983] (-) TimerEvent: {}
+[1.602228] (-) TimerEvent: {}
+[1.604189] (test_car) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.619057] (test_car) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.649128] (test_car) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.649828] (test_car) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.693578] (test_car) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.702309] (-) TimerEvent: {}
+[1.789574] (test_car) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.794921] (test_car) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.798604] (test_car) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.802373] (-) TimerEvent: {}
+[1.898684] (test_car) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.902434] (-) TimerEvent: {}
+[1.996335] (test_car) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.002513] (-) TimerEvent: {}
+[2.086526] (test_car) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[2.087049] (test_car) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[2.087577] (test_car) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[2.088064] (test_car) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[2.088572] (test_car) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[2.089093] (test_car) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[2.089292] (test_car) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[2.089478] (test_car) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[2.090015] (test_car) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[2.090547] (test_car) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[2.091071] (test_car) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[2.091546] (test_car) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[2.092091] (test_car) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[2.092620] (test_car) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[2.093155] (test_car) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[2.093700] (test_car) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[2.094225] (test_car) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[2.094781] (test_car) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[2.095378] (test_car) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[2.095900] (test_car) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[2.096322] (test_car) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[2.096487] (test_car) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[2.096724] (test_car) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[2.097236] (test_car) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[2.097837] (test_car) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[2.102585] (-) TimerEvent: {}
+[2.109849] (test_car) StdoutLine: {'line': b'-- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.119339] (test_car) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.186975] (test_car) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.199179] (test_car) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.200287] (test_car) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[2.200359] (test_car) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.201904] (test_car) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:17 (find_package):\n'}
+[2.201972] (test_car) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[2.202008] (test_car) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[2.202039] (test_car) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[2.202070] (test_car) StderrLine: {'line': b'\n'}
+[2.202101] (test_car) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[2.202129] (test_car) StderrLine: {'line': b'\n'}
+[2.202158] (test_car) StderrLine: {'line': b'    /usr\n'}
+[2.202186] (test_car) StderrLine: {'line': b'\n'}
+[2.202215] (test_car) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[2.202245] (test_car) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[2.202274] (test_car) StderrLine: {'line': b'\x1b[0m\n'}
+[2.202655] (-) TimerEvent: {}
+[2.257022] (test_car) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.302639] (test_car) StdoutLine: {'line': b'-- Generating done\n'}
+[2.302775] (-) TimerEvent: {}
+[2.309148] (test_car) StdoutLine: {'line': b'-- Build files have been written to: /home/peony/navigation_ws/build/test_car\n'}
+[2.323407] (test_car) CommandEnded: {'returncode': 0}
+[2.324087] (test_car) JobProgress: {'identifier': 'test_car', 'progress': 'build'}
+[2.324931] (test_car) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/peony/navigation_ws/build/test_car', '--', '-j32', '-l32'], 'cwd': '/home/peony/navigation_ws/build/test_car', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'peony'), ('LC_TIME', 'en_GB.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/peony/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/peony'), ('CHROME_DESKTOP', 'code.desktop'), ('CONDA_SHLVL', '0'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/peony'), ('TERM_PROGRAM_VERSION', '1.109.5'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/226/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('XDG_DATA_HOME_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE', '/home/peony/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/226/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/226/usr/share/code/code'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('SYSTEMD_EXEC_PID', '2452'), ('BUNDLED_DEBUGPY_PATH', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'peony'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'peony'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/peony/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/peony/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/opt/ros/humble/bin:/home/peony/anaconda3/condabin:/home/peony/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/peony/.local/bin:/home/peony/.local/bin:/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/peony/.local/bin'), ('SESSION_MANAGER', 'local/peony:@/tmp/.ICE-unix/2222,unix/peony:/tmp/.ICE-unix/2222'), ('GTK_EXE_PREFIX', '/snap/code/226/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_GB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/699811b2_2723_499f_806e_179d22054d51'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LOCPATH', '/snap/code/226/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/peony/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-e9a36166ad80b1ea.txt'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/peony/.config/Code/User/workspaceStorage/19f0b74d340f5008e7e0abe67beb3552/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'en_GB.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XDG_DATA_HOME', '/home/peony/snap/code/226/.local/share'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-891a6210eb.sock'), ('GNOME_TERMINAL_SERVICE', ':1.107'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/peony/snap/code/226/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/peony/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_GB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'en_GB.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_GB.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/peony/navigation_ws/build/test_car'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/peony/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/home/peony/snap/code/226/.local/share:/home/peony/snap/code/226:/snap/code/226/usr/share:/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_GB.UTF-8'), ('LC_PAPER', 'en_GB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.365779] (test_car) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/test_car.dir/src/TrajFollower.cpp.o\x1b[0m\n'}
+[2.366231] (test_car) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/test_car.dir/src/main.cpp.o\x1b[0m\n'}
+[2.402854] (-) TimerEvent: {}
+[2.450032] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:4:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.450136] (test_car) StderrLine: {'line': b'    4 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::manager()\n'}
+[2.450195] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.451056] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid manager()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.451125] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:6:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_geted\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.451169] (test_car) StderrLine: {'line': b'    6 |     if (\x1b[01;31m\x1b[Kpath_geted\x1b[m\x1b[K)\n'}
+[2.451204] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.452065] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:9:16:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_transform\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.452137] (test_car) StderrLine: {'line': b'    9 |           if (!\x1b[01;31m\x1b[Kget_transform\x1b[m\x1b[K())  // \xe6\xa3\x80\xe6\x9f\xa5\xe8\xbf\x94\xe5\x9b\x9e\xe5\x80\xbc\n'}
+[2.452177] (test_car) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.452744] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:11:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmode_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.452818] (test_car) StderrLine: {'line': b'   11 |             RCLCPP_WARN(\x1b[01;31m\x1b[Knode_\x1b[m\x1b[K.get_logger(), "Skip cycle: no valid transform");\n'}
+[2.452859] (test_car) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.452893] (test_car) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Kmode_t\x1b[m\x1b[K\n'}
+[2.453525] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:11:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCLCPP_WARN\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.453594] (test_car) StderrLine: {'line': b'   11 |             \x1b[01;31m\x1b[KRCLCPP_WARN\x1b[m\x1b[K(node_.get_logger(), "Skip cycle: no valid transform");\n'}
+[2.453631] (test_car) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.454324] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:14:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktranform_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krandom_data\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.454397] (test_car) StderrLine: {'line': b'   14 |         \x1b[01;31m\x1b[Ktranform_path\x1b[m\x1b[K();\n'}
+[2.454437] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.454472] (test_car) StderrLine: {'line': b'      |         \x1b[32m\x1b[Krandom_data\x1b[m\x1b[K\n'}
+[2.455025] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:15:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.455106] (test_car) StderrLine: {'line': b'   15 |         \x1b[01;31m\x1b[Kfollow\x1b[m\x1b[K();\n'}
+[2.455146] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.455817] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:16:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpub_cmd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.455991] (test_car) StderrLine: {'line': b'   16 |         \x1b[01;31m\x1b[Kpub_cmd\x1b[m\x1b[K();\n'}
+[2.456060] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.456097] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.456132] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:20:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.456165] (test_car) StderrLine: {'line': b'   20 | bool \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::get_transform()\n'}
+[2.456196] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.456225] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool get_transform()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.456256] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:24:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.456285] (test_car) StderrLine: {'line': b'   24 |     \x1b[01;31m\x1b[Kgeometry_msgs\x1b[m\x1b[K::msg::TransformStamped robot_global_pose;\n'}
+[2.456319] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.456572] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:27:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmode_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.456609] (test_car) StderrLine: {'line': b'   27 |         auto now = \x1b[01;31m\x1b[Knode_\x1b[m\x1b[K.get_clock()->now();\n'}
+[2.456639] (test_car) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.456669] (test_car) StderrLine: {'line': b'      |                    \x1b[32m\x1b[Kmode_t\x1b[m\x1b[K\n'}
+[2.457404] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:28:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_global_pose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.457455] (test_car) StderrLine: {'line': b'   28 |         \x1b[01;31m\x1b[Krobot_global_pose\x1b[m\x1b[K = tf_buffer_->lookupTransform(\n'}
+[2.457485] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.458178] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:28:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf_buffer_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.458215] (test_car) StderrLine: {'line': b'   28 |         robot_global_pose = \x1b[01;31m\x1b[Ktf_buffer_\x1b[m\x1b[K->lookupTransform(\n'}
+[2.458245] (test_car) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.458950] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:29:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_frame\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.459007] (test_car) StderrLine: {'line': b'   29 |             \x1b[01;31m\x1b[Kpath_frame\x1b[m\x1b[K, "body", now,\n'}
+[2.459039] (test_car) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.459069] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:30:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.459126] (test_car) StderrLine: {'line': b'   30 |             \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Duration::from_seconds(0.1));\n'}
+[2.459181] (test_car) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.459209] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:12:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf2\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.459239] (test_car) StderrLine: {'line': b'   33 |     catch (\x1b[01;31m\x1b[Ktf2\x1b[m\x1b[K::TransformException &ex)\n'}
+[2.459268] (test_car) StderrLine: {'line': b'      |            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[2.459297] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.459325] (test_car) StderrLine: {'line': b'   33 |     catch (tf2::TransformException \x1b[01;31m\x1b[K&\x1b[m\x1b[Kex)\n'}
+[2.459355] (test_car) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.459382] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:35:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.459416] (test_car) StderrLine: {'line': b'   33 |     catch \x1b[34m\x1b[K(\x1b[m\x1b[Ktf2::TransformException\x1b[01;31m\x1b[K \x1b[m\x1b[K\x1b[32m\x1b[K&\x1b[m\x1b[Kex)\n'}
+[2.459444] (test_car) StderrLine: {'line': b'      |           \x1b[34m\x1b[K~\x1b[m\x1b[K                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.459473] (test_car) StderrLine: {'line': b'      |                                   \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.459500] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K&\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.459530] (test_car) StderrLine: {'line': b'   33 |     catch (tf2::TransformException \x1b[01;31m\x1b[K&\x1b[m\x1b[Kex)\n'}
+[2.459558] (test_car) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.459710] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kex\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kexp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.459754] (test_car) StderrLine: {'line': b'   33 |     catch (tf2::TransformException &\x1b[01;31m\x1b[Kex\x1b[m\x1b[K)\n'}
+[2.459786] (test_car) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.459816] (test_car) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[Kexp\x1b[m\x1b[K\n'}
+[2.460510] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:39:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap2baselink\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.460541] (test_car) StderrLine: {'line': b'   39 |     \x1b[01;31m\x1b[Kmap2baselink\x1b[m\x1b[K = Eigen::MatrixXd::Zero(4, 4);\n'}
+[2.460580] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.460609] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:39:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.460636] (test_car) StderrLine: {'line': b'   39 |     map2baselink = \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::MatrixXd::Zero(4, 4);\n'}
+[2.460666] (test_car) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.461400] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:41:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krobot_global_pose\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.461438] (test_car) StderrLine: {'line': b'   41 |     map2baselink(0, 3) = \x1b[01;31m\x1b[Krobot_global_pose\x1b[m\x1b[K.transform.translation.x;\n'}
+[2.461467] (test_car) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.461496] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:45:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.461524] (test_car) StderrLine: {'line': b'   45 |     \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Quaterniond q_tmp;\n'}
+[2.461552] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.462067] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:46:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kq_tmp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.462116] (test_car) StderrLine: {'line': b'   46 |     \x1b[01;31m\x1b[Kq_tmp\x1b[m\x1b[K.x() = robot_global_pose.transform.rotation.x;\n'}
+[2.462144] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.462173] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:51:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.462203] (test_car) StderrLine: {'line': b'   51 |     \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Matrix3d R;\n'}
+[2.462232] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.462620] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:53:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.462670] (test_car) StderrLine: {'line': b'   53 |     \x1b[01;31m\x1b[KR\x1b[m\x1b[K = q_tmp.normalized().toRotationMatrix();\n'}
+[2.462700] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.462735] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.462769] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:59:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.462797] (test_car) StderrLine: {'line': b'   59 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::tranform_path()\n'}
+[2.462824] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.463439] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid tranform_path()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.463469] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:61:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocal_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krealpath\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.463499] (test_car) StderrLine: {'line': b'   61 |     \x1b[01;31m\x1b[Klocal_path\x1b[m\x1b[K = path;\n'}
+[2.463527] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.463556] (test_car) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krealpath\x1b[m\x1b[K\n'}
+[2.464059] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:61:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.464094] (test_car) StderrLine: {'line': b'   61 |     local_path = \x1b[01;31m\x1b[Kpath\x1b[m\x1b[K;\n'}
+[2.464122] (test_car) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.464215] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:64:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.464244] (test_car) StderrLine: {'line': b'   64 |         \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector4d p_temp = {p[0], p[1], 0, 1};\n'}
+[2.464273] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.464905] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:66:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp_temp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmktemp\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.464945] (test_car) StderrLine: {'line': b'   66 |         \x1b[01;31m\x1b[Kp_temp\x1b[m\x1b[K = map2baselink.inverse() * p_temp;\n'}
+[2.464977] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.465005] (test_car) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kmktemp\x1b[m\x1b[K\n'}
+[2.465743] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:66:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap2baselink\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.465813] (test_car) StderrLine: {'line': b'   66 |         p_temp = \x1b[01;31m\x1b[Kmap2baselink\x1b[m\x1b[K.inverse() * p_temp;\n'}
+[2.465852] (test_car) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.465890] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.465922] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:71:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.465954] (test_car) StderrLine: {'line': b'   71 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::pub_cmd()\n'}
+[2.465984] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.466012] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid pub_cmd()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.466041] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:74:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.466075] (test_car) StderrLine: {'line': b'   74 |     auto cmd_vel = \x1b[01;31m\x1b[Kgeometry_msgs\x1b[m\x1b[K::msg::Twist();\n'}
+[2.466105] (test_car) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.466542] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:77:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow_speed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.466575] (test_car) StderrLine: {'line': b'   77 |     cmd_vel.linear.x = \x1b[01;31m\x1b[Kfollow_speed\x1b[m\x1b[K[0];\n'}
+[2.466604] (test_car) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.467298] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:81:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd_pub\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.467335] (test_car) StderrLine: {'line': b'   81 |     \x1b[01;31m\x1b[Kcmd_pub\x1b[m\x1b[K->publish(cmd_vel);\n'}
+[2.467363] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[2.467392] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.467423] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:86:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.467455] (test_car) StderrLine: {'line': b'   86 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::follow()\n'}
+[2.467482] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.467893] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid follow()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.467926] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:92:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.467958] (test_car) StderrLine: {'line': b'   92 |     auto static_speed = \x1b[01;31m\x1b[KKp\x1b[m\x1b[K * speed_ratio;\n'}
+[2.467986] (test_car) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.468652] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:92:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kspeed_ratio\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.468684] (test_car) StderrLine: {'line': b'   92 |     auto static_speed = Kp * \x1b[01;31m\x1b[Kspeed_ratio\x1b[m\x1b[K;\n'}
+[2.468711] (test_car) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.469524] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:94:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfind_nearest_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.469590] (test_car) StderrLine: {'line': b'   94 |     \x1b[01;31m\x1b[Kfind_nearest_node\x1b[m\x1b[K();\n'}
+[2.469626] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.470192] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmode_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.470232] (test_car) StderrLine: {'line': b'   95 |     RCLCPP_INFO(\x1b[01;31m\x1b[Knode_\x1b[m\x1b[K.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, pre_node.norm());\n'}
+[2.470263] (test_car) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.470291] (test_car) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kmode_t\x1b[m\x1b[K\n'}
+[2.470865] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpre_i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.470900] (test_car) StderrLine: {'line': b'   95 |     RCLCPP_INFO(node_.get_logger(), "Nearest node index: %d, dist: %.2f", \x1b[01;31m\x1b[Kpre_i\x1b[m\x1b[K, pre_node.norm());\n'}
+[2.470929] (test_car) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.471612] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpre_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.471643] (test_car) StderrLine: {'line': b'   95 |     RCLCPP_INFO(node_.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, \x1b[01;31m\x1b[Kpre_node\x1b[m\x1b[K.norm());\n'}
+[2.471671] (test_car) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.472406] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRCLCPP_INFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.472446] (test_car) StderrLine: {'line': b'   95 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(node_.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, pre_node.norm());\n'}
+[2.472480] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.473174] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:96:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocal_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krealpath\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.473248] (test_car) StderrLine: {'line': b'   96 |     auto dist = (\x1b[01;31m\x1b[Klocal_path\x1b[m\x1b[K.back()).norm();\n'}
+[2.473288] (test_car) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.473323] (test_car) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Krealpath\x1b[m\x1b[K\n'}
+[2.473959] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:105:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow_speed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.474014] (test_car) StderrLine: {'line': b'  105 |         \x1b[01;31m\x1b[Kfollow_speed\x1b[m\x1b[K = Eigen::Vector2d(0, 0);\n'}
+[2.474046] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.474075] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:105:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.474105] (test_car) StderrLine: {'line': b'  105 |         follow_speed = \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector2d(0, 0);\n'}
+[2.474135] (test_car) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.474167] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:115:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.474196] (test_car) StderrLine: {'line': b'  115 |         \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector2d follow_vector = local_path.back();\n'}
+[2.474226] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.474775] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:116:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow_vector\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.474813] (test_car) StderrLine: {'line': b'  116 |         \x1b[01;31m\x1b[Kfollow_vector\x1b[m\x1b[K.normalize();\n'}
+[2.474842] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.475551] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:117:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow_speed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.475586] (test_car) StderrLine: {'line': b'  117 |         \x1b[01;31m\x1b[Kfollow_speed\x1b[m\x1b[K = follow_vector * static_speed * (num_left / 5.0);\n'}
+[2.475615] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.475645] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:123:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.475675] (test_car) StderrLine: {'line': b'  123 |     \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector2d path_vector = next_next_node - pre_node;\n'}
+[2.475703] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.476330] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:124:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpath_vector\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.476369] (test_car) StderrLine: {'line': b'  124 |     \x1b[01;31m\x1b[Kpath_vector\x1b[m\x1b[K.normalize();\n'}
+[2.476400] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.477328] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:126:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfollow_speed\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.477371] (test_car) StderrLine: {'line': b'  126 |     \x1b[01;31m\x1b[Kfollow_speed\x1b[m\x1b[K = path_vector * static_speed;\n'}
+[2.477401] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.477431] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:136:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.477459] (test_car) StderrLine: {'line': b'  136 |     auto lat_direction = \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector2d(-path_vector[1], path_vector[0]);\n'}
+[2.477488] (test_car) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.477689] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:139:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.477719] (test_car) StderrLine: {'line': b'  139 |     auto lat_dist_pid = Kp * lat_dist + \x1b[01;31m\x1b[KKd\x1b[m\x1b[K * (lat_dist - last_lat_dist) + Ki * sum_lat_dist;\n'}
+[2.477757] (test_car) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.478256] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:139:75:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KKi\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.478285] (test_car) StderrLine: {'line': b'  139 |     auto lat_dist_pid = Kp * lat_dist + Kd * (lat_dist - last_lat_dist) + \x1b[01;31m\x1b[KKi\x1b[m\x1b[K * sum_lat_dist;\n'}
+[2.478314] (test_car) StderrLine: {'line': b'      |                                                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.478342] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.478370] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:146:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.478398] (test_car) StderrLine: {'line': b'  146 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::find_nearest_node()\n'}
+[2.478434] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.478938] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid find_nearest_node()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.478995] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:149:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpre_i\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.479030] (test_car) StderrLine: {'line': b'  149 |     \x1b[01;31m\x1b[Kpre_i\x1b[m\x1b[K = 0;\n'}
+[2.479061] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.479698] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:150:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Klocal_path\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krealpath\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.479766] (test_car) StderrLine: {'line': b'  150 |     for (int i = 0; i < \x1b[01;31m\x1b[Klocal_path\x1b[m\x1b[K.size(); i++)\n'}
+[2.479833] (test_car) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.479871] (test_car) StderrLine: {'line': b'      |                         \x1b[32m\x1b[Krealpath\x1b[m\x1b[K\n'}
+[2.479899] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:152:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KEigen\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.479933] (test_car) StderrLine: {'line': b'  152 |         \x1b[01;31m\x1b[KEigen\x1b[m\x1b[K::Vector2d p = local_path[i];\n'}
+[2.479964] (test_car) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.480267] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:153:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kp\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.480302] (test_car) StderrLine: {'line': b'  153 |         double dist = (\x1b[01;31m\x1b[Kp\x1b[m\x1b[K).norm();\n'}
+[2.480331] (test_car) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.481032] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:157:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpre_node\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[2.481092] (test_car) StderrLine: {'line': b'  157 |             \x1b[01;31m\x1b[Kpre_node\x1b[m\x1b[K = p;\n'}
+[2.481124] (test_car) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.481153] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.481180] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[2.481209] (test_car) StderrLine: {'line': b'  164 | void \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K::global_path_callback(const nav_msgs::msg::Path::ConstSharedPtr &msg)\n'}
+[2.481261] (test_car) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.481320] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.481348] (test_car) StderrLine: {'line': b'  164 | void TrajFollower::global_path_callback(const \x1b[01;31m\x1b[Knav_msgs\x1b[m\x1b[K::msg::Path::ConstSharedPtr &msg)\n'}
+[2.481377] (test_car) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.481406] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.481433] (test_car) StderrLine: {'line': b'  164 | void TrajFollower::global_path_callback(const nav_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KPath::ConstSharedPtr &msg)\n'}
+[2.481460] (test_car) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.481489] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.481518] (test_car) StderrLine: {'line': b'  164 | void TrajFollower::global_path_callback\x1b[34m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::msg\x1b[01;31m\x1b[K:\x1b[m\x1b[K\x1b[32m\x1b[K:\x1b[m\x1b[KPath::ConstSharedPtr &msg)\n'}
+[2.481546] (test_car) StderrLine: {'line': b'      |                                        \x1b[34m\x1b[K~\x1b[m\x1b[K                   \x1b[01;31m\x1b[K^\x1b[m\x1b[K\x1b[32m\x1b[K~\x1b[m\x1b[K\n'}
+[2.481575] (test_car) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K)\x1b[m\x1b[K\n'}
+[2.481603] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected initializer before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.481631] (test_car) StderrLine: {'line': b'  164 | void TrajFollower::global_path_callback(const nav_msgs::msg\x1b[01;31m\x1b[K::\x1b[m\x1b[KPath::ConstSharedPtr &msg)\n'}
+[2.481660] (test_car) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.497944] (test_car) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_car.dir/build.make:90\xef\xbc\x9aCMakeFiles/test_car.dir/src/TrajFollower.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[2.498021] (test_car) StderrLine: {'line': b'gmake[2]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[2.502926] (-) TimerEvent: {}
+[2.603105] (-) TimerEvent: {}
+[2.703346] (-) TimerEvent: {}
+[2.803603] (-) TimerEvent: {}
+[2.903850] (-) TimerEvent: {}
+[3.004118] (-) TimerEvent: {}
+[3.104388] (-) TimerEvent: {}
+[3.204642] (-) TimerEvent: {}
+[3.304905] (-) TimerEvent: {}
+[3.405154] (-) TimerEvent: {}
+[3.505438] (-) TimerEvent: {}
+[3.605720] (-) TimerEvent: {}
+[3.705997] (-) TimerEvent: {}
+[3.806278] (-) TimerEvent: {}
+[3.810384] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/main.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.810581] (test_car) StderrLine: {'line': b'\x1b[01m\x1b[K/home/peony/navigation_ws/src/test_car/src/main.cpp:41:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KTrajFollower\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.810656] (test_car) StderrLine: {'line': b'   41 |     \x1b[01;31m\x1b[KTrajFollower\x1b[m\x1b[K follower1(*nh, Kp, Ki, Kd, speed_ratio);\n'}
+[3.810718] (test_car) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.906377] (-) TimerEvent: {}
+[4.006632] (-) TimerEvent: {}
+[4.061767] (test_car) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_car.dir/build.make:76\xef\xbc\x9aCMakeFiles/test_car.dir/src/main.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[4.061990] (test_car) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137\xef\xbc\x9aCMakeFiles/test_car.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[4.062270] (test_car) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[4.064594] (test_car) CommandEnded: {'returncode': 2}
+[4.071919] (test_car) JobEnded: {'identifier': 'test_car', 'rc': 2}
+[4.082389] (-) EventReactorShutdown: {}

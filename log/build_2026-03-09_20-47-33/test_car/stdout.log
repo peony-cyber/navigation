@@ -1,0 +1,23 @@
+[35m[1mConsolidate compiler generated dependencies of target test_car[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/main.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/test_car.dir/src/TrajFollower.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_car[0m
+[100%] Built target test_car
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/peony/navigation_ws/install/test_car/lib/test_car/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/package_run_dependencies/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/parent_prefix_path/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.bash
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.sh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.zsh
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.dsv
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/packages/test_car
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig.cmake
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig-version.cmake
+-- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.xml

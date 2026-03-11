@@ -1,0 +1,248 @@
+[33mCMake Warning (dev) at CMakeLists.txt:17 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  CMake variable PCL_ROOT is set to:
+
+    /usr
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:4:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+    4 | void [01;31m[KTrajFollower[m[K::manager()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kvoid manager()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:6:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_geted[m[K’ was not declared in this scope
+    6 |     if ([01;31m[Kpath_geted[m[K)
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:9:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_transform[m[K’ was not declared in this scope
+    9 |           if (![01;31m[Kget_transform[m[K())  // 检查返回值
+      |                [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:11:25:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   11 |             RCLCPP_WARN([01;31m[Knode_[m[K.get_logger(), "Skip cycle: no valid transform");
+      |                         [01;31m[K^~~~~[m[K
+      |                         [32m[Kmode_t[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:11:13:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_WARN[m[K’ was not declared in this scope
+   11 |             [01;31m[KRCLCPP_WARN[m[K(node_.get_logger(), "Skip cycle: no valid transform");
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:14:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktranform_path[m[K’ was not declared in this scope; did you mean ‘[01m[Krandom_data[m[K’?
+   14 |         [01;31m[Ktranform_path[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Krandom_data[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:15:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow[m[K’ was not declared in this scope
+   15 |         [01;31m[Kfollow[m[K();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_cmd[m[K’ was not declared in this scope
+   16 |         [01;31m[Kpub_cmd[m[K();
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:20:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+   20 | bool [01;31m[KTrajFollower[m[K::get_transform()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kbool get_transform()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:24:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+   24 |     [01;31m[Kgeometry_msgs[m[K::msg::TransformStamped robot_global_pose;
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:27:20:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   27 |         auto now = [01;31m[Knode_[m[K.get_clock()->now();
+      |                    [01;31m[K^~~~~[m[K
+      |                    [32m[Kmode_t[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:28:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_global_pose[m[K’ was not declared in this scope
+   28 |         [01;31m[Krobot_global_pose[m[K = tf_buffer_->lookupTransform(
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:28:29:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   28 |         robot_global_pose = [01;31m[Ktf_buffer_[m[K->lookupTransform(
+      |                             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:29:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_frame[m[K’ was not declared in this scope
+   29 |             [01;31m[Kpath_frame[m[K, "body", now,
+      |             [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:30:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ has not been declared
+   30 |             [01;31m[Krclcpp[m[K::Duration::from_seconds(0.1));
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:12:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ does not name a type
+   33 |     catch ([01;31m[Ktf2[m[K::TransformException &ex)
+      |            [01;31m[K^~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:36:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   33 |     catch (tf2::TransformException [01;31m[K&[m[Kex)
+      |                                    [01;31m[K^[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:35:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   33 |     catch [34m[K([m[Ktf2::TransformException[01;31m[K [m[K[32m[K&[m[Kex)
+      |           [34m[K~[m[K                       [01;31m[K^[m[K[32m[K~[m[K
+      |                                   [32m[K)[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K&[m[K’ token
+   33 |     catch (tf2::TransformException [01;31m[K&[m[Kex)
+      |                                    [01;31m[K^[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:33:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kex[m[K’ was not declared in this scope; did you mean ‘[01m[Kexp[m[K’?
+   33 |     catch (tf2::TransformException &[01;31m[Kex[m[K)
+      |                                     [01;31m[K^~[m[K
+      |                                     [32m[Kexp[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:39:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap2baselink[m[K’ was not declared in this scope
+   39 |     [01;31m[Kmap2baselink[m[K = Eigen::MatrixXd::Zero(4, 4);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:39:20:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+   39 |     map2baselink = [01;31m[KEigen[m[K::MatrixXd::Zero(4, 4);
+      |                    [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:41:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_global_pose[m[K’ was not declared in this scope
+   41 |     map2baselink(0, 3) = [01;31m[Krobot_global_pose[m[K.transform.translation.x;
+      |                          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+   45 |     [01;31m[KEigen[m[K::Quaterniond q_tmp;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:46:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kq_tmp[m[K’ was not declared in this scope
+   46 |     [01;31m[Kq_tmp[m[K.x() = robot_global_pose.transform.rotation.x;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:51:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+   51 |     [01;31m[KEigen[m[K::Matrix3d R;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:53:5:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+   53 |     [01;31m[KR[m[K = q_tmp.normalized().toRotationMatrix();
+      |     [01;31m[K^[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:59:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+   59 | void [01;31m[KTrajFollower[m[K::tranform_path()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kvoid tranform_path()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:61:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_path[m[K’ was not declared in this scope; did you mean ‘[01m[Krealpath[m[K’?
+   61 |     [01;31m[Klocal_path[m[K = path;
+      |     [01;31m[K^~~~~~~~~~[m[K
+      |     [32m[Krealpath[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:61:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath[m[K’ was not declared in this scope
+   61 |     local_path = [01;31m[Kpath[m[K;
+      |                  [01;31m[K^~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+   64 |         [01;31m[KEigen[m[K::Vector4d p_temp = {p[0], p[1], 0, 1};
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:66:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kp_temp[m[K’ was not declared in this scope; did you mean ‘[01m[Kmktemp[m[K’?
+   66 |         [01;31m[Kp_temp[m[K = map2baselink.inverse() * p_temp;
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kmktemp[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:66:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap2baselink[m[K’ was not declared in this scope
+   66 |         p_temp = [01;31m[Kmap2baselink[m[K.inverse() * p_temp;
+      |                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:71:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+   71 | void [01;31m[KTrajFollower[m[K::pub_cmd()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kvoid pub_cmd()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:74:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+   74 |     auto cmd_vel = [01;31m[Kgeometry_msgs[m[K::msg::Twist();
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:77:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow_speed[m[K’ was not declared in this scope
+   77 |     cmd_vel.linear.x = [01;31m[Kfollow_speed[m[K[0];
+      |                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_pub[m[K’ was not declared in this scope
+   81 |     [01;31m[Kcmd_pub[m[K->publish(cmd_vel);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:86:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+   86 | void [01;31m[KTrajFollower[m[K::follow()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kvoid follow()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:92:25:[m[K [01;31m[Kerror: [m[K‘[01m[KKp[m[K’ was not declared in this scope
+   92 |     auto static_speed = [01;31m[KKp[m[K * speed_ratio;
+      |                         [01;31m[K^~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:92:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kspeed_ratio[m[K’ was not declared in this scope
+   92 |     auto static_speed = Kp * [01;31m[Kspeed_ratio[m[K;
+      |                              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:94:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfind_nearest_node[m[K’ was not declared in this scope
+   94 |     [01;31m[Kfind_nearest_node[m[K();
+      |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   95 |     RCLCPP_INFO([01;31m[Knode_[m[K.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, pre_node.norm());
+      |                 [01;31m[K^~~~~[m[K
+      |                 [32m[Kmode_t[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:75:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_i[m[K’ was not declared in this scope
+   95 |     RCLCPP_INFO(node_.get_logger(), "Nearest node index: %d, dist: %.2f", [01;31m[Kpre_i[m[K, pre_node.norm());
+      |                                                                           [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:82:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_node[m[K’ was not declared in this scope
+   95 |     RCLCPP_INFO(node_.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, [01;31m[Kpre_node[m[K.norm());
+      |                                                                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:95:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_INFO[m[K’ was not declared in this scope
+   95 |     [01;31m[KRCLCPP_INFO[m[K(node_.get_logger(), "Nearest node index: %d, dist: %.2f", pre_i, pre_node.norm());
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:96:18:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_path[m[K’ was not declared in this scope; did you mean ‘[01m[Krealpath[m[K’?
+   96 |     auto dist = ([01;31m[Klocal_path[m[K.back()).norm();
+      |                  [01;31m[K^~~~~~~~~~[m[K
+      |                  [32m[Krealpath[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow_speed[m[K’ was not declared in this scope
+  105 |         [01;31m[Kfollow_speed[m[K = Eigen::Vector2d(0, 0);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+  105 |         follow_speed = [01;31m[KEigen[m[K::Vector2d(0, 0);
+      |                        [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:115:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+  115 |         [01;31m[KEigen[m[K::Vector2d follow_vector = local_path.back();
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:116:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow_vector[m[K’ was not declared in this scope
+  116 |         [01;31m[Kfollow_vector[m[K.normalize();
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:117:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow_speed[m[K’ was not declared in this scope
+  117 |         [01;31m[Kfollow_speed[m[K = follow_vector * static_speed * (num_left / 5.0);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:123:5:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+  123 |     [01;31m[KEigen[m[K::Vector2d path_vector = next_next_node - pre_node;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:124:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpath_vector[m[K’ was not declared in this scope
+  124 |     [01;31m[Kpath_vector[m[K.normalize();
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:126:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kfollow_speed[m[K’ was not declared in this scope
+  126 |     [01;31m[Kfollow_speed[m[K = path_vector * static_speed;
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:136:26:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+  136 |     auto lat_direction = [01;31m[KEigen[m[K::Vector2d(-path_vector[1], path_vector[0]);
+      |                          [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:139:41:[m[K [01;31m[Kerror: [m[K‘[01m[KKd[m[K’ was not declared in this scope
+  139 |     auto lat_dist_pid = Kp * lat_dist + [01;31m[KKd[m[K * (lat_dist - last_lat_dist) + Ki * sum_lat_dist;
+      |                                         [01;31m[K^~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:139:75:[m[K [01;31m[Kerror: [m[K‘[01m[KKi[m[K’ was not declared in this scope
+  139 |     auto lat_dist_pid = Kp * lat_dist + Kd * (lat_dist - last_lat_dist) + [01;31m[KKi[m[K * sum_lat_dist;
+      |                                                                           [01;31m[K^~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:146:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+  146 | void [01;31m[KTrajFollower[m[K::find_nearest_node()
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K In function ‘[01m[Kvoid find_nearest_node()[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:149:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_i[m[K’ was not declared in this scope
+  149 |     [01;31m[Kpre_i[m[K = 0;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:150:25:[m[K [01;31m[Kerror: [m[K‘[01m[Klocal_path[m[K’ was not declared in this scope; did you mean ‘[01m[Krealpath[m[K’?
+  150 |     for (int i = 0; i < [01;31m[Klocal_path[m[K.size(); i++)
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Krealpath[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:152:9:[m[K [01;31m[Kerror: [m[K‘[01m[KEigen[m[K’ has not been declared
+  152 |         [01;31m[KEigen[m[K::Vector2d p = local_path[i];
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:153:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kp[m[K’ was not declared in this scope
+  153 |         double dist = ([01;31m[Kp[m[K).norm();
+      |                        [01;31m[K^[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:157:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kpre_node[m[K’ was not declared in this scope
+  157 |             [01;31m[Kpre_node[m[K = p;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:[m[K At global scope:
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:6:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ has not been declared
+  164 | void [01;31m[KTrajFollower[m[K::global_path_callback(const nav_msgs::msg::Path::ConstSharedPtr &msg)
+      |      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:47:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+  164 | void TrajFollower::global_path_callback(const [01;31m[Knav_msgs[m[K::msg::Path::ConstSharedPtr &msg)
+      |                                               [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+  164 | void TrajFollower::global_path_callback(const nav_msgs::msg[01;31m[K::[m[KPath::ConstSharedPtr &msg)
+      |                                                            [01;31m[K^~[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+  164 | void TrajFollower::global_path_callback[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KPath::ConstSharedPtr &msg)
+      |                                        [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+      |                                                            [32m[K)[m[K
+[01m[K/home/peony/navigation_ws/src/test_car/src/TrajFollower.cpp:164:60:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+  164 | void TrajFollower::global_path_callback(const nav_msgs::msg[01;31m[K::[m[KPath::ConstSharedPtr &msg)
+      |                                                            [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/test_car.dir/build.make:90：CMakeFiles/test_car.dir/src/TrajFollower.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+[01m[K/home/peony/navigation_ws/src/test_car/src/main.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/peony/navigation_ws/src/test_car/src/main.cpp:41:5:[m[K [01;31m[Kerror: [m[K‘[01m[KTrajFollower[m[K’ was not declared in this scope
+   41 |     [01;31m[KTrajFollower[m[K follower1(*nh, Kp, Ki, Kd, speed_ratio);
+      |     [01;31m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/test_car.dir/build.make:76：CMakeFiles/test_car.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/test_car.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

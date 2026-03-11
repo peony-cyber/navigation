@@ -1,0 +1,24 @@
+[0.008s] Invoking command in '/home/peony/navigation_ws/build/test_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/test_car -- -j32 -l32
+[0.058s] [100%] Built target test_car
+[0.067s] Invoked command in '/home/peony/navigation_ws/build/test_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/test_car -- -j32 -l32
+[0.074s] Invoking command in '/home/peony/navigation_ws/build/test_car': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/test_car
+[0.079s] -- Install configuration: ""
+[0.079s] -- Execute custom install script
+[0.079s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/lib/test_car/test_car
+[0.079s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/lib/test_car/test_car.launch.py
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/package_run_dependencies/test_car
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/parent_prefix_path/test_car
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.sh
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/environment/ament_prefix_path.dsv
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.sh
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/environment/path.dsv
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.bash
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.sh
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.zsh
+[0.080s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/local_setup.dsv
+[0.080s] -- Symlinking: /home/peony/navigation_ws/install/test_car/share/test_car/package.dsv
+[0.086s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/ament_index/resource_index/packages/test_car
+[0.086s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig.cmake
+[0.086s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/cmake/test_carConfig-version.cmake
+[0.086s] -- Up-to-date symlink: /home/peony/navigation_ws/install/test_car/share/test_car/package.xml
+[0.088s] Invoked command in '/home/peony/navigation_ws/build/test_car' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/test_car

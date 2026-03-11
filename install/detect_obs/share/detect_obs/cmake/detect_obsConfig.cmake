@@ -1,0 +1,1 @@
+/home/peony/navigation_ws/build/detect_obs/ament_cmake_core/detect_obsConfig.cmake
