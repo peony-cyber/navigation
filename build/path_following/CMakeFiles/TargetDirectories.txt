@@ -1,6 +1,6 @@
 /home/peony/navigation_ws/build/path_following/CMakeFiles/uninstall.dir
 /home/peony/navigation_ws/build/path_following/CMakeFiles/path_following_uninstall.dir
-/home/peony/navigation_ws/build/path_following/CMakeFiles/pid_follower.dir
+/home/peony/navigation_ws/build/path_following/CMakeFiles/path_follower.dir
 /home/peony/navigation_ws/build/path_following/CMakeFiles/test.dir
 /home/peony/navigation_ws/build/path_following/CMakeFiles/edit_cache.dir
 /home/peony/navigation_ws/build/path_following/CMakeFiles/rebuild_cache.dir

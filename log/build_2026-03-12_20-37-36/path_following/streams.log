@@ -1,0 +1,69 @@
+[0.008s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.026s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.095s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.099s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.113s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.114s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.117s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.122s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.128s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.155s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.169s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.169s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.240s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.260s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.268s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.289s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.308s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.493s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.496s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.589s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.594s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.598s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.688s] -- Found Qhull version 8.0.2
+[0.778s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.868s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[0.870s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.909s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.911s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.911s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.922s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.936s] [33mCMake Warning (dev) at CMakeLists.txt:17 (find_package):
+[0.936s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[0.936s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[0.936s]   command to set the policy and suppress this warning.
+[0.936s] 
+[0.936s]   CMake variable PCL_ROOT is set to:
+[0.936s] 
+[0.936s]     /usr
+[0.936s] 
+[0.936s]   For compatibility, CMake is ignoring the variable.
+[0.936s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.936s] [0m
+[0.981s] -- Configuring done
+[1.005s] -- Generating done
+[1.011s] -- Build files have been written to: /home/peony/navigation_ws/build/path_following
+[1.044s] [ 50%] [32mBuilding CXX object CMakeFiles/path_follower.dir/src/PathFollower.cpp.o[0m
+[10.292s] [100%] [32m[1mLinking CXX executable path_follower[0m
+[10.959s] [100%] Built target path_follower
+[10.971s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[10.978s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_following
+[10.983s] -- Install configuration: ""
+[10.983s] -- Execute custom install script
+[10.983s] -- Symlinking: /home/peony/navigation_ws/install/path_following/lib/path_following/path_follower
+[10.989s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/package_run_dependencies/path_following
+[10.994s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/parent_prefix_path/path_following
+[11.000s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/environment/ament_prefix_path.sh
+[11.006s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/environment/ament_prefix_path.dsv
+[11.011s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/environment/path.sh
+[11.016s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/environment/path.dsv
+[11.022s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.bash
+[11.027s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.sh
+[11.032s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.zsh
+[11.038s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.dsv
+[11.045s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/package.dsv
+[11.052s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/packages/path_following
+[11.057s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/cmake/path_followingConfig.cmake
+[11.064s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/cmake/path_followingConfig-version.cmake
+[11.069s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/package.xml
+[11.076s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_following

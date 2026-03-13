@@ -198,65 +198,41 @@ path_following_uninstall/fast:
 .PHONY : path_following_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named pid_follower
+# Target rules for targets named path_follower
 
 # Build rule for target.
-pid_follower: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pid_follower
-.PHONY : pid_follower
+path_follower: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 path_follower
+.PHONY : path_follower
 
 # fast build rule for target.
-pid_follower/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/build
-.PHONY : pid_follower/fast
+path_follower/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/build
+.PHONY : path_follower/fast
 
-src/TrajFollower.o: src/TrajFollower.cpp.o
-.PHONY : src/TrajFollower.o
-
-# target to build an object file
-src/TrajFollower.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o
-.PHONY : src/TrajFollower.cpp.o
-
-src/TrajFollower.i: src/TrajFollower.cpp.i
-.PHONY : src/TrajFollower.i
-
-# target to preprocess a source file
-src/TrajFollower.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.i
-.PHONY : src/TrajFollower.cpp.i
-
-src/TrajFollower.s: src/TrajFollower.cpp.s
-.PHONY : src/TrajFollower.s
-
-# target to generate assembly for a file
-src/TrajFollower.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.s
-.PHONY : src/TrajFollower.cpp.s
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/PathFollower.o: src/PathFollower.cpp.o
+.PHONY : src/PathFollower.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/PathFollower.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/src/PathFollower.cpp.o
+.PHONY : src/PathFollower.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/PathFollower.i: src/PathFollower.cpp.i
+.PHONY : src/PathFollower.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/PathFollower.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/src/PathFollower.cpp.i
+.PHONY : src/PathFollower.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/PathFollower.s: src/PathFollower.cpp.s
+.PHONY : src/PathFollower.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pid_follower.dir/build.make CMakeFiles/pid_follower.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/PathFollower.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/path_follower.dir/build.make CMakeFiles/path_follower.dir/src/PathFollower.cpp.s
+.PHONY : src/PathFollower.cpp.s
 
 # Help Target
 help:
@@ -273,13 +249,10 @@ help:
 	@echo "... test"
 	@echo "... path_following_uninstall"
 	@echo "... uninstall"
-	@echo "... pid_follower"
-	@echo "... src/TrajFollower.o"
-	@echo "... src/TrajFollower.i"
-	@echo "... src/TrajFollower.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... path_follower"
+	@echo "... src/PathFollower.o"
+	@echo "... src/PathFollower.i"
+	@echo "... src/PathFollower.s"
 .PHONY : help
 
 

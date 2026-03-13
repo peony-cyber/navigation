@@ -1,0 +1,6 @@
+[ 50%] Built target path_searching_lib
+[35m[1mConsolidate compiler generated dependencies of target plan_manager[0m
+[ 75%] Built target esdf_benchmark
+[ 87%] [32mBuilding CXX object CMakeFiles/plan_manager.dir/src/plan_manager.cpp.o[0m
+[100%] [32m[1mLinking CXX executable plan_manager[0m
+[100%] Built target plan_manager

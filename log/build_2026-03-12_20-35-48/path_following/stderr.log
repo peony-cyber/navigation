@@ -1,0 +1,9 @@
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/peony/navigation_ws/src/path_following/src/main.cpp: 没有那个文件或目录
+compilation terminated.
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp: 没有那个文件或目录
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90：CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] 错误 1
+gmake[2]: *** 正在等待未完成的任务....
+gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76：CMakeFiles/pid_follower.dir/src/main.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pid_follower.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

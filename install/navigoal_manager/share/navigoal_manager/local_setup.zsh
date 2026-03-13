@@ -1,1 +1,0 @@
-/home/peony/navigation_ws/build/navigoal_manager/ament_cmake_environment_hooks/local_setup.zsh

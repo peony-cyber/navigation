@@ -5,9 +5,11 @@ namespace navigoal_manager
 GoalManager::GoalManager() : Node("goal_manager")
 {
     this->declare_parameter<int>("bias", 20);
-    this->declare_parameter<std::vector<double>>("r",{});
-    this->declare_parameter<std::vector<double>>("b",{});
+    // this->declare_parameter<std::vector<double>>("r",{});
+    // this->declare_parameter<std::vector<double>>("b",{});
 
+    this->declare_parameter<std::vector<double>>("r", std::vector<double>{});
+    this->declare_parameter<std::vector<double>>("b", std::vector<double>{});
     std::vector<double> r_raw, b_raw;
 
     // 获取参数值
@@ -90,4 +92,5 @@ int main(int argc, char *argv[])
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
+}
 }

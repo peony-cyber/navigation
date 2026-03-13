@@ -1,0 +1,5 @@
+[0.024s] Invoking command in '/home/peony/navigation_ws/build/detect_obs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/detect_obs -- -j32 -l32
+[0.080s] [35m[1mConsolidate compiler generated dependencies of target obstacle_processor[0m
+[0.108s] [ 50%] [32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o[0m
+[8.595s] [100%] [32m[1mLinking CXX executable obstacle_processor[0m
+[9.213s] [100%] Built target obstacle_processor

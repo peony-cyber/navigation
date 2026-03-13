@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target obstacle_processor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/obstacle_processor.dir/src/obstacle_processor.cpp.o[0m
+[100%] [32m[1mLinking CXX executable obstacle_processor[0m
+[100%] Built target obstacle_processor

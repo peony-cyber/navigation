@@ -1,0 +1,23 @@
+[0.022s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.094s] [100%] Built target pid_follower
+[0.103s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.113s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_following
+[0.117s] -- Install configuration: ""
+[0.118s] -- Execute custom install script
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/lib/path_following/pid_follower
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/package_run_dependencies/path_following
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/parent_prefix_path/path_following
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/environment/ament_prefix_path.sh
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/environment/ament_prefix_path.dsv
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/environment/path.sh
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/environment/path.dsv
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.bash
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.sh
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.zsh
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/local_setup.dsv
+[0.119s] -- Symlinking: /home/peony/navigation_ws/install/path_following/share/path_following/package.dsv
+[0.126s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/packages/path_following
+[0.126s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/cmake/path_followingConfig.cmake
+[0.126s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/cmake/path_followingConfig-version.cmake
+[0.126s] -- Up-to-date symlink: /home/peony/navigation_ws/install/path_following/share/path_following/package.xml
+[0.128s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/path_following

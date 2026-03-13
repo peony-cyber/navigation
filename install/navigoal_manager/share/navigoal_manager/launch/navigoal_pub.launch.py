@@ -1,1 +1,0 @@
-/home/peony/navigation_ws/src/navigoal_manager/launch/navigoal_pub.launch.py

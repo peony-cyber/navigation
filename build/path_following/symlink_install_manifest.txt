@@ -1,4 +1,6 @@
-/home/peony/navigation_ws/install/path_following/lib/path_following/pid_follower
+/home/peony/navigation_ws/install/path_following/lib/path_following/path_follower
+/home/peony/navigation_ws/install/path_following/share/path_following/cfg/cfg/follow_param.yaml
+/home/peony/navigation_ws/install/path_following/share/path_following/launch/launch/path_following.launch.py
 /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/package_run_dependencies/path_following
 /home/peony/navigation_ws/install/path_following/share/ament_index/resource_index/parent_prefix_path/path_following
 /home/peony/navigation_ws/install/path_following/share/path_following/environment/ament_prefix_path.sh

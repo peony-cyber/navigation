@@ -1,0 +1,24 @@
+[0.023s] Invoking command in '/home/peony/navigation_ws/build/detect_obs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/detect_obs -- -j32 -l32
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target obstacle_processor[0m
+[0.083s] [100%] Built target obstacle_processor
+[0.099s] Invoked command in '/home/peony/navigation_ws/build/detect_obs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/detect_obs -- -j32 -l32
+[0.101s] Invoking command in '/home/peony/navigation_ws/build/detect_obs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/detect_obs
+[0.107s] -- Install configuration: ""
+[0.107s] -- Execute custom install script
+[0.108s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/lib/detect_obs/obstacle_processor
+[0.108s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/package_run_dependencies/detect_obs
+[0.108s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/parent_prefix_path/detect_obs
+[0.108s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.sh
+[0.108s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/ament_prefix_path.dsv
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.sh
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/environment/path.dsv
+[0.109s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.bash
+[0.110s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.sh
+[0.110s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.zsh
+[0.110s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/local_setup.dsv
+[0.110s] -- Symlinking: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.dsv
+[0.118s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/ament_index/resource_index/packages/detect_obs
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig.cmake
+[0.119s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/cmake/detect_obsConfig-version.cmake
+[0.120s] -- Up-to-date symlink: /home/peony/navigation_ws/install/detect_obs/share/detect_obs/package.xml
+[0.146s] Invoked command in '/home/peony/navigation_ws/build/detect_obs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/detect_obs

@@ -1,0 +1,16 @@
+[01m[K/home/peony/navigation_ws/src/vel_forwarder/src/forwarder.cpp:[m[K In member function ‘[01m[Kvoid vel_forwarder::Forwarder::cmdvelCallback(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/peony/navigation_ws/src/vel_forwarder/src/forwarder.cpp:54:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_vx[m[K’ was not declared in this scope
+   54 |             [01;31m[Kfinal_vx[m[K += rep_vx_;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/vel_forwarder/src/forwarder.cpp:55:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_vy[m[K’ was not declared in this scope
+   55 |             [01;31m[Kfinal_vy[m[K += rep_vy_;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/vel_forwarder/src/forwarder.cpp:61:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_vx[m[K’ was not declared in this scope
+   61 |         float speed_magnitude = std::sqrt([01;31m[Kfinal_vx[m[K * final_vx + final_vy * final_vy);
+      |                                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/peony/navigation_ws/src/vel_forwarder/src/forwarder.cpp:61:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kfinal_vy[m[K’ was not declared in this scope
+   61 |         float speed_magnitude = std::sqrt(final_vx * final_vx + [01;31m[Kfinal_vy[m[K * final_vy);
+      |                                                                 [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/forwarder_node.dir/build.make:76：CMakeFiles/forwarder_node.dir/src/forwarder.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:593：CMakeFiles/forwarder_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

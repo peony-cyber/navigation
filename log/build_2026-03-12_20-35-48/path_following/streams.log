@@ -1,0 +1,13 @@
+[0.009s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32
+[0.094s] [ 33%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/main.cpp.o[0m
+[0.095s] [ 66%] [32mBuilding CXX object CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o[0m
+[0.100s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/peony/navigation_ws/src/path_following/src/main.cpp: 没有那个文件或目录
+[0.100s] compilation terminated.
+[0.100s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/peony/navigation_ws/src/path_following/src/TrajFollower.cpp: 没有那个文件或目录
+[0.100s] compilation terminated.
+[0.100s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:90：CMakeFiles/pid_follower.dir/src/TrajFollower.cpp.o] 错误 1
+[0.100s] gmake[2]: *** 正在等待未完成的任务....
+[0.100s] gmake[2]: *** [CMakeFiles/pid_follower.dir/build.make:76：CMakeFiles/pid_follower.dir/src/main.cpp.o] 错误 1
+[0.101s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pid_follower.dir/all] 错误 2
+[0.101s] gmake: *** [Makefile:146：all] 错误 2
+[0.103s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/path_following -- -j32 -l32

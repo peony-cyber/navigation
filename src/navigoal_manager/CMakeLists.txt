@@ -21,6 +21,8 @@ target_include_directories(goal_manager_node PUBLIC
 ament_target_dependencies(goal_manager_node
   rclcpp
   geometry_msgs
+  std_msgs
+  
 )
 
 install(TARGETS goal_manager_node

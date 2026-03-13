@@ -1,5 +1,6 @@
 #include "goal_pub/multigoal_pub.h"
-#include <cmath> // 需要引入 cmath 计算距离
+#include <cmath>
+#include "tf2/exceptions.h" // 必须包含 TF 异常处理
 
 namespace goal_pub
 {
@@ -7,7 +8,7 @@ GoalPublisher::GoalPublisher() : Node("multigoal_pub_node")
 {
     // 1. 声明参数
     this->declare_parameter<std::vector<double>>("nav_goals", std::vector<double>{});
-    this->declare_parameter<double>("xy_goal_tolerance", 0.1); // 新增：目标点小邻域容差，默认 0.5 米
+    this->declare_parameter<double>("xy_goal_tolerance", 0.5);
 
     // 2. 获取参数
     std::vector<double> raw_points = this->get_parameter("nav_goals").as_double_array();
@@ -21,15 +22,19 @@ GoalPublisher::GoalPublisher() : Node("multigoal_pub_node")
         RCLCPP_INFO(this->get_logger(), "Loaded goal %zu: (%f, %f)", i/2, raw_points[i], raw_points[i + 1]);
     }
 
-    // 3. 创建发布器和订阅器
+    // 3. 创建发布器
     goal_publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/goal_pose", 10);
 
-    // 假设机器人的位姿话题是 /odom (消息类型 nav_msgs::msg::Odometry)
-    // 如果你用的是 /amcl_pose，请改成 geometry_msgs::msg::PoseWithCovarianceStamped
-    pose_subscriber_ = this->create_subscription<nav_msgs::msg::Odometry>(
-        "/odom", 10, std::bind(&GoalPublisher::poseCallback, this, std::placeholders::_1));
+    // 4. 初始化 TF2 监听器
+    tf_buffer_ = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+    tf_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
 
-    // 4. 初始化发布第一个目标点
+    // 5. 创建状态检查定时器 (10Hz，每 100ms 检查一次当前位姿)
+    timer_ = this->create_wall_timer(
+        std::chrono::milliseconds(100),
+        std::bind(&GoalPublisher::checkPoseCallback, this));
+
+    // 6. 初始化发布第一个目标点
     goal_id = 0;
     if (!goals.empty())
     {
@@ -37,7 +42,6 @@ GoalPublisher::GoalPublisher() : Node("multigoal_pub_node")
     }
 }
 
-// 将发布逻辑提取成一个单独的函数，保持代码整洁
 void GoalPublisher::publishNextGoal()
 {
     if (goal_id < goals.size())
@@ -46,8 +50,6 @@ void GoalPublisher::publishNextGoal()
         pose_msg.header.stamp = this->now();
         pose_msg.pose.position.x = goals[goal_id].first;
         pose_msg.pose.position.y = goals[goal_id].second;
-        
-        // 避坑：Nav2 默认要求有效的四元数，如果 orientation 是全 0，可能会报错。
         pose_msg.pose.orientation.w = 1.0; 
 
         goal_publisher_->publish(pose_msg);
@@ -57,20 +59,32 @@ void GoalPublisher::publishNextGoal()
     }
 }
 
-// 订阅机器人实时位姿的回调函数
-void GoalPublisher::poseCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
+// 核心逻辑：周期性查询 TF 并计算距离
+void GoalPublisher::checkPoseCallback()
 {
-    // 如果还没开始，或者点已经发完了，就不做处理
+    // 如果还没开始，或者所有点已经执行完毕，直接返回
     if (goal_id == 0 || goal_id > goals.size()) {
         return;
     }
 
-    // 1. 获取机器人当前 XY 坐标
-    double current_x = msg->pose.pose.position.x;
-    double current_y = msg->pose.pose.position.y;
+    geometry_msgs::msg::TransformStamped transformStamped;
 
-    // 2. 获取当前正在追踪的目标点坐标
-    // (因为在 publishNextGoal 中 goal_id 已经加 1 了，所以当前目标是 goal_id - 1)
+    try {
+        // 查询从 map 到 base_link 的最新坐标变换
+        transformStamped = tf_buffer_->lookupTransform(
+            "map", "base_link",
+            tf2::TimePointZero); // TimePointZero 表示获取最新可用的变换
+    } catch (const tf2::TransformException & ex) {
+        // TF 树可能还没建好，或者偶尔丢帧，这里不用报错，直接等下个周期即可
+        // RCLCPP_WARN(this->get_logger(), "Could not transform map to base_link: %s", ex.what());
+        return;
+    }
+
+    // 1. 从 TF 树中获取机器人当前 XY 坐标
+    double current_x = transformStamped.transform.translation.x;
+    double current_y = transformStamped.transform.translation.y;
+
+    // 2. 获取当前正在追踪的目标点坐标 (goal_id 在发完点后已经加 1)
     double target_x = goals[goal_id - 1].first;
     double target_y = goals[goal_id - 1].second;
 
@@ -91,7 +105,7 @@ void GoalPublisher::poseCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
         {
             // 所有点执行完毕
             RCLCPP_INFO(this->get_logger(), "All goals have been reached! Sentinel patrol completed.");
-            goal_id++; // 防止重复触发此日志
+            goal_id++; // 越界处理，防止定时器疯狂打印这句日志
         }
     }
 }

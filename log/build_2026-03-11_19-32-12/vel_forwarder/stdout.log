@@ -1,0 +1,24 @@
+[  1%] Built target vel_forwarder__cpp
+[ 12%] Built target vel_forwarder__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_symlink_vel_forwarder
+[ 23%] Built target vel_forwarder__rosidl_typesupport_c
+[ 34%] Built target vel_forwarder__rosidl_typesupport_cpp
+[ 45%] Built target vel_forwarder__rosidl_typesupport_introspection_c
+[ 56%] Built target vel_forwarder__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target vel_forwarder__rosidl_typesupport_introspection_cpp
+[ 79%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c
+[35m[1mConsolidate compiler generated dependencies of target forwarder_node[0m
+[ 79%] Built target vel_forwarder
+[ 80%] [32mBuilding CXX object CMakeFiles/forwarder_node.dir/src/forwarder.cpp.o[0m
+[ 81%] Built target vel_forwarder__py
+[ 91%] Built target vel_forwarder__rosidl_generator_py
+[ 96%] Built target vel_forwarder__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] Built target vel_forwarder__rosidl_typesupport_introspection_c__pyext
+[ 98%] Built target vel_forwarder__rosidl_typesupport_c__pyext
+running egg_info
+writing vel_forwarder.egg-info/PKG-INFO
+writing dependency_links to vel_forwarder.egg-info/dependency_links.txt
+writing top-level names to vel_forwarder.egg-info/top_level.txt
+reading manifest file 'vel_forwarder.egg-info/SOURCES.txt'
+writing manifest file 'vel_forwarder.egg-info/SOURCES.txt'
+[ 98%] Built target ament_cmake_python_build_vel_forwarder_egg

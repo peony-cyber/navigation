@@ -315,8 +315,14 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "pid_follower" "DESTINATION" "lib/path_following")
+# install("TARGETS" "path_follower" "DESTINATION" "lib/path_following")
 include("/home/peony/navigation_ws/build/path_following/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(DIRECTORY "cfg" "DESTINATION" "share/path_following/cfg")
+ament_cmake_symlink_install_directory("/home/peony/navigation_ws/src/path_following" DIRECTORY "cfg" "DESTINATION" "share/path_following/cfg")
+
+# install(DIRECTORY "launch" "DESTINATION" "share/path_following/launch")
+ament_cmake_symlink_install_directory("/home/peony/navigation_ws/src/path_following" DIRECTORY "launch" "DESTINATION" "share/path_following/launch")
 
 # install(FILES "/home/peony/navigation_ws/build/path_following/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/path_following" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/peony/navigation_ws/src/path_following" FILES "/home/peony/navigation_ws/build/path_following/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/path_following" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")

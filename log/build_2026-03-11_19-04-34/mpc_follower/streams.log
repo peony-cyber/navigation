@@ -1,0 +1,76 @@
+[0.022s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[0.037s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.124s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.137s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.164s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.167s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.174s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.221s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.223s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.315s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.351s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.373s] -- Found visualization_msgs: 4.9.1 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.403s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[0.407s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.472s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.475s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.476s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.481s] -- Found angles: 1.15.0 (/opt/ros/humble/share/angles/cmake)
+[0.482s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.509s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.535s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.785s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.790s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.897s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.903s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.908s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.009s] -- Found Qhull version 8.0.2
+[1.114s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.236s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.293s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.294s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.295s] -- Configured cppcheck include dirs: /home/peony/navigation_ws/src/mpc_follower/include
+[1.295s] -- Configured cppcheck exclude dirs and/or files: 
+[1.296s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.296s] -- Configured cpplint exclude dirs and/or files: 
+[1.297s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.297s] -- Added test 'lint_cmake' to check CMake code style
+[1.297s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.299s] -- Added test 'uncrustify' to check C / C++ code style
+[1.299s] -- Configured uncrustify additional arguments: 
+[1.299s] -- Added test 'xmllint' to check XML markup files
+[1.300s] -- Configuring done
+[1.353s] -- Generating done
+[1.360s] -- Build files have been written to: /home/peony/navigation_ws/build/mpc_follower
+[1.380s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/mpc_follower -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/mpc_follower
+[1.381s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[1.423s] [35m[1mConsolidate compiler generated dependencies of target mpc_node[0m
+[1.456s] [100%] Built target mpc_node
+[1.465s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/mpc_follower -- -j32 -l32
+[1.467s] Invoking command in '/home/peony/navigation_ws/build/mpc_follower': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower
+[1.476s] -- Install configuration: ""
+[1.476s] -- Execute custom install script
+[1.476s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/lib/mpc_follower/mpc_node
+[1.476s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/include//mpc_controller.h
+[1.476s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/include//robot_model.h
+[1.476s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/include//utilities.h
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cfg//mpc_params.yaml
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/launch//mpc_follower.launch.py
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/package_run_dependencies/mpc_follower
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/parent_prefix_path/mpc_follower
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.sh
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/ament_prefix_path.dsv
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.sh
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/environment/path.dsv
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.bash
+[1.477s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.sh
+[1.478s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.zsh
+[1.478s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/local_setup.dsv
+[1.478s] -- Symlinking: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.dsv
+[1.486s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/ament_index/resource_index/packages/mpc_follower
+[1.486s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig.cmake
+[1.486s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/cmake/mpc_followerConfig-version.cmake
+[1.486s] -- Up-to-date symlink: /home/peony/navigation_ws/install/mpc_follower/share/mpc_follower/package.xml
+[1.488s] Invoked command in '/home/peony/navigation_ws/build/mpc_follower' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/peony/navigation_ws/build/mpc_follower

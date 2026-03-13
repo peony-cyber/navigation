@@ -1,0 +1,114 @@
+[0.021s] Invoking command in '/home/peony/navigation_ws/build/navigoal_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/navigoal_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/navigoal_manager
+[0.035s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.123s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.134s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.162s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.165s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.171s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.179s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.190s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.219s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.220s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.309s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.349s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.404s] -- Configuring done
+[0.413s] -- Generating done
+[0.415s] -- Build files have been written to: /home/peony/navigation_ws/build/navigoal_manager
+[0.422s] Invoked command in '/home/peony/navigation_ws/build/navigoal_manager' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/navigoal_manager -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/navigoal_manager
+[0.423s] Invoking command in '/home/peony/navigation_ws/build/navigoal_manager': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/navigoal_manager -- -j32 -l32
+[0.457s] [35m[1mConsolidate compiler generated dependencies of target goal_manager_node[0m
+[0.472s] [ 50%] [32mBuilding CXX object CMakeFiles/goal_manager_node.dir/src/manager.cpp.o[0m
+[2.162s] In file included from [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:1[m[K:
+[2.162s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:23:48:[m[K [01;31m[Kerror: [m[K‘[01m[KUInt16MultiArray[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[2.162s]    23 |     void goalPoseCallback(const std_msgs::msg::[01;31m[KUInt16MultiArray[m[K::SharedPtr msg);
+[2.162s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.162s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:23:76:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[2.162s]    23 |     void goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr [01;31m[Kmsg[m[K);
+[2.162s]       |                                                                            [01;31m[K^~~[m[K
+[2.162s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:23:75:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[2.162s]    23 |     void goalPoseCallback[34m[K([m[Kconst std_msgs::msg::UInt16MultiArray::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K);
+[2.162s]       |                          [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~~~[m[K
+[2.162s]       |                                                                           [32m[K)[m[K
+[2.162s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:23:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.162s]    23 |     void goalPoseCallback(const std_msgs::msg::UInt16MultiArray::[01;31m[KSharedPtr[m[K msg);
+[2.162s]       |                                                                  [01;31m[K^~~~~~~~~[m[K
+[2.163s]       |                                                                           [32m[K;[m[K
+[2.163s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:23:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+[2.163s]    23 |     void goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr [01;31m[Kmsg[m[K);
+[2.163s]       |                                                                            [01;31m[K^~~[m[K
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:41:[m[K [01;31m[Kerror: [m[K‘[01m[KUInt16MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[2.190s]    25 |     rclcpp::Subscription<std_msgs::msg::[01;31m[KUInt16MultiArray[m[K>::SharedPtr ly_goal_pose_subscription_;
+[2.190s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.190s]    25 |     rclcpp::Subscription<std_msgs::msg::UInt16MultiArray[01;31m[K>[m[K::SharedPtr ly_goal_pose_subscription_;
+[2.190s]       |                                                         [01;31m[K^[m[K
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:57:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[2.190s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:60:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.190s]    25 |     rclcpp::Subscription<std_msgs::msg::UInt16MultiArray>::[01;31m[KSharedPtr[m[K ly_goal_pose_subscription_;
+[2.190s]       |                                                            [01;31m[K^~~~~~~~~[m[K
+[2.190s]       |                                                                     [32m[K;[m[K
+[2.192s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:25:70:[m[K [01;31m[Kerror: [m[K‘[01m[Kly_goal_pose_subscription_[m[K’ does not name a type
+[2.192s]    25 |     rclcpp::Subscription<std_msgs::msg::UInt16MultiArray>::SharedPtr [01;31m[Kly_goal_pose_subscription_[m[K;
+[2.192s]       |                                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.197s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:[m[K In constructor ‘[01m[Knavigoal_manager::GoalManager::GoalManager()[m[K’:
+[2.197s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:8:49:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[2.197s]     8 |     [01;35m[Kthis->declare_parameter<std::vector<double>>("r",{})[m[K;
+[2.197s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.197s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:8:49:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[2.198s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:9:49:[m[K [01;35m[Kwarning: [m[Kconverting to ‘[01m[Kconst ParameterDescriptor[m[K’ {aka ‘[01m[Kconst rcl_interfaces::msg::ParameterDescriptor_<std::allocator<void> >[m[K’} from initializer list would use explicit constructor ‘[01m[Krcl_interfaces::msg::ParameterDescriptor_<ContainerAllocator>::ParameterDescriptor_(rosidl_runtime_cpp::MessageInitialization) [with ContainerAllocator = std::allocator<void>][m[K’
+[2.198s]     9 |     [01;35m[Kthis->declare_parameter<std::vector<double>>("b",{})[m[K;
+[2.198s]       |     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[2.198s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:9:49:[m[K [01;36m[Knote: [m[Kin C++11 and above a default constructor can be explicit
+[2.211s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:35:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kly_goal_pose_subscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Kly_goal_subscription_[m[K’?
+[2.211s]    35 |     [01;31m[Kly_goal_pose_subscription_[m[K = this->create_subscription<std_msgs::msg::UInt16MultiArray>(
+[2.211s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.211s]       |     [32m[Kly_goal_subscription_[m[K
+[2.212s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:35:75:[m[K [01;31m[Kerror: [m[K‘[01m[KUInt16MultiArray[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+[2.212s]    35 |     ly_goal_pose_subscription_ = this->create_subscription<std_msgs::msg::[01;31m[KUInt16MultiArray[m[K>(
+[2.212s]       |                                                                           [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.213s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:35:92:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knavigoal_manager::GoalManager::create_subscription<<expression error> >(const char [19], int, std::_Bind_helper<false, void (navigoal_manager::GoalManager::*)(...), navigoal_manager::GoalManager*, const std::_Placeholder<1>&>::type)[m[K’
+[2.214s]    35 |     ly_goal_pose_subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::UInt16MultiArray>([m[K
+[2.214s]       |                                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.214s]    36 | [01;31m[K        "/ly/navi/goal_pose", 10, std::bind(&GoalManager::goalPoseCallback, this, std::placeholders::_1))[m[K;
+[2.214s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.214s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[2.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.214s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.214s]                  from [01m[K/home/peony/navigation_ws/src/navigoal_manager/include/manager.h:2[m[K,
+[2.214s]                  from [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:1[m[K:
+[2.214s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[2.214s]    92 | [01;36m[KNode[m[K::create_subscription(
+[2.214s]       | [01;36m[K^~~~[m[K
+[2.214s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.214s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:35:92:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.214s]    35 |     ly_goal_pose_subscription_ = [01;31m[Kthis->create_subscription<std_msgs::msg::UInt16MultiArray>([m[K
+[2.214s]       |                                  [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[2.214s]    36 | [01;31m[K        "/ly/navi/goal_pose", 10, std::bind(&GoalManager::goalPoseCallback, this, std::placeholders::_1))[m[K;
+[2.214s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.217s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:[m[K At global scope:
+[2.217s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:72:57:[m[K [01;31m[Kerror: [m[K‘[01m[KUInt16MultiArray[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+[2.218s]    72 | void GoalManager::goalPoseCallback(const std_msgs::msg::[01;31m[KUInt16MultiArray[m[K::SharedPtr msg)
+[2.218s]       |                                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.218s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:72:85:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+[2.218s]    72 | void GoalManager::goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr [01;31m[Kmsg[m[K)
+[2.218s]       |                                                                                     [01;31m[K^~~[m[K
+[2.218s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:72:84:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+[2.218s]    72 | void GoalManager::goalPoseCallback[34m[K([m[Kconst std_msgs::msg::UInt16MultiArray::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+[2.218s]       |                                   [34m[K~[m[K                                                [01;31m[K^[m[K[32m[K~~~[m[K
+[2.218s]       |                                                                                    [32m[K)[m[K
+[2.218s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:72:85:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+[2.218s]    72 | void GoalManager::goalPoseCallback(const std_msgs::msg::UInt16MultiArray::SharedPtr [01;31m[Kmsg[m[K)
+[2.218s]       |                                                                                     [01;31m[K^~~[m[K
+[2.220s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:93:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[2.220s]    93 | }
+[2.220s]       |  [01;31m[K^[m[K
+[2.220s] [01m[K/home/peony/navigation_ws/src/navigoal_manager/src/manager.cpp:4:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.220s]     4 | [01;36m[K{[m[K
+[2.220s]       | [01;36m[K^[m[K
+[4.071s] gmake[2]: *** [CMakeFiles/goal_manager_node.dir/build.make:76：CMakeFiles/goal_manager_node.dir/src/manager.cpp.o] 错误 1
+[4.071s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/goal_manager_node.dir/all] 错误 2
+[4.072s] gmake: *** [Makefile:146：all] 错误 2
+[4.074s] Invoked command in '/home/peony/navigation_ws/build/navigoal_manager' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/peony/navigation_ws/build/navigoal_manager -- -j32 -l32

@@ -1,0 +1,112 @@
+[0.006s] Invoking command in '/home/peony/navigation_ws/build/path_following': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following
+[0.072s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.125s] -- Detecting C compiler ABI info
+[0.171s] -- Detecting C compiler ABI info - done
+[0.175s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.175s] -- Detecting C compile features
+[0.175s] -- Detecting C compile features - done
+[0.177s] -- Detecting CXX compiler ABI info
+[0.227s] -- Detecting CXX compiler ABI info - done
+[0.230s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.230s] -- Detecting CXX compile features
+[0.231s] -- Detecting CXX compile features - done
+[0.234s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.328s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.367s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.393s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.425s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.429s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.436s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.446s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.499s] -- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)
+[0.529s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.532s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.598s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.617s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.647s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.653s] -- Looking for pthread.h
+[0.704s] -- Looking for pthread.h - found
+[0.704s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.752s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.753s] -- Found Threads: TRUE  
+[0.782s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.794s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[0.822s] -- Checking for module 'eigen3'
+[0.831s] --   Found eigen3, version 3.4.0
+[0.858s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[0.858s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.888s] -- Checking for module 'flann'
+[0.899s] --   Found flann, version 1.9.1
+[0.925s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[0.925s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.562s] -- Checking for module 'libusb-1.0'
+[1.574s] --   Found libusb-1.0, version 1.0.25
+[1.606s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[1.607s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.646s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.738s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.743s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.748s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.847s] -- Found Qhull version 8.0.2
+[1.939s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.027s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[2.028s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[2.028s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[2.029s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[2.029s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[2.030s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[2.030s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[2.030s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[2.030s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[2.031s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[2.031s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[2.032s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[2.032s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[2.033s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[2.034s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[2.034s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[2.035s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[2.035s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[2.036s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[2.036s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[2.037s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[2.037s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[2.037s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[2.037s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[2.038s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[2.049s] -- Found tf2: 0.25.19 (/opt/ros/humble/share/tf2/cmake)
+[2.058s] -- Found tf2_ros: 0.25.19 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.118s] -- Found tf2_geometry_msgs: 0.25.19 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.129s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.130s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.130s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.132s] [33mCMake Warning (dev) at CMakeLists.txt:17 (find_package):
+[2.132s]   Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+[2.132s]   Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+[2.132s]   command to set the policy and suppress this warning.
+[2.132s] 
+[2.132s]   CMake variable PCL_ROOT is set to:
+[2.132s] 
+[2.132s]     /usr
+[2.132s] 
+[2.132s]   For compatibility, CMake is ignoring the variable.
+[2.132s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.132s] [0m
+[2.179s] -- Configuring done
+[2.184s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[2.184s]   Cannot find source file:
+[2.184s] 
+[2.185s]     src/main.cpp
+[2.185s] 
+[2.185s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[2.185s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[2.185s] 
+[2.185s] [0m
+[2.187s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[2.187s]   No SOURCES given to target: pid_follower
+[2.187s] 
+[2.187s] [0m
+[2.187s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[2.201s] Invoked command in '/home/peony/navigation_ws/build/path_following' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/peony/navigation_ws/src/path_following -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/peony/navigation_ws/install/path_following

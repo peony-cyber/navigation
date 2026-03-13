@@ -9,6 +9,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 # 创建可执行节点
 add_executable(multigoal_pub_node src/multigoal_pub.cpp)
@@ -22,6 +24,8 @@ ament_target_dependencies(multigoal_pub_node
   rclcpp
   geometry_msgs
   std_msgs
+  tf2
+  tf2_ros
 )
 
 install(TARGETS multigoal_pub_node
