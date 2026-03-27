@@ -1,0 +1,70 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+
+#include <Eigen/Eigen>
+#include <rclcpp/rclcpp.hpp>
+#include <nav_msgs/msg/path.hpp>
+#include <nav_msgs/msg/odometry.hpp>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+#include <tf2/LinearMath/Quaternion.h>
+#include <tf2/utils.h>
+#include <geometry_msgs/msg/twist.hpp>
+class TrajFollower
+{
+public:
+    // TrajFollower(ros::NodeHandle &nh, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+    // {
+    //     this->cmd_pub = nh.advertise<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+    //     this->tf_listener = std::make_shared<tf::TransformListener>();
+    //     this->global_path_sub = nh.subscribe("/sPath", 5, &TrajFollower::global_path_callback, this);
+    //     this->path_frame = "map";
+    //     this->plan_timer = nh.createTimer(ros::Duration(1.0 / 30), &TrajFollower::manager, this);
+    //     this->tf_buffer_ = std::make_unique<tf2_ros::Buffer>();
+    //     this->transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+    // }
+    TrajFollower(rclcpp::Node &node, double P, double I, double D, double speed_ratio = 0.9) : Kp(P), Ki(I), Kd(D), speed_ratio(speed_ratio)
+    {
+        this->cmd_pub = node.create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+        this->tf_listener = std::make_shared<tf::TransformListener>();
+        this->global_path_sub = node.create_subscription<nav_msgs::msg::Path>(
+            "/sPath", 5, std::bind(&TrajFollower::global_path_callback, this, std::placeholders::_1));
+        this->path_frame = "map";
+        this->plan_timer = node.create_wall_timer(
+            std::chrono::duration<double>(1.0 / 30),
+            std::bind(&TrajFollower::manager, this, std::placeholders::_1));
+        this->tf_buffer_ = std::make_unique<tf2_ros::Buffer>(node.get_clock());
+        this->transform_listener_ = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+    }   
+
+    ~TrajFollower() {}
+
+    void manager(const rclcpp::TimerBase::SharedPtr &timer);
+    bool get_transform();
+    void tranform_path();
+    void pub_cmd();
+    void follow();
+    void find_nearest_node();
+    void global_path_callback(const nav_msgs::msg::Path::ConstSharedPtr &msg);
+
+private:
+    double Kp;
+    double Ki;
+    double Kd;
+    double speed_ratio;
+    std::vector<Eigen::Vector2d> path;
+    std::vector<Eigen::Vector2d> local_path;
+    Eigen::Vector2d pre_node;
+    Eigen::Vector2d follow_speed;
+    Eigen::MatrixXd map2baselink;
+    int pre_i;
+    int next_i;
+    bool path_geted = false;
+    std::string path_frame;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_pub;
+    rclcpp::create_wall_timer<std::chrono::duration<double>>::SharedPtr plan_timer;
+    rclcpp::Subscription<nav_msgs::msg::Path>::SharedPtr global_path_sub;
+    std::shared_ptr<tf::TransformListener> tf_listener;
+    std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
+    std::shared_ptr<tf2_ros::TransformListener> transform_listener_;
+};
