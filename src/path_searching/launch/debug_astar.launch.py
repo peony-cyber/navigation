@@ -82,7 +82,7 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_tf_pub',
         output='screen',
-        arguments=['0', '-0.25', '0', '-1.570796326', '0', '0', 'body', 'baselink'],
+        arguments=['0', '-0.256', '0', '-1.570796326', '0', '0', 'lidar', 'base_link'],
     )
     
     # 使用TimerAction来延迟启动某些节点
@@ -104,11 +104,11 @@ def generate_launch_description():
     return LaunchDescription([
         declare_param_file_cmd,
         # 先启动plan_manager
-        plan_manager,
-        static_tf_pub,
+        plan_manager
+        # static_tf_pub,
         # 然后启动RViz
         # delayed_rviz,
         # 最后启动地图服务器
-        delayed_map_server,
-        delayed_lifecycle_manager,
+        # delayed_map_server,
+        # delayed_lifecycle_manager,
     ])

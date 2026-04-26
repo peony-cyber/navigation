@@ -54,6 +54,8 @@ private:
     rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_set_speed_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub_cmd_vel_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr pub_marker_;
+    //TEST
+    rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr pub_vel_dir_map_;
     
     rclcpp::TimerBase::SharedPtr timer_manager_;
     rclcpp::TimerBase::SharedPtr timer_get_current_velocity_;

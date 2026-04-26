@@ -5,7 +5,7 @@
 #include <limits>
 #include <random>
 #include <cmath>
-#define DEBUG_ESDF  //验证ESDF是否索引有误，指的是数组和cv::mat的行列对应关系是否正确,使用一次无误注释掉即可
+// #define DEBUG_ESDF  //验证ESDF是否索引有误，指的是数组和cv::mat的行列对应关系是否正确,使用一次无误注释掉即可
 
 namespace ESDF_enviroment
 {
@@ -125,6 +125,17 @@ namespace ESDF_enviroment
         if(pos_[0] < 0 || pos_[1] < 0 || pos_[0] >= Size[0] || pos_[1] >= Size[1])
             return std::numeric_limits<double>::infinity();
         return distance_map[pos_[0]][pos_[1]];
+    }
+    double esdf::getDynamicCost(Eigen::Vector2i pos_)
+    {
+        if (!dyn_layer_) return 0.0;
+        if (pos_[0] < 0 || pos_[1] < 0 || pos_[0] >= dyn_size_[0] || pos_[1] >= dyn_size_[1])
+            return 0.0;
+        
+        uint8_t cost = dyn_layer_[pos_[0]][pos_[1]];
+        if (cost <= 50) return 0.0;
+        
+        return 1.0;
     }
 
     Eigen::Vector2i esdf::getNearestObstacleIndex(Eigen::Vector2i pos_)
@@ -252,6 +263,28 @@ namespace ESDF_enviroment
         //raise to lower
         computeDistanceField();
     }
+    
+    void esdf::updateDynamicLayer(const std::vector<int8_t>& data, int height, int width)
+    {
+        if (!dyn_init_ || dyn_size_[0] != height || dyn_size_[1] != width) {
+            if (dyn_layer_) {
+                for (int i = 0; i < dyn_size_[0]; i++) delete[] dyn_layer_[i];
+                delete[] dyn_layer_;
+            }
+            dyn_size_[0] = height;//size[0] roll size[1] column
+            dyn_size_[1] = width;
+            dyn_layer_ = new uint8_t*[height];
+            for (int i = 0; i < height; i++) dyn_layer_[i] = new uint8_t[width];
+            dyn_init_ = true;
+        }
+        
+        for (int r = 0; r < height; r++) {
+            for (int c = 0; c < width; c++) {
+                int8_t val = data[r * width + c];
+                dyn_layer_[r][c] = (val < 0) ? 0 : static_cast<uint8_t>(val);
+            }
+        }
+    }
 
     esdf::esdf()
     {
@@ -274,5 +307,11 @@ namespace ESDF_enviroment
         delete[] distance_map;
         delete[] nearest_obs_x;
         delete[] nearest_obs_y;
+        if (dyn_layer_) {
+            for(int r = 0; r < dyn_size_[0]; r++) {
+                delete[] dyn_layer_[r];
+            }
+        delete[] dyn_layer_;
+    }
     }
 } // namespace name

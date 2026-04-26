@@ -15,7 +15,7 @@ import open3d as o3d
 
 
 class PCDPublisher(Node):
-    def __init__(self, pcd_path = "accumulated_map_ds.pcd", topic_name="pointcloud", frame_id="map", publish_rate=10.0):
+    def __init__(self, pcd_path = "/home/hustlyrm/slam_source/odom_ws/pcd/map.pcd", topic_name="pointcloud", frame_id="map", publish_rate=10.0):
         super().__init__('pcd_publisher_node')
         
         # 检查文件是否存在
@@ -27,7 +27,7 @@ class PCDPublisher(Node):
         self.frame_id = frame_id
         
         # 使用 Open3D 读取 PCD 文件
-        self.get_logger().info(f"Loading PCD file: {pcd_path}")
+        self.get_logger().info(f"Loading PCD file: {pcd_path}")cd
         pcd = o3d.io.read_point_cloud(pcd_path)
         
         if len(pcd.points) == 0:
@@ -104,7 +104,7 @@ def main(args=None):
     # pcd_path = sys.argv[1]
     # topic_name = sys.argv[2] if len(sys.argv) > 2 else "pointcloud"
     # frame_id = sys.argv[3] if len(sys.argv) > 3 else "map"
-    pcd_path = "accumulated_map_ds.pcd"
+    pcd_path = "/home/hustlyrm/slam_source/odom_ws/pcd/map.pcd"
     topic_name = "pointcloud"
     frame_id = "map"
     

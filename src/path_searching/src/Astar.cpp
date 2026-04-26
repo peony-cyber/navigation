@@ -155,7 +155,8 @@ namespace navi_planner
 
                     double tmp_g_score, tmp_f_score;
                     double dist = esdf_environment_->getDist(pro_pos);
-                    tmp_g_score = d_pos.norm() + getDistCost(dist) + cur_node->g_score;
+                    double dynamic_penalty = esdf_environment_->getDynamicCost(pro_pos);
+                    tmp_g_score = d_pos.norm() + getDistCost(dist) + cur_node->g_score + dynamic_penalty_weight_*dynamic_penalty;
                     tmp_f_score = tmp_g_score + lambda_heu_ * getEuclHeu(pro_pos, end_pt);
 
                     if (pro_node == NULL) {
@@ -196,15 +197,17 @@ namespace navi_planner
         return NO_PATH;
     }
 
-    void Astar::setParam(double obstacle_weight) {
+    void Astar::setParam(double obstacle_weight,double dynamic_penalty_weight) {
         lambda_heu_ = 2.0;
         allocate_num_ = 500000;
         obstacle_weight_ = obstacle_weight;
+        dynamic_penalty_weight_ = dynamic_penalty_weight;
         // nh.param("astar/lambda_heu", lambda_heu_, 2.0);
         // nh.param("astar/allocate_num", allocate_num_, 500000);
         RCLCPP_INFO(rclcpp::get_logger("Astar"),"lambda_heu:%f",lambda_heu_);
         RCLCPP_INFO(rclcpp::get_logger("Astar"),"allocate_num_:%d",allocate_num_);
         RCLCPP_INFO(rclcpp::get_logger("Astar"),"obstacle_weight_:%f",obstacle_weight_);
+        RCLCPP_INFO(rclcpp::get_logger("Astar"),"dynamic_penalty_weight_:%f",dynamic_penalty_weight_);
     }
 
     void Astar::retrievePath(NodePtr end_node) {
@@ -284,6 +287,7 @@ namespace navi_planner
         lambda_heu_ = 2.0;
         allocate_num_ = 500000;
         obstacle_weight_ = 10.0;
+        dynamic_penalty_weight_ = 0.0;
     }
 
     Astar::~Astar()

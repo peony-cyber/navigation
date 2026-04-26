@@ -1,11 +1,15 @@
 goal_manager_node:
   ros__parameters:
-    bias: 20
-    r: [0.004, 0.146,   # R0: anti hero
-        0.5604, 0.3857,   # R1: start
-        -0.38455, -0.204,  # R2: self outpost
-        4.90612, -2.09907,  # R3: circular highland patrol area
-        0.185018, -5.49178]  # R4: supply area
+    bias: 50
+    r: [1.2729578018188477, -0.4614954888820648,
+        -3.897923469543457, -0.784415066242218,
+        -3.6345605850219727, -2.2693068981170654,
+        -1.665787696838379, -1.9077666997909546]
+    # r: [0.004, 0.146,   # R0: anti hero
+    #     0.5604, 0.3857,   # R1: start
+    #     -0.38455, -0.204,  # R2: self outpost
+    #     4.90612, -2.09907,  # R3: circular highland patrol area
+    #     0.185018, -5.49178]  # R4: supply area
         # 2.750, 4.467,   # R5: enemy outpost
         # 7.842, -15.43,  # R6: high land 2 patrol area
         # 1.005, -15.38,  # R7: supply area

@@ -21,10 +21,15 @@ namespace ESDF_enviroment {
         Eigen::Vector2d Offset;
         bool enable_downstairs = false;
         std::string height_map_path;
+        uint8_t** dyn_layer_ = nullptr;
+        int dyn_size_[2] = {0, 0};
+        bool dyn_init_ = false;
     public:
         void esdf_init(bool* bin_map_, int sizeX_, int sizeY_, Eigen::Vector2d offset_, bool enable_downstairs = false);
         void computeDistanceField();
         void updateDistanceField();
+        //
+        void updateDynamicLayer(const std::vector<int8_t>& data, int height, int width);
         // void showpt(Eigen::Vector2i pt);
         esdf();
         ~esdf();
@@ -32,6 +37,7 @@ namespace ESDF_enviroment {
         bool checkCollision(Eigen::Vector2i pos_);
         bool checkUpStairs(Eigen::Vector2i pos_, Eigen::Vector2i next_pos_);
         double getDist(Eigen::Vector2i pos_);
+        double getDynamicCost(Eigen::Vector2i pos_);
         Eigen::Vector2i getNearestObstacleIndex(Eigen::Vector2i pos_);
         void getMapRegion(Eigen::Vector2i & map_size_){map_size_ =  Size;}
         Eigen::Vector2d Index2pos(Eigen::Vector2i index_)

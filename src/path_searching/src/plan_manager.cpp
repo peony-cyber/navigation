@@ -36,23 +36,32 @@ public:
     this->declare_parameter<double>("obstacle_expand_radius", 0.40);
     this->declare_parameter<double>("check_collision_radius", 0.50);
     this->declare_parameter<double>("obstacle_cost_weight", 0.0);
+    this->declare_parameter<double>("dynamic_penalty_weight",100.0);
 
     this->get_parameter("enable_downstairs", enable_downstaris);
     this->get_parameter("obstacle_expand_radius", obstacle_expand_radius);
     this->get_parameter("check_collision_radius", collision_radius);
     this->get_parameter("obstacle_cost_weight", obstacle_cost_weight);
+    this->get_parameter("dynamic_penalty_weight", dynamic_penalty_weight);
 
     RCLCPP_INFO(this->get_logger(), "[Params] [enable_downstairs] : %s", enable_downstaris ? "true" : "false");
     RCLCPP_INFO(this->get_logger(), "[Params] [obstacle_expand_radius] : %f", obstacle_expand_radius);
     RCLCPP_INFO(this->get_logger(), "[Params] [check_collision_radius] : %f", collision_radius);
     RCLCPP_INFO(this->get_logger(), "[Params] [obstacle_cost_weight] : %f", obstacle_cost_weight);
 
+    // map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+    //   "/map", 1, std::bind(&PlanManager::map_callback, this, std::placeholders::_1));
     map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
-      "/map", 1, std::bind(&PlanManager::map_callback, this, std::placeholders::_1));
+  "/map", 
+  rclcpp::QoS(1).reliable().transient_local(),
+  std::bind(&PlanManager::map_callback, this, std::placeholders::_1));
     goal_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
       "/goal_pose", 1, std::bind(&PlanManager::goal_callback, this, std::placeholders::_1));
     obstacle_sub_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
       "/cloud_livox_obs", 1, std::bind(&PlanManager::setObstacle, this,std::placeholders::_1));
+    cost_map_sub_ = this->create_subscription<nav_msgs::msg::OccupancyGrid>(
+      "/costmap/costmap",1,std::bind(&PlanManager::cost_map_callback,this,std::placeholders::_1));
+    
 
     path_pub_ = this->create_publisher<nav_msgs::msg::Path>("/sPath", 1);
 
@@ -84,6 +93,7 @@ private:
   rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr map_sub_;
   rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr goal_sub_;
   rclcpp::Subscription<sensor_msgs::msg::PointCloud2>::SharedPtr obstacle_sub_;
+  rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr cost_map_sub_;
   Eigen::Vector2d start, goal;
   std::vector<Eigen::Vector2d> path_now;
   std::unique_ptr<tf2_ros::Buffer> tf_buffer_;
@@ -91,6 +101,8 @@ private:
   bool enable_downstaris;
   double obstacle_expand_radius, collision_radius;
   double obstacle_cost_weight;
+  //新增的stvl动态障碍参数
+  double dynamic_penalty_weight;
   bool has_goal_;
   const std::string global_frame_{"map"};
   const std::array<std::string, 2> robot_frame_candidates_{{"baselink", "base_link"}};
@@ -246,7 +258,7 @@ private:
     
     RCLCPP_INFO(this->get_logger(), "ESDF map initialized");
     planner_1.setEnvironment(esdf_1);
-    planner_1.setParam(obstacle_cost_weight);
+    planner_1.setParam(obstacle_cost_weight,dynamic_penalty_weight);
     planner_1.init();
     smoother_1.smoother_setEnvironment(esdf_1);
     
@@ -359,7 +371,7 @@ private:
       return true;
     }
 
-    const std::array<std::string, 2> anchor_frame_candidates{{"lidar", "body"}};
+    const std::array<std::string, 2> anchor_frame_candidates{{"odom", "lidar"}};
     for (const auto &robot_frame : robot_frame_candidates_)
     {
       for (const auto &anchor_frame : anchor_frame_candidates)
@@ -468,6 +480,10 @@ private:
     // }
     
     // plan(start, goal);
+  }
+  void cost_map_callback(const nav_msgs::msg::OccupancyGrid::SharedPtr msg)
+  {
+    // esdf_1->updateCostmap();
   }
 
   bool detectCollision()

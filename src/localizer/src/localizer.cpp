@@ -28,7 +28,7 @@ public:
         this->declare_parameter("map_voxel_size", 0.05);
         this->declare_parameter("scan_voxel_size", 0.2);
         this->declare_parameter("localization_th", 0.95);
-        this->declare_parameter("map_pcd_path", "/home/hustrm/rosprojectv4/slam_2026_charles/src/3d_mapping/src/accumulated_map_ds.pcd");
+        this->declare_parameter("map_pcd_path", "/home/hustlyrm/slam_source/odom_ws/pcd/map.pcd");
 
         map_voxel_size_ = this->get_parameter("map_voxel_size").as_double();
         scan_voxel_size_ = this->get_parameter("scan_voxel_size").as_double();
@@ -45,15 +45,17 @@ public:
             if (pcl::io::loadPCDFile<pcl::PointXYZI>(map_pcd_path, *global_map_) == -1) {
                 RCLCPP_ERROR(this->get_logger(), "Failed to load PCD: %s", map_pcd_path.c_str());
             } else {
-                downsample(global_map_, global_map_, map_voxel_size_);
+                // downsample(global_map_, global_map_, map_voxel_size_);
                 has_map_ = true;
                 RCLCPP_INFO(this->get_logger(), "Loaded map with %zu points", global_map_->size());
             }
         }
 
         // --- 4. 订阅与广播 ---
+        // sub_scan_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
+        //     "/cloud_registered", 10, std::bind(&LocalizerNode::cbScan, this, std::placeholders::_1));
         sub_scan_ = this->create_subscription<sensor_msgs::msg::PointCloud2>(
-            "/fastlio2/world_cloud", 10, std::bind(&LocalizerNode::cbScan, this, std::placeholders::_1));
+            "/dlio/odom_node/pointcloud/deskewed", 10, std::bind(&LocalizerNode::cbScan, this, std::placeholders::_1));
         sub_init_ = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
             "/initialpose", 10, std::bind(&LocalizerNode::cbInitialPose, this, std::placeholders::_1));
         
@@ -69,6 +71,7 @@ public:
 private:
     // 回调：接收点云扫描
     void cbScan(const sensor_msgs::msg::PointCloud2::SharedPtr msg) {
+        // RCLCPP_INFO(this->get_logger(), "Received new scan with %u points", msg->width * msg->height);
         std::lock_guard<std::mutex> lock(data_mutex_);
         pcl::fromROSMsg(*msg, *current_scan_);
         has_scan_ = true;
@@ -99,6 +102,9 @@ private:
     void localizationCallback() {
         std::lock_guard<std::mutex> lock(data_mutex_);
         if (!has_map_ || !has_scan_ || !has_initial_pose_) {
+            if (!has_map_) RCLCPP_WARN(this->get_logger(), "No map loaded.");
+            if (!has_scan_) RCLCPP_WARN(this->get_logger(), "No scan received.");
+            if (!has_initial_pose_) RCLCPP_WARN(this->get_logger(), "No initial pose set.");
             RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 5000, "Waiting for data...");
             return;
         }
@@ -106,7 +112,7 @@ private:
         // 获取当前 odom -> base_link 的变换
         geometry_msgs::msg::TransformStamped tf_odom_base;
         try {
-            tf_odom_base = tf_buffer_.lookupTransform("lidar", "baselink", tf2::TimePointZero);
+            tf_odom_base = tf_buffer_.lookupTransform("odom", "base_link", tf2::TimePointZero);
         } catch (const tf2::TransformException & ex) {
             RCLCPP_WARN(this->get_logger(), "TF lookup failed: %s", ex.what());
             return;
@@ -135,6 +141,7 @@ private:
 
         PointCloudXYZI aligned;
         icp.align(aligned, initial_guess);
+        RCLCPP_INFO(this->get_logger(), "ICP fitness score: %f", icp.getFitnessScore());
 
         Eigen::Matrix4f final_transformation;
         bool success = false;
@@ -149,13 +156,20 @@ private:
             ndt.setInputSource(scan_down);
             ndt.setInputTarget(global_map_);
             ndt.align(aligned, initial_guess);
+            RCLCPP_INFO(this->get_logger(), "NDT fitness score: %f", ndt.getFitnessScore());
 
             if (ndt.hasConverged()) {
                 // NDT 后再接一轮 ICP 精修
+                RCLCPP_INFO(this->get_logger(), "NDT converged, refining with ICP...");
                 icp.align(aligned, ndt.getFinalTransformation());
                 if (icp.hasConverged() && icp.getFitnessScore() < localization_th_) {
                     final_transformation = icp.getFinalTransformation();
                     success = true;
+                    RCLCPP_INFO(this->get_logger(), "Refined ICP fitness score: %f", icp.getFitnessScore());
+                }
+                else {
+                    RCLCPP_WARN(this->get_logger(), "Refined ICP failed to converge or fitness too high.");
+                    RCLCPP_WARN(this->get_logger(), "ICP fitness score: %f", icp.getFitnessScore());
                 }
             }
         }
@@ -167,7 +181,7 @@ private:
             geometry_msgs::msg::TransformStamped t;
             t.header.stamp = this->get_clock()->now();
             t.header.frame_id = "map";
-            t.child_frame_id = "lidar";
+            t.child_frame_id = "odom";
 
             Eigen::Matrix3f R = T_map_to_odom_.block<3,3>(0,0);
             Eigen::Quaternionf q_final(R);

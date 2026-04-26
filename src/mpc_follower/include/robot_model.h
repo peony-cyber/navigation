@@ -27,7 +27,7 @@ namespace mpc_follower
     {
         double vx{};     // 线速度控制量
         double vy{};     // y方向线速度控制量
-        double omega{}; // 角速度控制量
+        // double omega{}; // 角速度控制量
     };
 
     // 路径点结构体

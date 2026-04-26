@@ -62,7 +62,7 @@
 namespace vel_forwarder
 {
     constexpr float MaxSpeed = 2.0f;
-    constexpr char MaxSpeedLevel = 70;
+    constexpr char MaxSpeedLevel = 100;
     constexpr float SpeedRatio = MaxSpeedLevel / MaxSpeed;
     constexpr float MinSpeed = 0.3f;
 
@@ -94,7 +94,7 @@ namespace vel_forwarder
     Forwarder::Forwarder() : Node("vel_forwarder")
     {
         sub_cmd_vel = create_subscription<geometry_msgs::msg::Twist>(
-            "/cmd_vel", 10,
+            "/cmd_vel", 1,
             std::bind(&Forwarder::cmdvelCallback, this, std::placeholders::_1));
 
         pub_ly_vel = create_publisher<gimbal_driver::msg::Vel>(

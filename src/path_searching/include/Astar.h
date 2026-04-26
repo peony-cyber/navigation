@@ -18,6 +18,7 @@ private:
 
 
   double lambda_heu_;
+  double dynamic_penalty_weight_;
   double margin_;
   int allocate_num_;
   double tie_breaker_;
@@ -39,7 +40,7 @@ public:
 
   enum { REACH_END = 1, NO_PATH = 2 };
 
-  void setParam(double obstacle_weight = 10.0);
+  void setParam(double obstacle_weight = 10.0,double dynamic_penalty_weight_ = 0.0);
   void init();
   void reset();
   int search(Eigen::Vector2i start_pt, Eigen::Vector2i end_pt);
